@@ -1,195 +1,383 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Dr Mesut İnan, PhD, SFHEA | Cyber Security & AI</title>
+```
+<title>Dr Mesut İnan, PhD, SFHEA | Cyber Security, AI & Computer Science</title>
 
-    <meta name="description" content="Official academic and professional website of Dr Mesut İnan, PhD, SFHEA, Cyber Security Researcher and Senior Lecturer specialising in Cyber Security, Artificial Intelligence and Computer Science.">
+<meta name="description" content="Official academic and professional website of Dr Mesut İnan, PhD, SFHEA. Cyber Security researcher, Senior Lecturer and academic specialising in Artificial Intelligence, Cyber Security, Information Security and Computer Science.">
 
-    <meta name="author" content="Dr Mesut İnan, PhD, SFHEA">
+<meta name="author" content="Dr Mesut İnan, PhD, SFHEA">
 
-    <meta name="keywords" content="Dr Mesut İnan, Mesut Inan, Cyber Security, Cybersecurity, Artificial Intelligence, AI, Computer Science, Information Security, SFHEA">
+<meta name="keywords" content="Dr Mesut İnan, Mesut Inan, Cyber Security, Cybersecurity, Artificial Intelligence, AI, Computer Science, Information Security, Neural Cryptography, SFHEA, Senior Lecturer">
 
-    <link rel="canonical" href="https://drmesutinan-sfhea.github.io/">
+<meta name="robots" content="index, follow">
 
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+<link rel="canonical" href="https://drmesutinan-sfhea.github.io/">
 
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            line-height: 1.6;
-            color: #1f2937;
-            background: #f8fafc;
-        }
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
 
-        header {
-            background: #0f172a;
-            color: white;
-            padding: 20px 8%;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.7;
+        color: #1e293b;
+        background: #f8fafc;
+    }
+
+    a {
+        color: inherit;
+    }
+
+    header {
+        background: #0f172a;
+        color: white;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+    }
+
+    nav {
+        max-width: 1200px;
+        margin: auto;
+        padding: 18px 6%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .logo {
+        font-size: 19px;
+        font-weight: 700;
+        white-space: nowrap;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 22px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #e2e8f0;
+        font-size: 14px;
+        transition: color 0.2s ease;
+    }
+
+    nav a:hover {
+        color: #60a5fa;
+    }
+
+    .hero {
+        background: linear-gradient(135deg, #0f172a, #1e3a8a);
+        color: white;
+        padding: 105px 6%;
+    }
+
+    .hero-content {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .eyebrow {
+        color: #93c5fd;
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-bottom: 18px;
+    }
+
+    .hero h1 {
+        font-size: 56px;
+        line-height: 1.15;
+        margin-bottom: 18px;
+    }
+
+    .hero h2 {
+        font-size: 25px;
+        font-weight: 400;
+        color: #dbeafe;
+        margin-bottom: 25px;
+    }
+
+    .hero p {
+        max-width: 850px;
+        font-size: 18px;
+        color: #e2e8f0;
+    }
+
+    .buttons {
+        margin-top: 32px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .button {
+        display: inline-block;
+        padding: 12px 22px;
+        border-radius: 7px;
+        text-decoration: none;
+        font-weight: 700;
+        transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .button:hover {
+        transform: translateY(-2px);
+        opacity: 0.92;
+    }
+
+    .primary {
+        background: #3b82f6;
+        color: white;
+    }
+
+    .secondary {
+        background: white;
+        color: #0f172a;
+    }
+
+    section {
+        padding: 80px 6%;
+    }
+
+    section:nth-child(even) {
+        background: white;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .section-label {
+        color: #2563eb;
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 8px;
+    }
+
+    section h2 {
+        font-size: 36px;
+        color: #0f172a;
+        margin-bottom: 22px;
+    }
+
+    section p {
+        max-width: 900px;
+        color: #475569;
+    }
+
+    .about-grid {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        gap: 45px;
+        align-items: start;
+    }
+
+    .profile-box {
+        background: #f1f5f9;
+        border-left: 4px solid #2563eb;
+        padding: 25px;
+        border-radius: 8px;
+    }
+
+    .profile-box strong {
+        display: block;
+        color: #0f172a;
+        margin-bottom: 6px;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        margin-top: 35px;
+    }
+
+    .card {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        border: 1px solid #e2e8f0;
+        box-shadow: 0 5px 20px rgba(15,23,42,0.05);
+    }
+
+    .card h3 {
+        color: #1e3a8a;
+        margin-bottom: 12px;
+        font-size: 21px;
+    }
+
+    .card p {
+        font-size: 15px;
+    }
+
+    .project-card {
+        background: #0f172a;
+        color: white;
+        padding: 30px;
+        border-radius: 10px;
+        margin-top: 25px;
+    }
+
+    .project-card h3 {
+        color: #93c5fd;
+        margin-bottom: 12px;
+        font-size: 22px;
+    }
+
+    .project-card p {
+        color: #cbd5e1;
+    }
+
+    .project-tag {
+        display: inline-block;
+        margin-top: 18px;
+        padding: 6px 10px;
+        border-radius: 5px;
+        background: #1e3a8a;
+        color: #dbeafe;
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    .academic-list {
+        margin-top: 25px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+
+    .academic-item {
+        background: #f8fafc;
+        border: 1px solid #e2e8f0;
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    .academic-item h3 {
+        color: #0f172a;
+        margin-bottom: 6px;
+        font-size: 18px;
+    }
+
+    .links {
+        margin-top: 25px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .profile-link {
+        display: inline-block;
+        background: #e2e8f0;
+        color: #0f172a;
+        padding: 10px 16px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .profile-link:hover {
+        background: #cbd5e1;
+    }
+
+    .contact-box {
+        background: #0f172a;
+        color: white;
+        padding: 35px;
+        border-radius: 10px;
+        margin-top: 25px;
+    }
+
+    .contact-box p {
+        color: #cbd5e1;
+        margin-bottom: 8px;
+    }
+
+    footer {
+        background: #020617;
+        color: #94a3b8;
+        text-align: center;
+        padding: 35px 6%;
+        font-size: 14px;
+    }
+
+    @media (max-width: 850px) {
 
         nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            margin: auto;
-        }
-
-        .logo {
-            font-size: 20px;
-            font-weight: bold;
+            flex-direction: column;
+            align-items: flex-start;
         }
 
         nav ul {
-            display: flex;
-            list-style: none;
-            gap: 22px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-size: 14px;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        .hero {
-            background: white;
-            padding: 100px 8%;
-        }
-
-        .hero-content {
-            max-width: 1200px;
-            margin: auto;
+            justify-content: flex-start;
         }
 
         .hero h1 {
-            font-size: 52px;
-            color: #0f172a;
-            margin-bottom: 15px;
+            font-size: 42px;
+        }
+
+        .about-grid,
+        .cards,
+        .academic-list {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @media (max-width: 600px) {
+
+        nav ul {
+            gap: 12px;
+        }
+
+        nav a {
+            font-size: 13px;
+        }
+
+        .hero {
+            padding: 75px 7%;
+        }
+
+        .hero h1 {
+            font-size: 34px;
         }
 
         .hero h2 {
-            font-size: 25px;
-            font-weight: normal;
-            color: #2563eb;
-            margin-bottom: 25px;
-        }
-
-        .hero p {
-            max-width: 800px;
-            font-size: 18px;
-            color: #475569;
-        }
-
-        .buttons {
-            margin-top: 30px;
-        }
-
-        .button {
-            display: inline-block;
-            padding: 12px 22px;
-            margin-right: 10px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .primary {
-            background: #2563eb;
-            color: white;
-        }
-
-        .secondary {
-            background: #e2e8f0;
-            color: #0f172a;
+            font-size: 20px;
         }
 
         section {
-            padding: 70px 8%;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: auto;
+            padding: 60px 7%;
         }
 
         section h2 {
-            font-size: 32px;
-            margin-bottom: 25px;
-            color: #0f172a;
+            font-size: 30px;
         }
+    }
+</style>
+```
 
-        section p {
-            max-width: 900px;
-            color: #475569;
-        }
-
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 25px;
-            margin-top: 35px;
-        }
-
-        .card {
-            background: white;
-            padding: 28px;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
-        }
-
-        .card h3 {
-            margin-bottom: 12px;
-            color: #1e3a8a;
-        }
-
-        footer {
-            background: #0f172a;
-            color: #cbd5e1;
-            text-align: center;
-            padding: 30px;
-            margin-top: 40px;
-        }
-
-        @media (max-width: 768px) {
-
-            nav {
-                flex-direction: column;
-                gap: 15px;
-            }
-
-            nav ul {
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-
-            .hero h1 {
-                font-size: 38px;
-            }
-
-            .hero h2 {
-                font-size: 21px;
-            }
-
-            .hero {
-                padding: 70px 8%;
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -198,182 +386,43 @@
     <nav>
         <div class="logo">Dr Mesut İnan, PhD, SFHEA</div>
 
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#research">Research</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#teaching">Teaching</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+```
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#cv">CV</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+```
+
 </header>
 
 <main>
 
 <section class="hero">
 
-    <div class="hero-content">
+```
+<div class="hero-content">
 
-        <h1>Dr Mesut İnan, PhD, SFHEA</h1>
-
-        <h2>Cyber Security Researcher | Senior Lecturer | AI & Cybersecurity</h2>
-
-        <p>
-            Academic, researcher and university lecturer specialising in
-            Cyber Security, Artificial Intelligence, Information Security,
-            emerging technologies and responsible technology adoption.
-        </p>
-
-        <div class="buttons">
-
-            <a class="button primary" href="#research">
-                Explore Research
-            </a>
-
-            <a class="button secondary" href="#about">
-                About Me
-            </a>
-
-        </div>
-
+    <div class="eyebrow">
+        Cyber Security • Artificial Intelligence • Computer Science
     </div>
 
-</section>
+    <h1>Dr Mesut İnan, PhD, SFHEA</h1>
 
-
-<section id="about">
-
-    <div class="container">
-
-        <h2>About</h2>
-
-        <p>
-            Dr Mesut İnan is a Cyber Security researcher, Senior Lecturer
-            and Senior Fellow of the Higher Education Academy (SFHEA).
-            His academic and professional interests span Cyber Security,
-            Artificial Intelligence, Computer Science, Information Security,
-            Governance, Risk and Compliance, and emerging technologies.
-        </p>
-
-    </div>
-
-</section>
-
-
-<section id="research">
-
-    <div class="container">
-
-        <h2>Research</h2>
-
-        <p>
-            Research interests include the intersection of Artificial
-            Intelligence and Cyber Security, secure systems, information
-            security, neural cryptography and emerging security technologies.
-        </p>
-
-        <div class="cards">
-
-            <div class="card">
-                <h3>AI Security</h3>
-                <p>
-                    Artificial Intelligence security, responsible AI and
-                    secure adoption of emerging AI technologies.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Cyber Security</h3>
-                <p>
-                    Cyber security, information security, secure systems
-                    and security assessment.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Neural Cryptography</h3>
-                <p>
-                    Research into neural approaches to cryptography and
-                    secure computational systems.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Information Security</h3>
-                <p>
-                    Information security management, governance, risk,
-                    compliance and digital transformation.
-                </p>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<section id="projects">
-
-    <div class="container">
-
-        <h2>Projects</h2>
-
-        <p>
-            Selected research and technology projects will be presented
-            here, including work in Artificial Intelligence, Cyber Security,
-            security assessment and emerging technologies.
-        </p>
-
-    </div>
-
-</section>
-
-
-<section id="teaching">
-
-    <div class="container">
-
-        <h2>Teaching & Academic Career</h2>
-
-        <p>
-            Teaching and academic activities cover Computer Science,
-            Artificial Intelligence, Cyber Security, Information Security
-            and related areas across undergraduate and postgraduate education.
-        </p>
-
-    </div>
-
-</section>
-
-
-<section id="contact">
-
-    <div class="container">
-
-        <h2>Academic Profiles & Contact</h2>
-
-        <p>
-            Academic publications, research outputs, professional profiles,
-            conference activities, curriculum vitae and contact information
-            will be available through this website.
-        </p>
-
-    </div>
-
-</section>
-
-</main>
-
-
-<footer>
+    <h2>Cyber Security Researcher | Senior Lecturer | AI & Cybersecurity</h2>
 
     <p>
-        © 2026 Dr Mesut İnan, PhD, SFHEA.
-        All rights reserved.
+        Academic, researcher and university lecturer specialising in
+        Cyber Security, Artificial Intelligence, Information Security,
+        secure systems and emerging technologies.
     </p>
 
-</footer>
-
-</body>
-                                        </html>
+    <div class="buttons">
+        <a class="button primary" href="#research">
+            Explore Research
+```
