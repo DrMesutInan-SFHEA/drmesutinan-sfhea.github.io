@@ -1,23 +1,69 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Dr Mesut İnan, PhD, SFHEA | Cyber Security, AI & Computer Science</title>
 
-<meta name="description" content="Official academic and professional website of Dr Mesut İnan, PhD, SFHEA. Cyber Security Researcher, Senior Lecturer, Artificial Intelligence and Computer Science specialist.">
-<meta name="author" content="Dr Mesut İnan, PhD, SFHEA">
-<meta name="keywords" content="Dr Mesut İnan, Cyber Security, Artificial Intelligence, AI, Cybersecurity, Computer Science, Neural Cryptography, Information Security, SFHEA">
+<meta name="description" content="Official academic and professional website of Dr Mesut İnan, PhD, SFHEA, Cyber Security Researcher and Senior Lecturer specialising in Cyber Security, Artificial Intelligence, Computer Science and Information Security.">
 
-<meta property="og:title" content="Dr Mesut İnan, PhD, SFHEA">
-<meta property="og:description" content="Cyber Security Researcher | Senior Lecturer | AI & Cybersecurity | SFHEA">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://drmesutinan-sfhea.github.io/">
+<meta name="author" content="Dr Mesut İnan, PhD, SFHEA">
+
+<meta name="keywords" content="Dr Mesut İnan, Mesut İnan, Cyber Security, Artificial Intelligence, AI, Cybersecurity, Computer Science, Information Security, Neural Cryptography, Secure Software Engineering, Senior Lecturer, SFHEA">
+
+<meta name="robots" content="index, follow">
 
 <link rel="canonical" href="https://drmesutinan-sfhea.github.io/">
 
+<meta property="og:title" content="Dr Mesut İnan, PhD, SFHEA">
+<meta property="og:description" content="Cyber Security Researcher | Senior Lecturer | AI & Cybersecurity">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://drmesutinan-sfhea.github.io/">
+<meta property="og:image" content="https://raw.githubusercontent.com/DrMesutInan-SFHEA/drmesutinan-sfhea.github.io/main/1781380694313.jpg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Dr Mesut İnan",
+  "honorificPrefix": "Dr",
+  "honorificSuffix": "PhD, SFHEA",
+  "jobTitle": "Senior Lecturer in Cyber Security and AI",
+  "url": "https://drmesutinan-sfhea.github.io/",
+  "image": "https://raw.githubusercontent.com/DrMesutInan-SFHEA/drmesutinan-sfhea.github.io/main/1781380694313.jpg",
+  "email": "Mesut.Inan@wlv.ac.uk",
+  "sameAs": [
+    "https://github.com/DrMesutInan-SFHEA"
+  ],
+  "knowsAbout": [
+    "Cyber Security",
+    "Artificial Intelligence",
+    "Computer Science",
+    "Information Security",
+    "Neural Cryptography",
+    "Secure Software Engineering",
+    "Cloud Security",
+    "Offensive Security"
+  ]
+}
+</script>
+
 <style>
+
+:root {
+    --navy: #0b1f33;
+    --blue: #123d63;
+    --light-blue: #eaf2f8;
+    --text: #1d2733;
+    --muted: #617080;
+    --white: #ffffff;
+    --border: #dbe3ea;
+    --background: #f6f8fa;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -30,137 +76,133 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background: var(--background);
+    color: var(--text);
     line-height: 1.7;
-    color: #1e293b;
-    background: #f8fafc;
 }
 
 a {
+    color: var(--blue);
     text-decoration: none;
-    color: inherit;
 }
 
-.container {
-    width: 90%;
-    max-width: 1150px;
-    margin: auto;
+a:hover {
+    text-decoration: underline;
 }
-
-/* NAVIGATION */
 
 nav {
-    background: #071426;
-    color: white;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 3px 15px rgba(0,0,0,0.15);
+    background: var(--navy);
+    padding: 16px 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.12);
 }
 
 .nav-container {
-    width: 90%;
-    max-width: 1150px;
+    max-width: 1180px;
     margin: auto;
-    min-height: 70px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    gap: 30px;
+    align-items: center;
+    gap: 20px;
 }
 
-.logo {
-    font-size: 19px;
-    font-weight: 700;
-    letter-spacing: 0.2px;
+.nav-brand {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    white-space: nowrap;
 }
 
 .nav-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
-    font-size: 14px;
+    justify-content: flex-end;
+    gap: 18px;
 }
 
 .nav-links a {
-    color: #dbeafe;
-    transition: 0.2s;
-}
-
-.nav-links a:hover {
     color: white;
+    font-size: 14px;
+    font-weight: 600;
 }
-
-/* HERO */
 
 .hero {
-    background:
-        linear-gradient(135deg, #071426 0%, #0f2b4d 55%, #164e63 100%);
+    background: linear-gradient(135deg, #0b1f33, #174f7b);
     color: white;
-    padding: 85px 0;
+    padding: 80px 20px;
 }
 
-.hero-content {
+.hero-container {
+    max-width: 1180px;
+    margin: auto;
     display: flex;
     align-items: center;
-    gap: 55px;
+    gap: 50px;
 }
 
-.profile-photo {
-    width: 210px;
-    height: 210px;
-    border-radius: 50%;
+.profile-image {
+    width: 190px;
+    height: 190px;
     object-fit: cover;
+    border-radius: 50%;
     border: 5px solid rgba(255,255,255,0.9);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    flex-shrink: 0;
 }
 
 .hero h1 {
     font-size: 46px;
     line-height: 1.15;
-    margin-bottom: 15px;
+    margin-bottom: 16px;
 }
 
 .hero-subtitle {
     font-size: 21px;
-    color: #bfdbfe;
-    margin-bottom: 18px;
+    font-weight: 600;
+    margin-bottom: 16px;
 }
 
-.hero-text {
+.hero-description {
     max-width: 760px;
-    color: #dbeafe;
     font-size: 17px;
+    opacity: 0.94;
 }
 
-/* SECTIONS */
+.container {
+    max-width: 1180px;
+    margin: auto;
+    padding: 70px 20px;
+}
 
 section {
-    padding: 75px 0;
+    scroll-margin-top: 90px;
 }
 
 .section-title {
+    color: var(--navy);
     font-size: 32px;
-    color: #0f172a;
-    margin-bottom: 12px;
+    margin-bottom: 18px;
 }
 
 .section-intro {
-    color: #64748b;
-    max-width: 800px;
+    max-width: 900px;
+    color: var(--muted);
     margin-bottom: 35px;
 }
-
-/* ABOUT */
 
 .about-box {
     background: white;
     padding: 35px;
-    border-radius: 16px;
-    box-shadow: 0 8px 30px rgba(15,23,42,0.07);
-    border-left: 5px solid #164e63;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.04);
 }
 
-/* EDUCATION */
+.about-box p + p {
+    margin-top: 18px;
+}
 
 .education-list {
     display: flex;
@@ -168,308 +210,225 @@ section {
     gap: 18px;
 }
 
-.education-card {
+.education-item {
     background: white;
-    padding: 28px 32px;
-    border-radius: 14px;
-    border-left: 5px solid #164e63;
-    box-shadow: 0 6px 25px rgba(15,23,42,0.06);
+    padding: 26px 30px;
+    border-left: 5px solid var(--blue);
+    border-radius: 10px;
+    border-top: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
 }
 
-.education-degree {
-    font-size: 21px;
-    font-weight: 700;
-    color: #0f172a;
+.education-item h3 {
+    color: var(--navy);
+    margin-bottom: 7px;
+    font-size: 20px;
 }
 
-.education-university {
-    font-size: 17px;
-    color: #164e63;
-    font-weight: 600;
-    margin-top: 5px;
+.education-item strong {
+    display: block;
+    margin-bottom: 5px;
 }
 
-.education-detail {
-    color: #64748b;
-    margin-top: 7px;
+.education-item p {
+    color: var(--muted);
 }
 
-/* EXPERIENCE */
-
-.grid-2 {
+.grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 22px;
+    gap: 24px;
 }
 
 .card {
     background: white;
     padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 7px 28px rgba(15,23,42,0.06);
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 35px rgba(15,23,42,0.10);
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.04);
 }
 
 .card h3 {
+    color: var(--navy);
     font-size: 21px;
-    color: #0f172a;
-    margin-bottom: 7px;
-}
-
-.card .role {
-    color: #164e63;
-    font-weight: 600;
     margin-bottom: 10px;
 }
 
 .card p {
-    color: #64748b;
+    color: var(--muted);
 }
 
-/* RESEARCH */
-
-.research-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 22px;
-}
-
-.research-card {
-    background: linear-gradient(145deg, #ffffff, #f1f5f9);
-    padding: 30px;
-    border-radius: 15px;
-    border-top: 4px solid #164e63;
-    box-shadow: 0 7px 25px rgba(15,23,42,0.06);
-}
-
-.research-card h3 {
-    font-size: 21px;
-    color: #0f172a;
-    margin-bottom: 10px;
-}
-
-.research-card p {
-    color: #64748b;
-}
-
-/* PROJECTS */
-
-.project-list {
-    display: flex;
-    flex-direction: column;
-    gap: 22px;
-}
-
-.project-card {
-    background: white;
-    padding: 32px;
-    border-radius: 16px;
-    box-shadow: 0 8px 28px rgba(15,23,42,0.07);
-}
-
-.project-card h3 {
-    color: #0f172a;
-    font-size: 23px;
-    margin-bottom: 10px;
-}
-
-.project-card p {
-    color: #64748b;
-    margin-bottom: 15px;
-}
-
-.project-link {
+.card-label {
     display: inline-block;
-    color: #164e63;
-    font-weight: 700;
-}
-
-/* PUBLICATIONS */
-
-.publications {
-    background: #eef4f8;
-}
-
-.publication-list {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-}
-
-.publication-card {
-    background: white;
-    padding: 27px 30px;
-    border-radius: 14px;
-    box-shadow: 0 6px 22px rgba(15,23,42,0.06);
-}
-
-.publication-number {
-    color: #164e63;
-    font-weight: 700;
-    font-size: 14px;
-    margin-bottom: 7px;
-}
-
-.publication-card h3 {
-    font-size: 19px;
-    color: #0f172a;
+    color: var(--blue);
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
     margin-bottom: 8px;
 }
 
-.publication-card p {
-    color: #64748b;
-}
-
-.publication-link {
+.card-link {
     display: inline-block;
-    margin-top: 10px;
-    color: #164e63;
-    font-weight: 700;
+    margin-top: 16px;
+    font-weight: bold;
 }
 
-/* TEACHING */
+.experience-role {
+    font-weight: bold;
+    color: var(--blue);
+    margin-bottom: 8px;
+}
+
+.project-card {
+    border-top: 5px solid var(--blue);
+}
+
+.publication-card {
+    border-top: 4px solid #2d587c;
+}
 
 .teaching-card {
-    background: white;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 7px 25px rgba(15,23,42,0.06);
+    border-top: 4px solid #54748f;
 }
 
-/* CV */
-
-.cv-box {
-    background: #071426;
+.cv-section {
+    background: var(--navy);
     color: white;
-    padding: 42px;
-    border-radius: 18px;
-    text-align: center;
+    border-radius: 16px;
+    padding: 45px;
 }
 
-.cv-box h2 {
-    margin-bottom: 10px;
+.cv-section h2 {
+    color: white;
+    margin-bottom: 12px;
 }
 
-.cv-box p {
-    color: #cbd5e1;
+.cv-section p {
+    color: #d8e4ee;
     margin-bottom: 22px;
 }
 
 .cv-button {
     display: inline-block;
     background: white;
-    color: #071426;
-    padding: 12px 24px;
+    color: var(--navy);
+    padding: 13px 22px;
     border-radius: 8px;
-    font-weight: 700;
+    font-weight: bold;
 }
 
-/* CONTACT */
+.cv-button:hover {
+    text-decoration: none;
+    background: #edf3f7;
+}
 
 .contact-box {
     background: white;
     padding: 35px;
-    border-radius: 16px;
-    box-shadow: 0 8px 30px rgba(15,23,42,0.07);
+    border-radius: 14px;
+    border: 1px solid var(--border);
 }
 
-.contact-box p {
-    margin: 9px 0;
+.contact-item {
+    margin-bottom: 14px;
 }
 
-.contact-box a {
-    color: #164e63;
-    font-weight: 600;
+.contact-item strong {
+    display: inline-block;
+    min-width: 90px;
 }
-
-/* FOOTER */
 
 footer {
-    background: #071426;
-    color: #cbd5e1;
+    background: #071522;
+    color: #cbd7e2;
     text-align: center;
-    padding: 30px 20px;
+    padding: 28px 20px;
     font-size: 14px;
 }
 
-/* RESPONSIVE */
-
-@media (max-width: 800px) {
+@media (max-width: 850px) {
 
     .nav-container {
         flex-direction: column;
-        padding: 18px 0;
+        align-items: flex-start;
     }
 
     .nav-links {
-        justify-content: center;
-        gap: 13px;
+        justify-content: flex-start;
     }
 
-    .hero {
-        padding: 60px 0;
-    }
-
-    .hero-content {
+    .hero-container {
         flex-direction: column;
         text-align: center;
     }
 
     .hero h1 {
-        font-size: 35px;
+        font-size: 36px;
     }
 
     .hero-subtitle {
         font-size: 18px;
     }
 
-    .grid-2,
-    .research-grid {
+    .grid {
         grid-template-columns: 1fr;
     }
+}
 
-    section {
-        padding: 55px 0;
+@media (max-width: 600px) {
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .hero {
+        padding: 60px 18px;
+    }
+
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .container {
+        padding: 55px 16px;
+    }
+
+    .section-title {
+        font-size: 27px;
+    }
+
+    .card,
+    .about-box,
+    .contact-box {
+        padding: 24px;
+    }
+
+    .cv-section {
+        padding: 30px 24px;
     }
 }
+
 </style>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Dr Mesut İnan",
-  "honorificSuffix": "PhD, SFHEA",
-  "jobTitle": "Senior Lecturer in Cyber Security and AI",
-  "url": "https://drmesutinan-sfhea.github.io/",
-  "image": "https://raw.githubusercontent.com/DrMesutInan-SFHEA/drmesutinan-sfhea.github.io/main/1781380694313.jpg",
-  "email": "mailto:Mesut.Inan@wlv.ac.uk",
-  "sameAs": [
-    "https://github.com/DrMesutInan-SFHEA"
-  ],
-  "knowsAbout": [
-    "Cyber Security",
-    "Artificial Intelligence",
-    "Computer Science",
-    "Neural Cryptography",
-    "Information Security",
-    "Secure Software Engineering"
-  ]
-}
-</script>
-
 </head>
 
 <body>
 
 <nav>
     <div class="nav-container">
-        <div class="logo">Dr Mesut İnan, PhD, SFHEA</div>
+
+        <a href="#top" class="nav-brand">
+            Dr Mesut İnan, PhD, SFHEA
+        </a>
 
         <div class="nav-links">
             <a href="#about">About</a>
@@ -482,63 +441,72 @@ footer {
             <a href="#cv">CV</a>
             <a href="#contact">Contact</a>
         </div>
+
     </div>
 </nav>
 
-<header class="hero">
-    <div class="container hero-content">
+<header class="hero" id="top">
+
+    <div class="hero-container">
 
         <img
-            class="profile-photo"
             src="https://raw.githubusercontent.com/DrMesutInan-SFHEA/drmesutinan-sfhea.github.io/main/1781380694313.jpg"
-            alt="Dr Mesut İnan">
+            alt="Dr Mesut İnan"
+            class="profile-image"
+        >
 
         <div>
+
             <h1>Dr Mesut İnan, PhD, SFHEA</h1>
 
-            <div class="hero-subtitle">
+            <p class="hero-subtitle">
                 Cyber Security Researcher | Senior Lecturer | AI & Cybersecurity
-            </div>
+            </p>
 
-            <p class="hero-text">
+            <p class="hero-description">
                 Academic and professional profile focused on Cyber Security,
                 Artificial Intelligence, Computer Science, Information Security
                 and emerging secure technologies.
             </p>
+
         </div>
 
     </div>
+
 </header>
 
 <main>
 
 <section id="about">
+
     <div class="container">
 
         <h2 class="section-title">About</h2>
 
         <div class="about-box">
+
             <p>
                 Dr Mesut İnan is a Cyber Security researcher and Senior Lecturer
                 working across Artificial Intelligence, Cybersecurity and Computer Science.
                 His academic interests include AI-driven security, neural cryptography,
-                information security, offensive security, cloud security and
-                secure software engineering.
+                information security, offensive security, cloud security and secure
+                software engineering.
             </p>
-
-            <br>
 
             <p>
                 His work combines academic research, applied technology development
                 and higher education teaching, with an emphasis on responsible,
                 secure and practical adoption of emerging technologies.
             </p>
+
         </div>
 
     </div>
+
 </section>
 
 <section id="education">
+
     <div class="container">
 
         <h2 class="section-title">Education</h2>
@@ -550,71 +518,49 @@ footer {
 
         <div class="education-list">
 
-            <div class="education-card">
-                <div class="education-degree">
-                    PhD in Computer Science
-                </div>
-                <div class="education-university">
-                    KU Leuven, Belgium
-                </div>
-                <div class="education-detail">
-                    Cybersecurity and Neural Cryptography
-                </div>
+            <div class="education-item">
+                <h3>PhD in Computer Science</h3>
+                <strong>KU Leuven, Belgium</strong>
+                <p>Cybersecurity and Neural Cryptography</p>
             </div>
 
-            <div class="education-card">
-                <div class="education-degree">
-                    MSc in Artificial Intelligence
-                </div>
-                <div class="education-university">
-                    KU Leuven, Belgium
-                </div>
-                <div class="education-detail">
-                    Autonomous Systems | Summa Cum Laude
-                </div>
+            <div class="education-item">
+                <h3>MSc in Artificial Intelligence</h3>
+                <strong>KU Leuven, Belgium</strong>
+                <p>Autonomous Systems | Summa Cum Laude</p>
             </div>
 
-            <div class="education-card">
-                <div class="education-degree">
-                    MSc in Computer Science
-                </div>
-                <div class="education-university">
-                    University of Antwerp, Belgium
-                </div>
-                <div class="education-detail">
-                    Risk and Information Security | Distinction
-                </div>
+            <div class="education-item">
+                <h3>MSc in Computer Science</h3>
+                <strong>University of Antwerp, Belgium</strong>
+                <p>Risk and Information Security | Distinction</p>
             </div>
 
-            <div class="education-card">
-                <div class="education-degree">
-                    BSc in Computer Science
-                </div>
-                <div class="education-university">
-                    KU Leuven, Belgium
-                </div>
-                <div class="education-detail">
-                    Computer Science | Top Student
-                </div>
+            <div class="education-item">
+                <h3>BSc in Computer Science</h3>
+                <strong>KU Leuven, Belgium</strong>
+                <p>Computer Science | Top Student</p>
             </div>
 
         </div>
 
     </div>
+
 </section>
 
 <section id="experience">
+
     <div class="container">
 
         <h2 class="section-title">Academic & Professional Experience</h2>
 
-        <div class="grid-2">
+        <div class="grid">
 
             <div class="card">
                 <h3>University of Wolverhampton</h3>
-                <div class="role">
+                <p class="experience-role">
                     Senior Lecturer in Cyber Security and AI
-                </div>
+                </p>
                 <p>
                     Teaching and academic activities across Cyber Security,
                     Artificial Intelligence and Computer Science.
@@ -623,20 +569,20 @@ footer {
 
             <div class="card">
                 <h3>Vrije Universiteit Brussel</h3>
-                <div class="role">
+                <p class="experience-role">
                     AI & Cybersecurity
-                </div>
+                </p>
                 <p>
-                    Academic and teaching activities involving Artificial
-                    Intelligence, Cybersecurity and related computing disciplines.
+                    Academic and teaching activities involving Artificial Intelligence,
+                    Cybersecurity and related computing disciplines.
                 </p>
             </div>
 
             <div class="card">
                 <h3>Thomas More University</h3>
-                <div class="role">
+                <p class="experience-role">
                     Applied Computer Science
-                </div>
+                </p>
                 <p>
                     Teaching and applied academic work in Computer Science
                     and technology-oriented disciplines.
@@ -645,9 +591,9 @@ footer {
 
             <div class="card">
                 <h3>TECHAMES</h3>
-                <div class="role">
+                <p class="experience-role">
                     Founder & CEO
-                </div>
+                </p>
                 <p>
                     Technology development, innovation and applied research
                     activities across emerging technology areas.
@@ -657,9 +603,11 @@ footer {
         </div>
 
     </div>
+
 </section>
 
 <section id="research">
+
     <div class="container">
 
         <h2 class="section-title">Research</h2>
@@ -669,9 +617,9 @@ footer {
             Cybersecurity and secure computing.
         </p>
 
-        <div class="research-grid">
+        <div class="grid">
 
-            <div class="research-card">
+            <div class="card">
                 <h3>AI for Cybersecurity</h3>
                 <p>
                     Intelligent approaches for cyber threat detection,
@@ -679,23 +627,23 @@ footer {
                 </p>
             </div>
 
-            <div class="research-card">
+            <div class="card">
                 <h3>Neural Cryptography</h3>
                 <p>
-                    Research into neural-network-based approaches to
-                    cryptographic learning and secure communication.
+                    Research into neural-network-based approaches to cryptographic
+                    learning and secure communication.
                 </p>
             </div>
 
-            <div class="research-card">
+            <div class="card">
                 <h3>Information Security</h3>
                 <p>
-                    Security architectures, risk analysis, information
-                    protection and secure technology adoption.
+                    Security architectures, risk analysis, information protection
+                    and secure technology adoption.
                 </p>
             </div>
 
-            <div class="research-card">
+            <div class="card">
                 <h3>Secure Software Engineering</h3>
                 <p>
                     Security-aware software development, automated assessment
@@ -706,30 +654,39 @@ footer {
         </div>
 
     </div>
+
 </section>
 
 <section id="projects">
+
     <div class="container">
 
         <h2 class="section-title">Research Projects</h2>
 
-        <div class="project-list">
+        <div class="grid">
 
-            <div class="project-card">
+            <div class="card project-card">
+
+                <span class="card-label">RESEARCH PROJECT</span>
+
                 <h3>AEGIS-SENTINEL</h3>
 
                 <p>
                     A research project focused on civilian airspace threat detection
-                    and critical infrastructure protection through intelligent
-                    sensor fusion, threat assessment and human-authorised decision making.
+                    and critical infrastructure protection through intelligent sensor
+                    fusion, threat assessment and human-authorised decision making.
                 </p>
 
-                <a class="project-link" href="#" aria-label="AEGIS-SENTINEL project">
-                    Research Project
+                <a href="#contact" class="card-link">
+                    Research Project →
                 </a>
+
             </div>
 
-            <div class="project-card">
+            <div class="card project-card">
+
+                <span class="card-label">RESEARCH OUTPUT</span>
+
                 <h3>AFSS</h3>
 
                 <p>
@@ -737,14 +694,21 @@ footer {
                     optimisation techniques and security-oriented system design.
                 </p>
 
-                <a class="project-link"
-                   href="https://doi.org/10.5281/zenodo.17974640"
-                   target="_blank">
+                <a
+                    href="https://doi.org/10.5281/zenodo.17974640"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="card-link"
+                >
                     View Research Record →
                 </a>
+
             </div>
 
-            <div class="project-card">
+            <div class="card project-card">
+
+                <span class="card-label">SOFTWARE PROJECT</span>
+
                 <h3>Cyber Web Assessment Agent</h3>
 
                 <p>
@@ -753,128 +717,155 @@ footer {
                     structured assessment reports.
                 </p>
 
-                <a class="project-link" href="https://github.com/DrMesutInan-SFHEA" target="_blank">
+                <a
+                    href="https://github.com/DrMesutInan-SFHEA"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="card-link"
+                >
                     GitHub Profile →
                 </a>
+
             </div>
 
         </div>
 
     </div>
+
 </section>
 
-<section id="publications" class="publications">
+<section id="publications">
+
     <div class="container">
 
         <h2 class="section-title">Publications & Academic Work</h2>
 
         <p class="section-intro">
             Selected research outputs and academic work. This section can be
-            expanded with peer-reviewed publications, conference papers,
+            expanded with verified journal articles, conference papers,
             book chapters and research datasets.
         </p>
 
-        <div class="publication-list">
+        <div class="grid">
 
-            <div class="publication-card">
-                <div class="publication-number">RESEARCH OUTPUT 01</div>
+            <div class="card publication-card">
 
-                <h3>
-                    AFSS Research Dataset and Research Record
-                </h3>
+                <span class="card-label">RESEARCH OUTPUT 01</span>
+
+                <h3>AFSS Research Dataset and Research Record</h3>
 
                 <p>
                     Research output associated with secure and adaptive
                     computational system development.
                 </p>
 
-                <a class="publication-link"
-                   href="https://doi.org/10.5281/zenodo.17974640"
-                   target="_blank">
+                <a
+                    href="https://doi.org/10.5281/zenodo.17974640"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="card-link"
+                >
                     DOI: 10.5281/zenodo.17974640 →
                 </a>
+
             </div>
 
-            <div class="publication-card">
-                <div class="publication-number">ACADEMIC PROFILE</div>
+            <div class="card publication-card">
 
-                <h3>
-                    Research in Cybersecurity and Artificial Intelligence
-                </h3>
+                <span class="card-label">ACADEMIC PROFILE</span>
+
+                <h3>Research in Cybersecurity and Artificial Intelligence</h3>
 
                 <p>
                     Academic interests covering AI for Cybersecurity,
                     Neural Cryptography, Information Security, Offensive Security,
                     Cloud Security and Secure Software Engineering.
                 </p>
+
             </div>
 
-            <div class="publication-card">
-                <div class="publication-number">FUTURE PUBLICATIONS</div>
+            <div class="card publication-card">
 
-                <h3>
-                    Peer-Reviewed Publications & Conference Contributions
-                </h3>
+                <span class="card-label">FUTURE PUBLICATIONS</span>
+
+                <h3>Peer-Reviewed Publications & Conference Contributions</h3>
 
                 <p>
                     This section is reserved for verified journal articles,
                     conference papers and other scholarly outputs.
                 </p>
+
             </div>
 
         </div>
 
     </div>
+
 </section>
 
 <section id="teaching">
+
     <div class="container">
 
         <h2 class="section-title">Teaching</h2>
 
-        <div class="grid-2">
+        <div class="grid">
 
-            <div class="teaching-card">
+            <div class="card teaching-card">
+
                 <h3>Cyber Security</h3>
+
                 <p>
-                    Cybersecurity principles, threat analysis, information
-                    security and practical security technologies.
+                    Cybersecurity principles, threat analysis, information security
+                    and practical security technologies.
                 </p>
+
             </div>
 
-            <div class="teaching-card">
+            <div class="card teaching-card">
+
                 <h3>Artificial Intelligence</h3>
+
                 <p>
                     Artificial Intelligence, intelligent systems,
                     autonomous systems and applied AI.
                 </p>
+
             </div>
 
-            <div class="teaching-card">
+            <div class="card teaching-card">
+
                 <h3>Computer Science</h3>
+
                 <p>
-                    Computer Science, software development, databases and
-                    computing technologies.
+                    Computer Science, software development, databases
+                    and computing technologies.
                 </p>
+
             </div>
 
-            <div class="teaching-card">
+            <div class="card teaching-card">
+
                 <h3>Information Security</h3>
+
                 <p>
-                    Risk, information protection, secure systems and
-                    security-aware technology adoption.
+                    Risk, information protection, secure systems
+                    and security-aware technology adoption.
                 </p>
+
             </div>
 
         </div>
 
     </div>
+
 </section>
 
 <section id="cv">
+
     <div class="container">
 
-        <div class="cv-box">
+        <div class="cv-section">
 
             <h2>Academic CV</h2>
 
@@ -882,50 +873,62 @@ footer {
                 Download the academic CV of Dr Mesut İnan, PhD, SFHEA.
             </p>
 
-            <a class="cv-button"
-               href="Dr-Mesut-Inan-Academic-CV.pdf"
-               target="_blank">
+            <a
+                href="Dr-Mesut-Inan-Academic-CV.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="cv-button"
+            >
                 Download Academic CV
             </a>
 
         </div>
 
     </div>
+
 </section>
 
 <section id="contact">
+
     <div class="container">
 
         <h2 class="section-title">Contact</h2>
 
         <div class="contact-box">
 
-            <p>
+            <div class="contact-item">
                 <strong>Email:</strong>
                 <a href="mailto:Mesut.Inan@wlv.ac.uk">
                     Mesut.Inan@wlv.ac.uk
                 </a>
-            </p>
+            </div>
 
-            <p>
+            <div class="contact-item">
                 <strong>GitHub:</strong>
-                <a href="https://github.com/DrMesutInan-SFHEA" target="_blank">
+                <a
+                    href="https://github.com/DrMesutInan-SFHEA"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     DrMesutInan-SFHEA
                 </a>
-            </p>
+            </div>
 
         </div>
 
     </div>
+
 </section>
 
 </main>
 
 <footer>
-    <p>
-        © 2026 Dr Mesut İnan, PhD, SFHEA. Academic & Professional Website.
-    </p>
+
+    © 2026 Dr Mesut İnan, PhD, SFHEA.
+    Academic & Professional Website.
+
 </footer>
 
 </body>
 </html>
+```
