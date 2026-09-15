@@ -4,19 +4,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Dr Mesut İnan, PhD, SFHEA | Cyber Security Researcher & Senior Lecturer</title>
+<title>Dr Mesut İnan, PhD, SFHEA | Cyber Security, AI & Technology</title>
 
-<meta name="description" content="Official academic and professional website of Dr Mesut İnan, PhD, SFHEA. Cyber Security Researcher and Senior Lecturer specialising in Cyber Security, Artificial Intelligence, Computer Science, Information Security and Neural Cryptography.">
+<meta name="description" content="Official academic and professional website of Dr Mesut İnan, PhD, SFHEA. Cyber Security Researcher and Senior Lecturer specialising in Cyber Security, Artificial Intelligence, Computer Science, Information Security and emerging technologies.">
 
 <meta name="author" content="Dr Mesut İnan, PhD, SFHEA">
 <meta name="robots" content="index, follow">
-<meta name="theme-color" content="#0a1d2f">
+<meta name="theme-color" content="#081c2d">
 
 <link rel="canonical" href="https://drmesutinan-sfhea.github.io/">
 
 <meta property="og:title" content="Dr Mesut İnan, PhD, SFHEA">
-<meta property="og:description" content="Cyber Security Researcher | Senior Lecturer | AI & Cybersecurity">
-<meta property="og:type" content="profile">
+<meta property="og:description" content="Cyber Security Researcher | Senior Lecturer | AI & Emerging Technology">
+<meta property="og:type" content="website">
 <meta property="og:url" content="https://drmesutinan-sfhea.github.io/">
 <meta property="og:image" content="https://raw.githubusercontent.com/DrMesutInan-SFHEA/drmesutinan-sfhea.github.io/main/1781380694313.jpg">
 <meta property="og:site_name" content="Dr Mesut İnan">
@@ -25,22 +25,14 @@
 {
   "@context":"https://schema.org",
   "@type":"Person",
-  "@id":"https://drmesutinan-sfhea.github.io/#person",
   "name":"Dr Mesut İnan",
-  "givenName":"Mesut",
-  "familyName":"İnan",
   "honorificPrefix":"Dr",
   "honorificSuffix":"PhD, SFHEA",
   "jobTitle":"Senior Lecturer in Cyber Security and AI",
-  "description":"Cyber Security Researcher and Senior Lecturer specialising in Cyber Security, Artificial Intelligence, Computer Science, Information Security and Neural Cryptography.",
+  "description":"Cyber Security Researcher and Senior Lecturer specialising in Cyber Security, Artificial Intelligence, Computer Science, Information Security and emerging technologies.",
   "url":"https://drmesutinan-sfhea.github.io/",
   "image":"https://raw.githubusercontent.com/DrMesutInan-SFHEA/drmesutinan-sfhea.github.io/main/1781380694313.jpg",
   "email":"Mesut.Inan@wlv.ac.uk",
-  "worksFor":{
-    "@type":"Organization",
-    "name":"University of Wolverhampton",
-    "url":"https://www.wlv.ac.uk/"
-  },
   "sameAs":[
     "https://github.com/DrMesutInan-SFHEA"
   ],
@@ -53,8 +45,7 @@
     "Secure Software Engineering",
     "Cloud Security",
     "Offensive Security",
-    "Cybersecurity",
-    "Artificial Intelligence for Cybersecurity"
+    "Emerging Technology"
   ]
 }
 </script>
@@ -63,7 +54,6 @@
 
 :root{
 --navy:#081c2d;
---navy2:#102f49;
 --blue:#18547f;
 --blue2:#2673a8;
 --light:#eef5f9;
@@ -72,7 +62,7 @@
 --white:#ffffff;
 --border:#d9e3ea;
 --background:#f5f8fa;
---success:#2d6f55;
+--note:#f0f6fa;
 }
 
 *{
@@ -341,67 +331,86 @@ margin-top:17px;
 font-weight:700;
 }
 
-.academic-links{
+.note-section{
+background:linear-gradient(135deg,#edf5f9,#ffffff);
+border:1px solid var(--border);
+border-radius:18px;
+padding:45px;
+box-shadow:0 7px 28px rgba(0,0,0,.045);
+}
+
+.note-header{
+display:flex;
+align-items:center;
+gap:16px;
+margin-bottom:18px;
+}
+
+.note-icon{
+width:48px;
+height:48px;
+border-radius:50%;
+background:var(--navy);
+color:#fff;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:700;
+font-size:18px;
+}
+
+.note-section h2{
+color:var(--navy);
+font-size:34px;
+}
+
+.note-section > p{
+color:var(--muted);
+max-width:900px;
+margin-bottom:30px;
+}
+
+.note-grid{
 display:grid;
 grid-template-columns:repeat(3,1fr);
-gap:18px;
-margin-top:25px;
+gap:20px;
 }
 
-.academic-link{
+.note-card{
 background:#fff;
 border:1px solid var(--border);
-border-radius:12px;
-padding:22px;
-transition:.2s;
+border-radius:13px;
+padding:25px;
 }
 
-.academic-link:hover{
-transform:translateY(-2px);
-box-shadow:0 8px 22px rgba(0,0,0,.07);
-text-decoration:none;
-}
-
-.academic-link strong{
-display:block;
+.note-card h3{
 color:var(--navy);
-margin-bottom:5px;
+font-size:19px;
+margin-bottom:9px;
 }
 
-.academic-link span{
-font-size:13px;
+.note-card p{
 color:var(--muted);
+font-size:14px;
 }
 
-.cv-section{
-background:var(--navy);
-border-radius:18px;
-padding:52px;
-color:#fff;
-}
-
-.cv-section h2{
-font-size:33px;
-margin-bottom:12px;
-}
-
-.cv-section p{
-color:#d9e5ee;
-margin-bottom:25px;
-}
-
-.cv-button{
+.note-card .note-status{
 display:inline-block;
-background:#fff;
-color:var(--navy);
-padding:13px 24px;
-border-radius:8px;
+margin-top:15px;
+font-size:11px;
 font-weight:700;
+letter-spacing:.8px;
+color:var(--blue);
 }
 
-.cv-button:hover{
-background:#eaf0f5;
-text-decoration:none;
+.note-coming{
+margin-top:25px;
+padding:18px 20px;
+background:var(--note);
+border-left:4px solid var(--blue);
+border-radius:7px;
+color:var(--muted);
+font-size:14px;
 }
 
 .contact-item{
@@ -462,7 +471,7 @@ grid-template-columns:1fr;
 grid-template-columns:1fr;
 }
 
-.academic-links{
+.note-grid{
 grid-template-columns:1fr;
 }
 }
@@ -496,12 +505,9 @@ font-size:28px;
 
 .about-box,
 .contact-box,
-.card{
+.card,
+.note-section{
 padding:24px;
-}
-
-.cv-section{
-padding:33px 25px;
 }
 
 .nav-links{
@@ -511,6 +517,11 @@ gap:9px;
 .nav-links a{
 font-size:11px;
 }
+
+.note-section h2{
+font-size:28px;
+}
+
 }
 
 </style>
@@ -527,6 +538,7 @@ Dr Mesut İnan, PhD, SFHEA
 </a>
 
 <div class="nav-links">
+
 <a href="#about">About</a>
 <a href="#education">Education</a>
 <a href="#experience">Experience</a>
@@ -534,9 +546,9 @@ Dr Mesut İnan, PhD, SFHEA
 <a href="#projects">Projects</a>
 <a href="#publications">Publications</a>
 <a href="#teaching">Teaching</a>
-<a href="#academic-profiles">Profiles</a>
-<a href="#cv">CV</a>
+<a href="#notes">Training Notes</a>
 <a href="#contact">Contact</a>
+
 </div>
 
 </div>
@@ -568,11 +580,13 @@ and emerging secure technologies.
 </p>
 
 <div class="hero-tags">
+
 <span class="hero-tag">Cyber Security</span>
 <span class="hero-tag">Artificial Intelligence</span>
 <span class="hero-tag">Neural Cryptography</span>
 <span class="hero-tag">Information Security</span>
-<span class="hero-tag">Secure Software Engineering</span>
+<span class="hero-tag">Emerging Technology</span>
+
 </div>
 
 </div>
@@ -644,27 +658,51 @@ Cybersecurity and Information Security.
 <div class="education-list">
 
 <div class="education-item">
+
 <h3>PhD in Computer Science</h3>
+
 <strong>KU Leuven, Belgium</strong>
-<p>Cybersecurity and Neural Cryptography</p>
+
+<p>
+Cybersecurity and Neural Cryptography
+</p>
+
 </div>
 
 <div class="education-item">
+
 <h3>MSc in Artificial Intelligence</h3>
+
 <strong>KU Leuven, Belgium</strong>
-<p>Autonomous Systems | Summa Cum Laude</p>
+
+<p>
+Autonomous Systems | Summa Cum Laude
+</p>
+
 </div>
 
 <div class="education-item">
+
 <h3>MSc in Computer Science</h3>
+
 <strong>University of Antwerp, Belgium</strong>
-<p>Risk and Information Security | Distinction</p>
+
+<p>
+Risk and Information Security | Distinction
+</p>
+
 </div>
 
 <div class="education-item">
+
 <h3>BSc in Computer Science</h3>
+
 <strong>KU Leuven, Belgium</strong>
-<p>Computer Science | Top Student</p>
+
+<p>
+Computer Science | Top Student
+</p>
+
 </div>
 
 </div>
@@ -677,52 +715,70 @@ Cybersecurity and Information Security.
 
 <div class="container">
 
-<h2 class="section-title">Academic & Professional Experience</h2>
+<h2 class="section-title">
+Academic & Professional Experience
+</h2>
 
 <div class="grid">
 
 <div class="card">
+
 <h3>University of Wolverhampton</h3>
+
 <p class="experience-role">
 Senior Lecturer in Cyber Security and AI
 </p>
+
 <p>
 Teaching and academic activities across Cyber Security,
 Artificial Intelligence and Computer Science.
 </p>
+
 </div>
 
 <div class="card">
+
 <h3>Vrije Universiteit Brussel</h3>
+
 <p class="experience-role">
 AI & Cybersecurity
 </p>
+
 <p>
 Academic and teaching activities involving Artificial Intelligence,
 Cybersecurity and related computing disciplines.
 </p>
+
 </div>
 
 <div class="card">
+
 <h3>Thomas More University</h3>
+
 <p class="experience-role">
 Applied Computer Science
 </p>
+
 <p>
 Teaching and applied academic work in Computer Science
 and technology-oriented disciplines.
 </p>
+
 </div>
 
 <div class="card">
+
 <h3>TECHAMES</h3>
+
 <p class="experience-role">
 Founder & CEO
 </p>
+
 <p>
 Technology development, innovation and applied research
 activities across emerging technology areas.
 </p>
+
 </div>
 
 </div>
@@ -735,7 +791,9 @@ activities across emerging technology areas.
 
 <div class="container">
 
-<h2 class="section-title">Research</h2>
+<h2 class="section-title">
+Research
+</h2>
 
 <p class="section-intro">
 Research interests at the intersection of Artificial Intelligence,
@@ -745,35 +803,47 @@ Cybersecurity and secure computing.
 <div class="grid">
 
 <div class="card">
+
 <h3>AI for Cybersecurity</h3>
+
 <p>
 Intelligent approaches for cyber threat detection,
 security analysis and automated decision support.
 </p>
+
 </div>
 
 <div class="card">
+
 <h3>Neural Cryptography</h3>
+
 <p>
 Research into neural-network-based approaches to cryptographic
 learning and secure communication.
 </p>
+
 </div>
 
 <div class="card">
+
 <h3>Information Security</h3>
+
 <p>
 Security architectures, risk analysis, information protection
 and secure technology adoption.
 </p>
+
 </div>
 
 <div class="card">
+
 <h3>Secure Software Engineering</h3>
+
 <p>
 Security-aware software development, automated assessment
 and engineering of resilient digital systems.
 </p>
+
 </div>
 
 </div>
@@ -786,15 +856,21 @@ and engineering of resilient digital systems.
 
 <div class="container">
 
-<h2 class="section-title">Research Projects</h2>
+<h2 class="section-title">
+Research Projects
+</h2>
 
 <div class="grid">
 
 <div class="card project-card">
 
-<span class="card-label">RESEARCH PROJECT</span>
+<span class="card-label">
+RESEARCH PROJECT
+</span>
 
-<h3>AEGIS-SENTINEL</h3>
+<h3>
+AEGIS-SENTINEL
+</h3>
 
 <p>
 A research project focused on civilian airspace threat detection
@@ -810,9 +886,13 @@ Research Project →
 
 <div class="card project-card">
 
-<span class="card-label">RESEARCH OUTPUT</span>
+<span class="card-label">
+RESEARCH OUTPUT
+</span>
 
-<h3>AFSS</h3>
+<h3>
+AFSS
+</h3>
 
 <p>
 Research into secure and adaptive computational systems,
@@ -831,9 +911,13 @@ View Research Record →
 
 <div class="card project-card">
 
-<span class="card-label">SOFTWARE PROJECT</span>
+<span class="card-label">
+SOFTWARE PROJECT
+</span>
 
-<h3>Cyber Web Assessment Agent</h3>
+<h3>
+Cyber Web Assessment Agent
+</h3>
 
 <p>
 A modular web security assessment framework designed to collect
@@ -861,20 +945,26 @@ GitHub Profile →
 
 <div class="container">
 
-<h2 class="section-title">Publications & Academic Work</h2>
+<h2 class="section-title">
+Publications & Academic Work
+</h2>
 
 <p class="section-intro">
 Selected research outputs and academic work. Verified scholarly
-records should be added here as they become available.
+records can be added here as they become available.
 </p>
 
 <div class="grid">
 
 <div class="card publication-card">
 
-<span class="card-label">RESEARCH OUTPUT</span>
+<span class="card-label">
+RESEARCH OUTPUT
+</span>
 
-<h3>AFSS Research Dataset and Research Record</h3>
+<h3>
+AFSS Research Dataset and Research Record
+</h3>
 
 <p>
 Research output associated with secure and adaptive computational
@@ -893,9 +983,13 @@ DOI: 10.5281/zenodo.17974640 →
 
 <div class="card publication-card">
 
-<span class="card-label">RESEARCH AREA</span>
+<span class="card-label">
+RESEARCH AREA
+</span>
 
-<h3>Artificial Intelligence for Cybersecurity</h3>
+<h3>
+Artificial Intelligence for Cybersecurity
+</h3>
 
 <p>
 Research interests covering intelligent security analysis,
@@ -906,9 +1000,13 @@ threat detection and AI-assisted cyber defence.
 
 <div class="card publication-card">
 
-<span class="card-label">RESEARCH AREA</span>
+<span class="card-label">
+RESEARCH AREA
+</span>
 
-<h3>Neural Cryptography</h3>
+<h3>
+Neural Cryptography
+</h3>
 
 <p>
 Research into neural-network-based learning approaches
@@ -919,9 +1017,13 @@ for cryptographic and secure communication systems.
 
 <div class="card publication-card">
 
-<span class="card-label">RESEARCH AREA</span>
+<span class="card-label">
+RESEARCH AREA
+</span>
 
-<h3>Information Security</h3>
+<h3>
+Information Security
+</h3>
 
 <p>
 Security architectures, risk analysis, information protection
@@ -932,9 +1034,13 @@ and secure technology adoption.
 
 <div class="card publication-card">
 
-<span class="card-label">RESEARCH AREA</span>
+<span class="card-label">
+RESEARCH AREA
+</span>
 
-<h3>Secure Software Engineering</h3>
+<h3>
+Secure Software Engineering
+</h3>
 
 <p>
 Secure development practices, automated security assessment
@@ -945,9 +1051,13 @@ and resilient software engineering.
 
 <div class="card publication-card">
 
-<span class="card-label">ACADEMIC RECORD</span>
+<span class="card-label">
+ACADEMIC RECORD
+</span>
 
-<h3>Peer-Reviewed Publications & Conference Contributions</h3>
+<h3>
+Peer-Reviewed Publications & Conference Contributions
+</h3>
 
 <p>
 This section is reserved for verified journal articles,
@@ -966,104 +1076,61 @@ conference papers, book chapters and other scholarly outputs.
 
 <div class="container">
 
-<h2 class="section-title">Teaching</h2>
+<h2 class="section-title">
+Teaching
+</h2>
 
 <div class="grid">
 
 <div class="card teaching-card">
-<h3>Cyber Security</h3>
+
+<h3>
+Cyber Security
+</h3>
+
 <p>
 Cybersecurity principles, threat analysis, information security
 and practical security technologies.
 </p>
+
 </div>
 
 <div class="card teaching-card">
-<h3>Artificial Intelligence</h3>
+
+<h3>
+Artificial Intelligence
+</h3>
+
 <p>
 Artificial Intelligence, intelligent systems,
 autonomous systems and applied AI.
 </p>
+
 </div>
 
 <div class="card teaching-card">
-<h3>Computer Science</h3>
+
+<h3>
+Computer Science
+</h3>
+
 <p>
 Computer Science, software development, databases
 and computing technologies.
 </p>
+
 </div>
 
 <div class="card teaching-card">
-<h3>Information Security</h3>
+
+<h3>
+Information Security
+</h3>
+
 <p>
 Risk, information protection, secure systems
 and security-aware technology adoption.
 </p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="academic-profiles">
-
-<div class="container">
-
-<h2 class="section-title">Academic & Professional Profiles</h2>
-
-<p class="section-intro">
-Verified professional and academic profiles can be connected here
-to provide a consistent online research identity.
-</p>
-
-<div class="academic-links">
-
-<a
-class="academic-link"
-href="https://github.com/DrMesutInan-SFHEA"
-target="_blank"
-rel="noopener noreferrer">
-
-<strong>GitHub</strong>
-<span>Research projects, software and technical work</span>
-
-</a>
-
-<div class="academic-link">
-
-<strong>ORCID</strong>
-<span>Profile link to be added after verification</span>
-
-</div>
-
-<div class="academic-link">
-
-<strong>Google Scholar</strong>
-<span>Profile link to be added after verification</span>
-
-</div>
-
-<div class="academic-link">
-
-<strong>ResearchGate</strong>
-<span>Profile link to be added after verification</span>
-
-</div>
-
-<div class="academic-link">
-
-<strong>LinkedIn</strong>
-<span>Professional profile link to be added after verification</span>
-
-</div>
-
-<div class="academic-link">
-
-<strong>University Profile</strong>
-<span>University of Wolverhampton academic profile</span>
 
 </div>
 
@@ -1073,25 +1140,93 @@ rel="noopener noreferrer">
 
 </section>
 
-<section id="cv">
+<section id="notes">
 
 <div class="container">
 
-<div class="cv-section">
+<div class="note-section">
 
-<h2>Academic CV</h2>
+<div class="note-header">
+
+<div class="note-icon">
+TN
+</div>
+
+<h2>
+Training Notes
+</h2>
+
+</div>
 
 <p>
-Download the academic CV of Dr Mesut İnan, PhD, SFHEA.
+A dedicated knowledge-sharing area for students, researchers,
+professionals and anyone interested in Cyber Security,
+Artificial Intelligence, Information Technology and emerging
+technologies. New notes, explanations and practical resources
+can be added here over time.
 </p>
 
-<a
-href="Dr-Mesut-Inan-Academic-CV.pdf"
-target="_blank"
-rel="noopener noreferrer"
-class="cv-button">
-Download Academic CV
-</a>
+<div class="note-grid">
+
+<div class="note-card">
+
+<h3>
+Cyber Security
+</h3>
+
+<p>
+Practical notes, concepts, security awareness material,
+threat analysis and current cybersecurity topics.
+</p>
+
+<span class="note-status">
+COMING SOON
+</span>
+
+</div>
+
+<div class="note-card">
+
+<h3>
+Artificial Intelligence
+</h3>
+
+<p>
+Educational notes covering Artificial Intelligence,
+machine learning, intelligent systems and applied AI.
+</p>
+
+<span class="note-status">
+COMING SOON
+</span>
+
+</div>
+
+<div class="note-card">
+
+<h3>
+Information Technology
+</h3>
+
+<p>
+Technical notes covering computing, software,
+cloud technologies, emerging IT and digital systems.
+</p>
+
+<span class="note-status">
+COMING SOON
+</span>
+
+</div>
+
+</div>
+
+<div class="note-coming">
+New Training Notes, technical articles and educational resources
+will be published here regularly. This section is designed to
+be expanded with individual articles, downloadable resources,
+research explanations and practical learning material.
+</div>
 
 </div>
 
@@ -1103,25 +1238,33 @@ Download Academic CV
 
 <div class="container">
 
-<h2 class="section-title">Contact</h2>
+<h2 class="section-title">
+Contact
+</h2>
 
 <div class="contact-box">
 
 <div class="contact-item">
+
 <strong>Email:</strong>
+
 <a href="mailto:Mesut.Inan@wlv.ac.uk">
 Mesut.Inan@wlv.ac.uk
 </a>
+
 </div>
 
 <div class="contact-item">
+
 <strong>GitHub:</strong>
+
 <a
 href="https://github.com/DrMesutInan-SFHEA"
 target="_blank"
 rel="noopener noreferrer">
 DrMesutInan-SFHEA
 </a>
+
 </div>
 
 </div>
@@ -1140,8 +1283,9 @@ DrMesutInan-SFHEA
 
 <a href="#about">About</a>
 <a href="#research">Research</a>
+<a href="#projects">Projects</a>
 <a href="#publications">Publications</a>
-<a href="#cv">CV</a>
+<a href="#notes">Training Notes</a>
 <a href="#contact">Contact</a>
 
 </div>
