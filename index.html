@@ -6,421 +6,358 @@
 
 <title>Dr Mesut İnan, PhD, SFHEA | Cyber Security & Artificial Intelligence</title>
 
-<meta name="description" content="Official academic and professional website of Dr Mesut İnan, PhD, SFHEA. Cyber Security Researcher and Senior Lecturer specialising in Cybersecurity, Artificial Intelligence and Computer Science.">
-
+<meta name="description" content="Official academic and professional website of Dr Mesut İnan, PhD, SFHEA. Cyber Security Researcher and Senior Lecturer specialising in Artificial Intelligence, Cybersecurity, Information Security and Computer Science.">
 <meta name="author" content="Dr Mesut İnan, PhD, SFHEA">
-
-<link rel="canonical" href="https://drmesutinan-sfhea.github.io/">
+<meta name="keywords" content="Dr Mesut İnan, Cyber Security, Artificial Intelligence, Cybersecurity, Neural Cryptography, Information Security, Computer Science, SFHEA">
 
 <style>
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: #f4f7fb;
-  color: #1f2937;
-  line-height: 1.7;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+    color: #1f2937;
+    background: #f4f7fb;
 }
 
 a {
-  color: #2563eb;
-  text-decoration: none;
+    color: #2563eb;
+    text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 /* NAVIGATION */
 
 nav {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background: #0b1220;
-  padding: 17px 20px;
-  text-align: center;
-  box-shadow: 0 3px 15px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #071a33;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.18);
 }
 
-nav a {
-  color: #ffffff;
-  margin: 0 11px;
-  font-size: 14px;
-  font-weight: 600;
+.nav-container {
+    max-width: 1180px;
+    margin: auto;
+    padding: 16px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav a:hover {
-  color: #93c5fd;
-  text-decoration: none;
+.nav-brand {
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    color: #dbeafe;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: white;
+    text-decoration: none;
 }
 
 /* HERO */
 
-header {
-  background: linear-gradient(135deg, #0b1220 0%, #172554 55%, #1d4ed8 100%);
-  color: white;
-  padding: 85px 20px;
+.hero {
+    background: linear-gradient(135deg, #071a33, #123d68, #2563a6);
+    color: white;
+    padding: 75px 25px;
 }
 
-.hero {
-  max-width: 1100px;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  gap: 55px;
+.hero-container {
+    max-width: 1180px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 230px 1fr;
+    gap: 45px;
+    align-items: center;
 }
 
 .profile-photo {
-  width: 190px;
-  height: 190px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 5px solid rgba(255,255,255,0.9);
-  box-shadow: 0 15px 40px rgba(0,0,0,0.35);
-}
-
-.hero-content {
-  flex: 1;
+    width: 210px;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid rgba(255,255,255,0.9);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
 .hero h1 {
-  font-size: 44px;
-  line-height: 1.2;
-  margin-bottom: 14px;
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 12px;
 }
 
 .hero h2 {
-  font-size: 23px;
-  font-weight: 500;
-  color: #dbeafe;
-  margin-bottom: 12px;
+    font-size: 23px;
+    font-weight: 500;
+    color: #dbeafe;
+    margin-bottom: 15px;
 }
 
-.hero-subtitle {
-  font-size: 17px;
-  color: #bfdbfe;
+.hero-tagline {
+    font-size: 18px;
+    color: #e0ecff;
 }
 
-.hero-description {
-  margin-top: 20px;
-  max-width: 750px;
-  color: #e0e7ff;
-  font-size: 16px;
+/* MAIN */
+
+main {
+    max-width: 1180px;
+    margin: auto;
+    padding: 50px 25px;
 }
 
-/* GENERAL */
-
-.container {
-  max-width: 1150px;
-  margin: auto;
-  padding: 75px 22px;
+section {
+    margin-bottom: 65px;
 }
 
-section:nth-of-type(even) {
-  background: #ffffff;
+.section-title {
+    font-size: 30px;
+    color: #071a33;
+    margin-bottom: 28px;
+    border-left: 5px solid #2563eb;
+    padding-left: 15px;
 }
 
-section h2 {
-  font-size: 32px;
-  color: #0f172a;
-  margin-bottom: 38px;
-  padding-left: 15px;
-  border-left: 5px solid #2563eb;
-}
-
-.intro {
-  max-width: 900px;
-  font-size: 17px;
+.intro-card {
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 5px 22px rgba(15,23,42,0.08);
+    border: 1px solid #e5eaf2;
 }
 
 /* CARDS */
 
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
 }
 
 .card {
-  background: #ffffff;
-  border: 1px solid #e2e8f0;
-  border-radius: 15px;
-  padding: 30px;
-  box-shadow: 0 8px 25px rgba(15,23,42,0.06);
-  transition: all 0.25s ease;
+    background: white;
+    padding: 28px;
+    border-radius: 14px;
+    border: 1px solid #e1e7ef;
+    box-shadow: 0 5px 20px rgba(15,23,42,0.07);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 35px rgba(15,23,42,0.12);
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(15,23,42,0.13);
 }
 
 .card-label {
-  color: #2563eb;
-  font-size: 12px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.6px;
-  margin-bottom: 9px;
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    margin-bottom: 8px;
 }
 
 .card h3 {
-  color: #0f172a;
-  font-size: 21px;
-  margin-bottom: 12px;
+    color: #071a33;
+    font-size: 21px;
+    margin-bottom: 8px;
+}
+
+.card h4 {
+    color: #334155;
+    font-size: 16px;
+    margin-bottom: 8px;
 }
 
 .card p {
-  margin-bottom: 10px;
+    color: #475569;
 }
 
-/* EDUCATION */
-
-.education-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 25px;
-}
-
-.education-card {
-  background: #ffffff;
-  border: 1px solid #e2e8f0;
-  border-radius: 15px;
-  padding: 30px;
-  box-shadow: 0 8px 25px rgba(15,23,42,0.06);
-}
-
-.education-card h3 {
-  color: #0f172a;
-  margin: 8px 0;
-}
-
-.degree-type {
-  color: #2563eb;
-  font-size: 13px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-/* EXPERIENCE */
-
-.experience-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 25px;
-}
-
-.experience-card {
-  background: white;
-  border-left: 5px solid #2563eb;
-  border-radius: 12px;
-  padding: 28px;
-  box-shadow: 0 8px 25px rgba(15,23,42,0.06);
-}
-
-.experience-card h3 {
-  color: #0f172a;
-  margin-bottom: 10px;
-}
-
-/* PROJECTS */
-
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
-}
+/* PROJECT CARDS */
 
 .project-card {
-  background: #ffffff;
-  border: 1px solid #dbe3ef;
-  border-radius: 17px;
-  padding: 30px;
-  box-shadow: 0 10px 28px rgba(15,23,42,0.07);
-  transition: all 0.25s ease;
-  display: flex;
-  flex-direction: column;
-}
-
-.project-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 18px 40px rgba(15,23,42,0.13);
-}
-
-.project-category {
-  color: #2563eb;
-  font-size: 12px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  margin-bottom: 12px;
+    background: white;
+    padding: 32px;
+    border-radius: 16px;
+    border: 1px solid #dce5f0;
+    box-shadow: 0 7px 25px rgba(15,23,42,0.08);
+    margin-bottom: 25px;
+    border-top: 5px solid #2563eb;
 }
 
 .project-card h3 {
-  color: #0f172a;
-  font-size: 24px;
-  margin-bottom: 16px;
+    font-size: 26px;
+    color: #071a33;
+    margin-bottom: 12px;
 }
 
 .project-card p {
-  margin-bottom: 15px;
+    color: #475569;
+    margin-bottom: 14px;
 }
 
-.project-focus {
-  font-size: 14px;
-  color: #475569;
-}
-
-.project-status {
-  margin-top: auto;
-  padding-top: 20px;
-}
-
-.project-status span {
-  display: inline-block;
-  background: #eff6ff;
-  color: #1d4ed8;
-  border-radius: 20px;
-  padding: 6px 12px;
-  font-size: 12px;
-  font-weight: 700;
+.research-focus {
+    background: #eef5ff;
+    border-radius: 10px;
+    padding: 13px 16px;
+    color: #1e40af;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 /* CV */
 
-.cv-container {
-  max-width: 850px;
-  margin: auto;
-}
-
 .cv-card {
-  background: linear-gradient(135deg, #ffffff, #f8fafc);
-  border: 1px solid #dbe3ef;
-  border-radius: 18px;
-  padding: 45px;
-  text-align: center;
-  box-shadow: 0 12px 35px rgba(15,23,42,0.08);
+    background: linear-gradient(135deg, #071a33, #123d68);
+    color: white;
+    padding: 38px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(15,23,42,0.15);
 }
 
 .cv-card h3 {
-  font-size: 27px;
-  color: #0f172a;
-  margin-bottom: 12px;
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.cv-card p {
+    color: #dbeafe;
+    margin-bottom: 22px;
 }
 
 .cv-button {
-  display: inline-block;
-  margin-top: 22px;
-  background: #2563eb;
-  color: white;
-  padding: 13px 25px;
-  border-radius: 9px;
-  font-weight: 700;
+    display: inline-block;
+    background: white;
+    color: #071a33;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-weight: bold;
 }
 
 .cv-button:hover {
-  background: #1d4ed8;
-  text-decoration: none;
+    background: #e0ecff;
+    text-decoration: none;
 }
 
 /* CONTACT */
 
-.contact-box {
-  background: #0f172a;
-  color: white;
-  border-radius: 18px;
-  padding: 42px;
+.contact-card {
+    background: white;
+    padding: 32px;
+    border-radius: 16px;
+    border: 1px solid #dce5f0;
+    box-shadow: 0 6px 22px rgba(15,23,42,0.08);
 }
 
-.contact-box h2 {
-  color: white;
-}
-
-.contact-box p {
-  margin-bottom: 15px;
-}
-
-.contact-box a {
-  color: #93c5fd;
+.contact-item {
+    margin: 10px 0;
 }
 
 /* FOOTER */
 
 footer {
-  background: #020617;
-  color: #94a3b8;
-  text-align: center;
-  padding: 30px 20px;
-  font-size: 14px;
+    background: #071a33;
+    color: #cbd5e1;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px 0;
 }
 
 /* MOBILE */
 
-@media (max-width: 900px) {
+@media (max-width: 850px) {
 
-  .card-grid,
-  .projects-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+    .nav-container {
+        flex-direction: column;
+        gap: 12px;
+    }
 
+    .nav-links {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .profile-photo {
+        margin: auto;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero h2 {
+        font-size: 19px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 500px) {
 
-  nav a {
-    display: inline-block;
-    margin: 4px 6px;
-    font-size: 13px;
-  }
+    .nav-links {
+        font-size: 12px;
+    }
 
-  header {
-    padding: 60px 20px;
-  }
+    .hero {
+        padding: 50px 20px;
+    }
 
-  .hero {
-    flex-direction: column;
-    text-align: center;
-    gap: 30px;
-  }
+    .hero h1 {
+        font-size: 27px;
+    }
 
-  .hero h1 {
-    font-size: 34px;
-  }
+    main {
+        padding: 35px 18px;
+    }
 
-  .hero h2 {
-    font-size: 20px;
-  }
+    .section-title {
+        font-size: 25px;
+    }
 
-  .profile-photo {
-    width: 160px;
-    height: 160px;
-  }
-
-  .card-grid,
-  .education-grid,
-  .experience-grid,
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-
-  section h2 {
-    font-size: 28px;
-  }
-
-  .container {
-    padding: 55px 18px;
-  }
-
+    .card,
+    .project-card,
+    .intro-card,
+    .contact-card,
+    .cv-card {
+        padding: 23px;
+    }
 }
 
 </style>
@@ -429,574 +366,461 @@ footer {
 <body>
 
 <nav>
-  <a href="#about">About</a>
-  <a href="#education">Education</a>
-  <a href="#experience">Experience</a>
-  <a href="#research">Research</a>
-  <a href="#projects">Projects</a>
-  <a href="#teaching">Teaching</a>
-  <a href="#cv">CV</a>
-  <a href="#contact">Contact</a>
+    <div class="nav-container">
+
+        <div class="nav-brand">
+            Dr Mesut İnan, PhD, SFHEA
+        </div>
+
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#research">Research</a>
+            <a href="#projects">Projects</a>
+            <a href="#teaching">Teaching</a>
+            <a href="#cv">CV</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+    </div>
 </nav>
 
-<header>
+<header class="hero">
 
-<div class="hero">
+    <div class="hero-container">
 
-<img
-class="profile-photo"
-src="https://raw.githubusercontent.com/DrMesutInan-SFHEA/drmesutinan-sfhea.github.io/main/1781380694313.jpg"
-alt="Dr Mesut İnan, PhD, SFHEA">
+        <img
+            class="profile-photo"
+            src="https://raw.githubusercontent.com/DrMesutInan-SFHEA/drmesutinan-sfhea.github.io/main/1781380694313.jpg"
+            alt="Dr Mesut İnan">
 
-<div class="hero-content">
+        <div>
 
-<h1>Dr Mesut İnan, PhD, SFHEA</h1>
+            <h1>Dr Mesut İnan, PhD, SFHEA</h1>
 
-<h2>Senior Lecturer in Cyber Security and Artificial Intelligence</h2>
+            <h2>
+                Senior Lecturer in Cyber Security and Artificial Intelligence
+            </h2>
 
-<p class="hero-subtitle">
-Cyber Security Researcher | Artificial Intelligence | Computer Science
-</p>
+            <p class="hero-tagline">
+                Cyber Security Researcher | Artificial Intelligence | Computer Science
+            </p>
 
-<p class="hero-description">
-Research and teaching across Cyber Security, Artificial Intelligence,
-Information Security and emerging technologies.
-</p>
+            <p class="hero-tagline">
+                Research and teaching across Cyber Security, Artificial Intelligence,
+                Information Security and emerging technologies.
+            </p>
 
-</div>
-</div>
+        </div>
+
+    </div>
 
 </header>
 
+<main>
 
 <section id="about">
 
-<div class="container">
+    <h2 class="section-title">About</h2>
 
-<h2>About</h2>
+    <div class="intro-card">
 
-<div class="intro">
+        <p>
+            I am Dr Mesut İnan, PhD, SFHEA, a Cyber Security Researcher and
+            Senior Lecturer working across Cyber Security, Artificial Intelligence
+            and Computer Science.
+        </p>
 
-<p>
-I am Dr Mesut İnan, PhD, SFHEA, a Cyber Security Researcher and Senior Lecturer
-working across Cyber Security, Artificial Intelligence and Computer Science.
-</p>
+        <br>
 
-<p>
-My academic and research interests focus on the development, analysis and
-application of intelligent and secure computing systems, with particular
-emphasis on AI for Cybersecurity, Neural Cryptography, Information Security
-and secure software engineering.
-</p>
+        <p>
+            My academic and research interests focus on the development,
+            analysis and application of intelligent and secure computing systems,
+            with particular emphasis on AI for Cybersecurity, Neural Cryptography,
+            Information Security and secure software engineering.
+        </p>
 
-<p>
-My work combines academic research, practical technology development and
-higher education teaching.
-</p>
+        <br>
 
-</div>
+        <p>
+            My work combines academic research, practical technology development
+            and higher education teaching.
+        </p>
 
-</div>
+    </div>
 
 </section>
 
 
 <section id="education">
 
-<div class="container">
+    <h2 class="section-title">Education</h2>
 
-<h2>Education</h2>
+    <div class="cards">
 
-<div class="education-grid">
+        <div class="card">
+            <div class="card-label">Doctoral Degree</div>
+            <h3>PhD in Computer Science</h3>
+            <h4>KU Leuven, Belgium</h4>
+            <p>Cybersecurity and Neural Cryptography</p>
+        </div>
 
-<div class="education-card">
+        <div class="card">
+            <div class="card-label">Master's Degree</div>
+            <h3>MSc in Artificial Intelligence</h3>
+            <h4>KU Leuven, Belgium</h4>
+            <p>Autonomous Systems</p>
+            <p><strong>Summa Cum Laude</strong></p>
+        </div>
 
-<span class="degree-type">Doctoral Degree</span>
+        <div class="card">
+            <div class="card-label">Master's Degree</div>
+            <h3>MSc in Computer Science</h3>
+            <h4>University of Antwerp, Belgium</h4>
+            <p>Risk and Information Security</p>
+            <p><strong>Distinction</strong></p>
+        </div>
 
-<h3>PhD in Computer Science</h3>
+        <div class="card">
+            <div class="card-label">Bachelor's Degree</div>
+            <h3>BSc in Computer Science</h3>
+            <h4>KU Leuven, Belgium</h4>
+            <p>Computer Science</p>
+            <p><strong>Top Student</strong></p>
+        </div>
 
-<p><strong>KU Leuven, Belgium</strong></p>
-
-<p>Cybersecurity and Neural Cryptography</p>
-
-</div>
-
-
-<div class="education-card">
-
-<span class="degree-type">Master's Degree</span>
-
-<h3>MSc in Artificial Intelligence</h3>
-
-<p><strong>KU Leuven, Belgium</strong></p>
-
-<p>Autonomous Systems</p>
-
-<p><strong>Summa Cum Laude</strong></p>
-
-</div>
-
-
-<div class="education-card">
-
-<span class="degree-type">Master's Degree</span>
-
-<h3>MSc in Computer Science</h3>
-
-<p><strong>University of Antwerp, Belgium</strong></p>
-
-<p>Risk and Information Security</p>
-
-<p><strong>Distinction</strong></p>
-
-</div>
-
-
-<div class="education-card">
-
-<span class="degree-type">Bachelor's Degree</span>
-
-<h3>BSc in Computer Science</h3>
-
-<p><strong>KU Leuven, Belgium</strong></p>
-
-<p>Computer Science</p>
-
-<p><strong>Top Student</strong></p>
-
-</div>
-
-</div>
-
-</div>
+    </div>
 
 </section>
 
 
 <section id="experience">
 
-<div class="container">
+    <h2 class="section-title">Academic & Professional Experience</h2>
 
-<h2>Academic & Professional Experience</h2>
+    <div class="cards">
 
-<div class="experience-grid">
+        <div class="card">
+            <div class="card-label">Higher Education</div>
+            <h3>University of Wolverhampton</h3>
+            <p>
+                Senior Lecturer working across Cyber Security,
+                Artificial Intelligence and Computer Science.
+            </p>
+        </div>
 
-<div class="experience-card">
+        <div class="card">
+            <div class="card-label">Academic Experience</div>
+            <h3>Vrije Universiteit Brussel</h3>
+            <p>
+                Academic and teaching experience in Artificial Intelligence
+                and Cybersecurity.
+            </p>
+        </div>
 
-<h3>University of Wolverhampton</h3>
+        <div class="card">
+            <div class="card-label">Academic Experience</div>
+            <h3>Thomas More University</h3>
+            <p>
+                Academic experience in Applied Computer Science.
+            </p>
+        </div>
 
-<p>
-Senior Lecturer working across Cyber Security,
-Artificial Intelligence and Computer Science.
-</p>
+        <div class="card">
+            <div class="card-label">Technology & Entrepreneurship</div>
+            <h3>TECHAMES</h3>
+            <p>
+                Founder and CEO with experience in technology development,
+                innovation and applied computing.
+            </p>
+        </div>
 
-</div>
-
-
-<div class="experience-card">
-
-<h3>Vrije Universiteit Brussel</h3>
-
-<p>
-Academic and teaching experience in Artificial Intelligence
-and Cybersecurity.
-</p>
-
-</div>
-
-
-<div class="experience-card">
-
-<h3>Thomas More University</h3>
-
-<p>
-Academic experience in Applied Computer Science.
-</p>
-
-</div>
-
-
-<div class="experience-card">
-
-<h3>TECHAMES</h3>
-
-<p>
-Founder and CEO with experience in technology development,
-innovation and applied computing.
-</p>
-
-</div>
-
-</div>
-
-</div>
+    </div>
 
 </section>
 
 
 <section id="research">
 
-<div class="container">
+    <h2 class="section-title">Research</h2>
 
-<h2>Research</h2>
+    <div class="cards">
 
-<div class="card-grid">
+        <div class="card">
+            <div class="card-label">Research Area</div>
+            <h3>AI for Cybersecurity</h3>
+            <p>
+                Application of artificial intelligence and intelligent systems
+                to threat detection, security analysis and cyber defence.
+            </p>
+        </div>
 
-<div class="card">
+        <div class="card">
+            <div class="card-label">Research Area</div>
+            <h3>Neural Cryptography</h3>
+            <p>
+                Research into neural approaches to cryptographic systems,
+                secure communication and adaptive security mechanisms.
+            </p>
+        </div>
 
-<div class="card-label">Research Area</div>
+        <div class="card">
+            <div class="card-label">Research Area</div>
+            <h3>Information Security</h3>
+            <p>
+                Security engineering, risk assessment, secure architectures
+                and protection of information systems and digital infrastructure.
+            </p>
+        </div>
 
-<h3>AI for Cybersecurity</h3>
+        <div class="card">
+            <div class="card-label">Research Area</div>
+            <h3>Offensive Security</h3>
+            <p>
+                Security assessment, vulnerability analysis and automated
+                approaches for identifying weaknesses in digital systems.
+            </p>
+        </div>
 
-<p>
-Application of artificial intelligence and intelligent systems
-to threat detection, security analysis and cyber defence.
-</p>
+        <div class="card">
+            <div class="card-label">Research Area</div>
+            <h3>Cloud Security</h3>
+            <p>
+                Security challenges associated with cloud infrastructure,
+                distributed systems and modern digital environments.
+            </p>
+        </div>
 
-</div>
+        <div class="card">
+            <div class="card-label">Research Area</div>
+            <h3>Secure Software Engineering</h3>
+            <p>
+                Development and evaluation of secure software systems,
+                automated testing and security-oriented engineering.
+            </p>
+        </div>
 
-
-<div class="card">
-
-<div class="card-label">Research Area</div>
-
-<h3>Neural Cryptography</h3>
-
-<p>
-Research into neural approaches to cryptographic systems,
-secure communication and adaptive security mechanisms.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<div class="card-label">Research Area</div>
-
-<h3>Information Security</h3>
-
-<p>
-Security engineering, risk assessment, secure architectures
-and protection of information systems.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<div class="card-label">Research Area</div>
-
-<h3>Offensive Security</h3>
-
-<p>
-Security assessment, vulnerability analysis and automated
-approaches for identifying weaknesses in digital systems.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<div class="card-label">Research Area</div>
-
-<h3>Cloud Security</h3>
-
-<p>
-Security challenges associated with cloud infrastructure,
-distributed systems and modern digital environments.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<div class="card-label">Research Area</div>
-
-<h3>Secure Software Engineering</h3>
-
-<p>
-Development and evaluation of secure software systems,
-automated testing and security-oriented engineering.
-</p>
-
-</div>
-
-</div>
-
-</div>
+    </div>
 
 </section>
 
 
 <section id="projects">
 
-<div class="container">
-
-<h2>Projects</h2>
-
-<div class="projects-grid">
+    <h2 class="section-title">Research Projects</h2>
 
 
-<div class="project-card">
+    <div class="project-card">
 
-<div class="project-category">
-Cybersecurity · AI · Critical Infrastructure
-</div>
+        <div class="card-label">
+            Cybersecurity · AI · Critical Infrastructure
+        </div>
 
-<h3>AEGIS-SENTINEL</h3>
+        <h3>AEGIS-SENTINEL</h3>
 
-<p>
-An intelligent threat detection and assessment framework designed
-for civilian airspace and critical infrastructure protection.
-</p>
+        <p>
+            An intelligent threat detection and assessment framework designed
+            for civilian airspace and critical infrastructure protection.
+        </p>
 
-<p>
-The project combines sensor fusion, intelligent threat assessment
-and human-authorised decision making to support security-critical
-environments.
-</p>
+        <p>
+            The project combines sensor fusion, intelligent threat assessment
+            and human-authorised decision making to support security-critical
+            environments.
+        </p>
 
-<p class="project-focus">
-<strong>Research Focus:</strong><br>
-Sensor Fusion · Threat Detection · AI Security · Critical Infrastructure ·
-Human-in-the-Loop Security
-</p>
+        <div class="research-focus">
+            Research Focus:
+            Sensor Fusion · Threat Detection · AI Security ·
+            Critical Infrastructure · Human-in-the-Loop Security
+        </div>
 
-<div class="project-status">
-<span>Research Project</span>
-</div>
-
-</div>
+    </div>
 
 
-<div class="project-card">
+    <div class="project-card">
 
-<div class="project-category">
-Cybersecurity · Optimisation · Secure Systems
-</div>
+        <div class="card-label">
+            Cybersecurity · Optimisation · Secure Systems
+        </div>
 
-<h3>AFSS</h3>
+        <h3>AFSS</h3>
 
-<p>
-A research framework investigating secure and adaptive system design
-through computational modelling and optimisation.
-</p>
+        <p>
+            A research framework investigating secure and adaptive system
+            design through computational modelling and optimisation.
+        </p>
 
-<p>
-The work explores advanced optimisation methods for
-security-oriented system development.
-</p>
+        <p>
+            The work explores advanced optimisation methods for security-oriented
+            system development and computational modelling.
+        </p>
 
-<p class="project-focus">
-<strong>Research Focus:</strong><br>
-Secure Systems · Adaptive Systems · Optimisation · Computational Modelling ·
-Security Engineering
-</p>
+        <div class="research-focus">
+            Research Focus:
+            Secure Systems · Adaptive Systems · Optimisation ·
+            Computational Modelling · Security Engineering
+        </div>
 
-<p>
-<strong>Research Output:</strong><br>
+        <br>
 
-<a
-href="https://doi.org/10.5281/zenodo.17974640"
-target="_blank">
-Zenodo DOI: 10.5281/zenodo.17974640
-</a>
+        <p>
+            <strong>Research Output:</strong>
+            <a href="https://doi.org/10.5281/zenodo.17974640" target="_blank">
+                Zenodo DOI: 10.5281/zenodo.17974640
+            </a>
+        </p>
 
-</p>
-
-<div class="project-status">
-<span>Research Project</span>
-</div>
-
-</div>
+    </div>
 
 
-<div class="project-card">
+    <div class="project-card">
 
-<div class="project-category">
-Web Security · Automation · Risk Analysis
-</div>
+        <div class="card-label">
+            Web Security · Automation · Risk Analysis
+        </div>
 
-<h3>Cyber Web Assessment Agent</h3>
+        <h3>Cyber Web Assessment Agent</h3>
 
-<p>
-A modular automated web security assessment framework designed
-to collect technical evidence, analyse security weaknesses,
-evaluate risk and generate structured reports.
-</p>
+        <p>
+            A modular automated web security assessment framework designed
+            to collect technical evidence, analyse security weaknesses,
+            evaluate risk and generate structured reports.
+        </p>
 
-<p>
-The architecture follows a modular assessment pipeline covering
-evidence collection, security analysis, risk evaluation and
-automated reporting.
-</p>
+        <p>
+            The architecture follows a modular assessment pipeline covering
+            evidence collection, security analysis, risk evaluation and
+            automated reporting.
+        </p>
 
-<p class="project-focus">
-<strong>Research Focus:</strong><br>
-Web Security · Automated Assessment · Evidence Collection ·
-Security Analysis · Risk Scoring · Automated Reporting
-</p>
+        <div class="research-focus">
+            Research Focus:
+            Web Security · Automated Assessment · Evidence Collection ·
+            Security Analysis · Risk Scoring · Automated Reporting
+        </div>
 
-<div class="project-status">
-<span>Development Project</span>
-</div>
-
-</div>
-
-</div>
-
-</div>
+    </div>
 
 </section>
 
 
 <section id="teaching">
 
-<div class="container">
+    <h2 class="section-title">Teaching</h2>
 
-<h2>Teaching</h2>
+    <div class="cards">
 
-<div class="card-grid">
+        <div class="card">
+            <div class="card-label">Teaching Area</div>
+            <h3>Cyber Security</h3>
+            <p>
+                Cybersecurity principles, security assessment,
+                information security and defensive technologies.
+            </p>
+        </div>
 
-<div class="card">
+        <div class="card">
+            <div class="card-label">Teaching Area</div>
+            <h3>Artificial Intelligence</h3>
+            <p>
+                Artificial intelligence, intelligent systems,
+                autonomous systems and applied AI.
+            </p>
+        </div>
 
-<h3>Cyber Security</h3>
+        <div class="card">
+            <div class="card-label">Teaching Area</div>
+            <h3>Computer Science</h3>
+            <p>
+                Computer science, software development and applied computing.
+            </p>
+        </div>
 
-<p>
-Cybersecurity principles, security assessment,
-information security and defensive technologies.
-</p>
+        <div class="card">
+            <div class="card-label">Teaching Area</div>
+            <h3>Information Security</h3>
+            <p>
+                Information security, risk management and secure
+                computing environments.
+            </p>
+        </div>
 
-</div>
-
-
-<div class="card">
-
-<h3>Artificial Intelligence</h3>
-
-<p>
-Artificial intelligence, intelligent systems,
-autonomous systems and applied AI.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<h3>Computer Science</h3>
-
-<p>
-Computer science, software development and
-applied computing.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<h3>Information Security</h3>
-
-<p>
-Information security, risk management and
-secure computing environments.
-</p>
-
-</div>
-
-</div>
-
-</div>
+    </div>
 
 </section>
 
 
 <section id="cv">
 
-<div class="container">
+    <h2 class="section-title">Academic CV</h2>
 
-<h2>Academic CV</h2>
+    <div class="cv-card">
 
-<div class="cv-container">
+        <h3>Dr Mesut İnan, PhD, SFHEA</h3>
 
-<div class="cv-card">
+        <p>
+            Academic and professional profile covering education,
+            academic experience, research interests and professional
+            activities in Cyber Security, Artificial Intelligence
+            and Computer Science.
+        </p>
 
-<h3>Dr Mesut İnan, PhD, SFHEA</h3>
+        <a
+            class="cv-button"
+            href="Dr-Mesut-Inan-Academic-CV.pdf"
+            target="_blank">
+            Download Academic CV
+        </a>
 
-<p>
-Academic and professional profile covering education,
-academic experience, research interests and professional
-activities in Cyber Security, Artificial Intelligence
-and Computer Science.
-</p>
-
-<a
-class="cv-button"
-href="Dr-Mesut-Inan-Academic-CV.pdf"
-target="_blank">
-
-Download Academic CV
-
-</a>
-
-</div>
-
-</div>
-
-</div>
+    </div>
 
 </section>
 
 
 <section id="contact">
 
-<div class="container">
+    <h2 class="section-title">Contact</h2>
 
-<div class="contact-box">
+    <div class="contact-card">
 
-<h2>Contact</h2>
+        <p>
+            For academic, research and professional enquiries:
+        </p>
 
-<p>
-For academic, research and professional enquiries:
-</p>
+        <div class="contact-item">
+            <strong>Email:</strong>
+            <a href="mailto:Mesut.Inan@wlv.ac.uk">
+                Mesut.Inan@wlv.ac.uk
+            </a>
+        </div>
 
-<p>
-<strong>Email:</strong>
-<a href="mailto:Mesut.Inan@wlv.ac.uk">
-Mesut.Inan@wlv.ac.uk
-</a>
-</p>
+        <div class="contact-item">
+            <strong>GitHub:</strong>
+            <a
+                href="https://github.com/DrMesutInan-SFHEA"
+                target="_blank">
+                DrMesutInan-SFHEA
+            </a>
+        </div>
 
-<p>
-<strong>GitHub:</strong>
-<a
-href="https://github.com/DrMesutInan-SFHEA"
-target="_blank">
-DrMesutInan-SFHEA
-</a>
-</p>
-
-</div>
-
-</div>
+    </div>
 
 </section>
+
+</main>
 
 
 <footer>
 
-<p>
-© 2026 Dr Mesut İnan, PhD, SFHEA. All rights reserved.
-</p>
+    <p>
+        © 2026 Dr Mesut İnan, PhD, SFHEA. All rights reserved.
+    </p>
 
-<p>
-Cyber Security · Artificial Intelligence · Computer Science
-</p>
+    <p>
+        Cyber Security · Artificial Intelligence · Computer Science
+    </p>
 
 </footer>
 
