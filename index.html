@@ -62,6 +62,7 @@
 --border:#d9e3ea;
 --background:#f5f8fa;
 --note:#f0f6fa;
+--success:#2d6a4f;
 }
 
 *{
@@ -324,93 +325,208 @@ border-top:4px solid #315f80;
 border-top:4px solid #58758c;
 }
 
-.card-link{
-display:inline-block;
-margin-top:17px;
-font-weight:700;
-}
+/* TRAINING LIBRARY */
 
-.note-section{
-background:linear-gradient(135deg,#edf5f9,#ffffff);
+.training-intro{
+background:#fff;
 border:1px solid var(--border);
-border-radius:18px;
-padding:45px;
+border-radius:16px;
+padding:35px;
+margin-bottom:30px;
 box-shadow:0 7px 28px rgba(0,0,0,.045);
 }
 
-.note-header{
-display:flex;
-align-items:center;
-gap:16px;
-margin-bottom:18px;
+.training-intro p{
+color:var(--muted);
+max-width:950px;
 }
 
-.note-icon{
+.training-topics{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:22px;
+}
+
+.training-topic{
+background:#fff;
+border:1px solid var(--border);
+border-radius:16px;
+overflow:hidden;
+box-shadow:0 6px 25px rgba(0,0,0,.045);
+}
+
+.training-topic summary{
+list-style:none;
+cursor:pointer;
+padding:28px 30px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:20px;
+background:#fff;
+}
+
+.training-topic summary::-webkit-details-marker{
+display:none;
+}
+
+.training-topic summary:hover{
+background:var(--light);
+}
+
+.topic-left{
+display:flex;
+align-items:center;
+gap:17px;
+}
+
+.topic-icon{
 width:48px;
 height:48px;
-border-radius:50%;
+border-radius:12px;
 background:var(--navy);
 color:#fff;
 display:flex;
 align-items:center;
 justify-content:center;
 font-weight:700;
-font-size:18px;
+font-size:13px;
+flex-shrink:0;
 }
 
-.note-section h2{
+.topic-title{
+font-size:20px;
+font-weight:700;
 color:var(--navy);
-font-size:34px;
 }
 
-.note-section > p{
+.topic-description{
+font-size:13px;
 color:var(--muted);
-max-width:900px;
-margin-bottom:30px;
+margin-top:3px;
 }
 
-.note-grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:20px;
+.topic-arrow{
+font-size:22px;
+color:var(--blue);
+transition:transform .2s ease;
 }
 
-.note-card{
-background:#fff;
-border:1px solid var(--border);
-border-radius:13px;
-padding:25px;
+.training-topic[open] .topic-arrow{
+transform:rotate(180deg);
 }
 
-.note-card h3{
+.topic-content{
+padding:0 30px 30px 30px;
+border-top:1px solid var(--border);
+}
+
+.topic-content h4{
 color:var(--navy);
-font-size:19px;
-margin-bottom:9px;
+font-size:17px;
+margin:25px 0 15px;
 }
 
-.note-card p{
+.material-list{
+display:flex;
+flex-direction:column;
+gap:12px;
+}
+
+.material{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:18px;
+background:var(--light);
+border:1px solid var(--border);
+border-radius:10px;
+padding:17px 19px;
+}
+
+.material-info{
+display:flex;
+align-items:center;
+gap:14px;
+min-width:0;
+}
+
+.material-icon{
+width:38px;
+height:38px;
+border-radius:8px;
+background:var(--blue);
+color:#fff;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:11px;
+font-weight:700;
+flex-shrink:0;
+}
+
+.material h5{
+font-size:15px;
+color:var(--navy);
+margin-bottom:2px;
+}
+
+.material p{
+font-size:12px;
+color:var(--muted);
+}
+
+.material-button{
+background:var(--navy);
+color:#fff!important;
+padding:8px 14px;
+border-radius:7px;
+font-size:12px;
+font-weight:700;
+white-space:nowrap;
+}
+
+.material-button:hover{
+background:var(--blue);
+text-decoration:none;
+}
+
+.empty-materials{
+padding:18px;
+background:#fafcfd;
+border:1px dashed var(--border);
+border-radius:9px;
+color:var(--muted);
+font-size:13px;
+}
+
+.training-instructions{
+margin-top:30px;
+background:var(--note);
+border-left:5px solid var(--blue);
+border-radius:9px;
+padding:24px 25px;
+}
+
+.training-instructions h3{
+color:var(--navy);
+margin-bottom:10px;
+}
+
+.training-instructions p{
 color:var(--muted);
 font-size:14px;
 }
 
-.note-card .note-status{
-display:inline-block;
-margin-top:15px;
-font-size:11px;
-font-weight:700;
-letter-spacing:.8px;
+.training-instructions code{
+background:#fff;
+padding:3px 6px;
+border-radius:4px;
+font-family:monospace;
 color:var(--blue);
 }
 
-.note-coming{
-margin-top:25px;
-padding:18px 20px;
-background:var(--note);
-border-left:4px solid var(--blue);
-border-radius:7px;
-color:var(--muted);
-font-size:14px;
-}
+/* END TRAINING LIBRARY */
 
 .contact-item{
 margin-bottom:15px;
@@ -470,7 +586,7 @@ grid-template-columns:1fr;
 grid-template-columns:1fr;
 }
 
-.note-grid{
+.training-topics{
 grid-template-columns:1fr;
 }
 
@@ -506,7 +622,7 @@ font-size:28px;
 .about-box,
 .contact-box,
 .card,
-.note-section{
+.training-intro{
 padding:24px;
 }
 
@@ -518,8 +634,22 @@ gap:9px;
 font-size:11px;
 }
 
-.note-section h2{
-font-size:28px;
+.training-topic summary{
+padding:22px;
+}
+
+.topic-content{
+padding:0 22px 22px;
+}
+
+.material{
+align-items:flex-start;
+flex-direction:column;
+}
+
+.material-button{
+width:100%;
+text-align:center;
 }
 
 }
@@ -550,6 +680,7 @@ Dr Mesut İnan, PhD, SFHEA
 <a href="#contact">Contact</a>
 
 </div>
+
 </div>
 
 </nav>
@@ -1139,93 +1270,602 @@ and security-aware technology adoption.
 
 </section>
 
+<!-- TRAINING NOTES / EDUCATIONAL LIBRARY -->
+
 <section id="notes">
 
 <div class="container">
 
-<div class="note-section">
-
-<div class="note-header">
-
-<div class="note-icon">
-TN
-</div>
-
-<h2>
+<h2 class="section-title">
 Training Notes
 </h2>
 
-</div>
-
-<p>
-A dedicated knowledge-sharing area for students, researchers,
-professionals and anyone interested in Cyber Security,
-Artificial Intelligence, Information Technology and emerging
-technologies. New notes, explanations and practical resources
-can be added here over time.
+<p class="section-intro">
+An open educational resource area for students, researchers,
+IT professionals and anyone interested in Cyber Security,
+Artificial Intelligence, Neural Cryptography, Information Security
+and Emerging Technology.
 </p>
 
-<div class="note-grid">
+<div class="training-intro">
 
-<div class="note-card">
+<p>
+Select a subject below to access training materials, lecture notes,
+PDF documents, PowerPoint presentations and other educational
+resources. The library can be expanded over time as new materials
+are published.
+</p>
 
-<h3>
+</div>
+
+<div class="training-topics">
+
+<!-- CYBER SECURITY -->
+
+<details class="training-topic">
+
+<summary>
+
+<div class="topic-left">
+
+<div class="topic-icon">
+CS
+</div>
+
+<div>
+
+<div class="topic-title">
 Cyber Security
-</h3>
+</div>
 
-<p>
-Practical notes, concepts, security awareness material,
-threat analysis and current cybersecurity topics.
-</p>
-
-<span class="note-status">
-COMING SOON
-</span>
+<div class="topic-description">
+Cybersecurity principles, threats, attacks and defence
+</div>
 
 </div>
 
-<div class="note-card">
+</div>
 
-<h3>
+<div class="topic-arrow">
+⌄
+</div>
+
+</summary>
+
+<div class="topic-content">
+
+<h4>
+Cyber Security Training Materials
+</h4>
+
+<div class="material-list">
+
+<!-- ADD YOUR CYBER SECURITY FILES HERE -->
+
+<div class="material">
+
+<div class="material-info">
+
+<div class="material-icon">
+PDF
+</div>
+
+<div>
+
+<h5>
+Cyber Security Fundamentals
+</h5>
+
+<p>
+Introduction to cybersecurity concepts and principles.
+</p>
+
+</div>
+
+</div>
+
+<a
+href="training/cyber-security/cyber-security-fundamentals.pdf"
+target="_blank"
+class="material-button">
+Open PDF
+</a>
+
+</div>
+
+<div class="material">
+
+<div class="material-info">
+
+<div class="material-icon">
+PPT
+</div>
+
+<div>
+
+<h5>
+Cyber Security Lecture Notes
+</h5>
+
+<p>
+Lecture presentation and training material.
+</p>
+
+</div>
+
+</div>
+
+<a
+href="training/cyber-security/cyber-security-lecture-notes.pptx"
+target="_blank"
+class="material-button">
+Open Presentation
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</details>
+
+
+<!-- ARTIFICIAL INTELLIGENCE -->
+
+<details class="training-topic">
+
+<summary>
+
+<div class="topic-left">
+
+<div class="topic-icon">
+AI
+</div>
+
+<div>
+
+<div class="topic-title">
 Artificial Intelligence
-</h3>
+</div>
 
-<p>
-Educational notes covering Artificial Intelligence,
-machine learning, intelligent systems and applied AI.
-</p>
-
-<span class="note-status">
-COMING SOON
-</span>
+<div class="topic-description">
+AI, machine learning and intelligent systems
+</div>
 
 </div>
 
-<div class="note-card">
+</div>
+
+<div class="topic-arrow">
+⌄
+</div>
+
+</summary>
+
+<div class="topic-content">
+
+<h4>
+Artificial Intelligence Training Materials
+</h4>
+
+<div class="material-list">
+
+<div class="material">
+
+<div class="material-info">
+
+<div class="material-icon">
+PDF
+</div>
+
+<div>
+
+<h5>
+Introduction to Artificial Intelligence
+</h5>
+
+<p>
+Fundamental concepts of Artificial Intelligence.
+</p>
+
+</div>
+
+</div>
+
+<a
+href="training/artificial-intelligence/introduction-to-ai.pdf"
+target="_blank"
+class="material-button">
+Open PDF
+</a>
+
+</div>
+
+<div class="material">
+
+<div class="material-info">
+
+<div class="material-icon">
+PPT
+</div>
+
+<div>
+
+<h5>
+Machine Learning and Intelligent Systems
+</h5>
+
+<p>
+Training presentation covering applied AI concepts.
+</p>
+
+</div>
+
+</div>
+
+<a
+href="training/artificial-intelligence/machine-learning.pptx"
+target="_blank"
+class="material-button">
+Open Presentation
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</details>
+
+
+<!-- NEURAL CRYPTOGRAPHY -->
+
+<details class="training-topic">
+
+<summary>
+
+<div class="topic-left">
+
+<div class="topic-icon">
+NC
+</div>
+
+<div>
+
+<div class="topic-title">
+Neural Cryptography
+</div>
+
+<div class="topic-description">
+Neural networks, cryptography and secure communication
+</div>
+
+</div>
+
+</div>
+
+<div class="topic-arrow">
+⌄
+</div>
+
+</summary>
+
+<div class="topic-content">
+
+<h4>
+Neural Cryptography Training Materials
+</h4>
+
+<div class="material-list">
+
+<div class="material">
+
+<div class="material-info">
+
+<div class="material-icon">
+PDF
+</div>
+
+<div>
+
+<h5>
+Introduction to Neural Cryptography
+</h5>
+
+<p>
+Educational material covering neural cryptographic concepts.
+</p>
+
+</div>
+
+</div>
+
+<a
+href="training/neural-cryptography/neural-cryptography-introduction.pdf"
+target="_blank"
+class="material-button">
+Open PDF
+</a>
+
+</div>
+
+<div class="material">
+
+<div class="material-info">
+
+<div class="material-icon">
+PPT
+</div>
+
+<div>
+
+<h5>
+Neural Cryptography Lecture
+</h5>
+
+<p>
+Presentation covering neural cryptography research concepts.
+</p>
+
+</div>
+
+</div>
+
+<a
+href="training/neural-cryptography/neural-cryptography.pptx"
+target="_blank"
+class="material-button">
+Open Presentation
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</details>
+
+
+<!-- INFORMATION SECURITY -->
+
+<details class="training-topic">
+
+<summary>
+
+<div class="topic-left">
+
+<div class="topic-icon">
+IS
+</div>
+
+<div>
+
+<div class="topic-title">
+Information Security
+</div>
+
+<div class="topic-description">
+Risk, governance, information protection and secure systems
+</div>
+
+</div>
+
+</div>
+
+<div class="topic-arrow">
+⌄
+</div>
+
+</summary>
+
+<div class="topic-content">
+
+<h4>
+Information Security Training Materials
+</h4>
+
+<div class="material-list">
+
+<div class="material">
+
+<div class="material-info">
+
+<div class="material-icon">
+PDF
+</div>
+
+<div>
+
+<h5>
+Information Security Fundamentals
+</h5>
+
+<p>
+Core principles of information security and risk.
+</p>
+
+</div>
+
+</div>
+
+<a
+href="training/information-security/information-security-fundamentals.pdf"
+target="_blank"
+class="material-button">
+Open PDF
+</a>
+
+</div>
+
+<div class="material">
+
+<div class="material-info">
+
+<div class="material-icon">
+PPT
+</div>
+
+<div>
+
+<h5>
+Information Security Management
+</h5>
+
+<p>
+Lecture and training presentation.
+</p>
+
+</div>
+
+</div>
+
+<a
+href="training/information-security/information-security-management.pptx"
+target="_blank"
+class="material-button">
+Open Presentation
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</details>
+
+
+<!-- EMERGING TECHNOLOGY -->
+
+<details class="training-topic">
+
+<summary>
+
+<div class="topic-left">
+
+<div class="topic-icon">
+ET
+</div>
+
+<div>
+
+<div class="topic-title">
+Emerging Technology
+</div>
+
+<div class="topic-description">
+New technologies, digital transformation and future systems
+</div>
+
+</div>
+
+</div>
+
+<div class="topic-arrow">
+⌄
+</div>
+
+</summary>
+
+<div class="topic-content">
+
+<h4>
+Emerging Technology Training Materials
+</h4>
+
+<div class="material-list">
+
+<div class="material">
+
+<div class="material-info">
+
+<div class="material-icon">
+PDF
+</div>
+
+<div>
+
+<h5>
+Emerging Technologies Overview
+</h5>
+
+<p>
+Educational notes covering important emerging technologies.
+</p>
+
+</div>
+
+</div>
+
+<a
+href="training/emerging-technology/emerging-technologies.pdf"
+target="_blank"
+class="material-button">
+Open PDF
+</a>
+
+</div>
+
+<div class="material">
+
+<div class="material-info">
+
+<div class="material-icon">
+PPT
+</div>
+
+<div>
+
+<h5>
+Future Technology and Digital Transformation
+</h5>
+
+<p>
+Presentation covering emerging technology trends.
+</p>
+
+</div>
+
+</div>
+
+<a
+href="training/emerging-technology/future-technology.pptx"
+target="_blank"
+class="material-button">
+Open Presentation
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</details>
+
+</div>
+
+<div class="training-instructions">
 
 <h3>
-Information Technology
+Training Library Structure
 </h3>
 
 <p>
-Technical notes covering computing, software,
-cloud technologies, emerging IT and digital systems.
+To add a new resource, upload your file to the appropriate
+GitHub folder and then add its title and link inside the relevant
+subject section above.
+For example:
+<code>training/cyber-security/your-file.pdf</code>
 </p>
 
-<span class="note-status">
-COMING SOON
-</span>
-
-</div>
-
-</div>
-
-<div class="note-coming">
-New Training Notes, technical articles and educational resources
-will be published here regularly. This section is designed to
-be expanded with individual articles, downloadable resources,
-research explanations and practical learning material.
-</div>
+<p style="margin-top:10px;">
+Supported educational resources can include PDF, PPT, PPTX,
+DOC, DOCX, TXT and other browser-accessible files.
+</p>
 
 </div>
 
