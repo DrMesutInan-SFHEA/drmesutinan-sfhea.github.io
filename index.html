@@ -1,19 +1,19 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Dr Mesut İnan, PhD, SFHEA | Cyber Security, AI & Computer Science</title>
+<title>Dr Mesut İnan, PhD, SFHEA | Cyber Security, Artificial Intelligence & Computer Science</title>
 
-<meta name="description" content="Official academic and professional website of Dr Mesut İnan, PhD, SFHEA. Cyber Security researcher and Senior Lecturer specialising in Artificial Intelligence, Cybersecurity, Neural Cryptography and Computer Science.">
+<meta name="description" content="Official academic and professional website of Dr Mesut İnan, PhD, SFHEA. Cyber Security researcher and Senior Lecturer specialising in Artificial Intelligence, Cybersecurity, Neural Cryptography, Information Security and Computer Science.">
 
-<meta name="keywords" content="Dr Mesut İnan, Mesut İnan, Cyber Security, Artificial Intelligence, Cybersecurity, Neural Cryptography, Information Security, Computer Science, SFHEA">
+<meta name="keywords" content="Dr Mesut İnan, Mesut İnan, Cyber Security, Artificial Intelligence, Cybersecurity, Neural Cryptography, Information Security, Computer Science, Secure Software Engineering, SFHEA">
 
 <meta name="author" content="Dr Mesut İnan, PhD, SFHEA">
-
 <meta name="robots" content="index, follow">
+<meta name="theme-color" content="#081c2d">
 
 <link rel="canonical" href="https://drmesutinan-sfhea.github.io/">
 
@@ -25,528 +25,698 @@
 
 <style>
 
-:root {
-    --primary: #0b3d62;
-    --secondary: #145a86;
-    --accent: #1f7ab5;
-    --light: #f4f7fa;
-    --lighter: #fafcff;
-    --dark: #17212b;
-    --text: #354052;
-    --border: #dfe6ec;
-    --white: #ffffff;
-    --shadow: 0 8px 25px rgba(0,0,0,0.07);
+:root{
+--navy:#081c2d;
+--blue:#18547f;
+--blue2:#2673a8;
+--light:#eef5f9;
+--text:#172431;
+--muted:#617180;
+--white:#ffffff;
+--border:#d9e3ea;
+--background:#f5f8fa;
+--note:#f0f6fa;
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
 }
 
-html {
-    scroll-behavior: smooth;
+html{
+scroll-behavior:smooth;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.7;
-    color: var(--text);
-    background: var(--white);
+body{
+font-family:Arial,Helvetica,sans-serif;
+background:var(--background);
+color:var(--text);
+line-height:1.7;
 }
 
-a {
-    color: var(--accent);
-    text-decoration: none;
+a{
+color:var(--blue);
+text-decoration:none;
 }
 
-a:hover {
-    text-decoration: underline;
+a:hover{
+text-decoration:underline;
 }
 
-.container {
-    width: min(1120px, 92%);
-    margin: auto;
+nav{
+position:sticky;
+top:0;
+z-index:1000;
+background:var(--navy);
+box-shadow:0 3px 16px rgba(0,0,0,.18);
 }
 
-header {
-    background: linear-gradient(135deg, #0b3d62, #145a86);
-    color: white;
-    padding: 24px 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 3px 15px rgba(0,0,0,0.12);
+.nav-container{
+max-width:1240px;
+margin:auto;
+padding:15px 22px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:25px;
 }
 
-.nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 25px;
+.nav-brand{
+color:#fff;
+font-size:18px;
+font-weight:700;
+white-space:nowrap;
 }
 
-.logo {
-    font-size: 1.25rem;
-    font-weight: 700;
-    white-space: nowrap;
+.nav-links{
+display:flex;
+flex-wrap:wrap;
+justify-content:flex-end;
+gap:15px;
 }
 
-nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 17px;
-    justify-content: flex-end;
+.nav-links a{
+color:#fff;
+font-size:13px;
+font-weight:600;
 }
 
-nav a {
-    color: white;
-    font-size: 0.92rem;
-    font-weight: 600;
+.hero{
+background:linear-gradient(135deg,var(--navy),var(--blue));
+color:#fff;
+padding:100px 22px;
 }
 
-nav a:hover {
-    text-decoration: none;
-    opacity: 0.75;
+.hero-container{
+max-width:1240px;
+margin:auto;
+display:flex;
+align-items:center;
+gap:55px;
 }
 
-.hero {
-    background: var(--light);
-    padding: 75px 0;
+.profile-image{
+width:215px;
+height:215px;
+object-fit:cover;
+border-radius:50%;
+border:5px solid rgba(255,255,255,.95);
+box-shadow:0 15px 40px rgba(0,0,0,.3);
+flex-shrink:0;
 }
 
-.hero-grid {
-    display: grid;
-    grid-template-columns: 240px 1fr;
-    gap: 50px;
-    align-items: center;
+.hero h1{
+font-size:50px;
+line-height:1.12;
+margin-bottom:14px;
 }
 
-.profile-photo {
-    width: 220px;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 7px solid white;
-    box-shadow: var(--shadow);
+.hero-subtitle{
+font-size:21px;
+font-weight:600;
+margin-bottom:16px;
 }
 
-.hero h1 {
-    font-size: 2.7rem;
-    color: var(--primary);
-    margin-bottom: 12px;
+.hero-description{
+font-size:17px;
+max-width:900px;
+opacity:.95;
 }
 
-.hero-subtitle {
-    font-size: 1.2rem;
-    color: var(--secondary);
-    font-weight: 700;
-    margin-bottom: 18px;
+.hero-tags{
+display:flex;
+flex-wrap:wrap;
+gap:9px;
+margin-top:23px;
 }
 
-.hero-text {
-    max-width: 800px;
-    font-size: 1.05rem;
+.hero-tag{
+border:1px solid rgba(255,255,255,.35);
+background:rgba(255,255,255,.08);
+padding:7px 13px;
+border-radius:20px;
+font-size:12px;
 }
 
-.section {
-    padding: 70px 0;
+.container{
+max-width:1240px;
+margin:auto;
+padding:78px 22px;
 }
 
-.section:nth-child(even) {
-    background: var(--lighter);
+section{
+scroll-margin-top:90px;
 }
 
-.section-title {
-    color: var(--primary);
-    font-size: 2rem;
-    margin-bottom: 12px;
+.section-title{
+font-size:35px;
+color:var(--navy);
+margin-bottom:14px;
 }
 
-.section-intro {
-    max-width: 850px;
-    margin-bottom: 35px;
-    color: #5a6673;
+.section-intro{
+max-width:950px;
+color:var(--muted);
+margin-bottom:36px;
 }
 
-.cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
+.about-box,
+.contact-box{
+background:#fff;
+border:1px solid var(--border);
+border-radius:16px;
+padding:42px;
+box-shadow:0 7px 28px rgba(0,0,0,.045);
 }
 
-.card {
-    background: white;
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 27px;
-    box-shadow: var(--shadow);
+.about-box p+p{
+margin-top:18px;
 }
 
-.card h3 {
-    color: var(--primary);
-    margin-bottom: 10px;
+.profile-facts{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:15px;
+margin-top:30px;
 }
 
-.card p {
-    color: var(--text);
+.fact{
+background:var(--light);
+border-radius:10px;
+padding:18px;
 }
 
-.education-list {
-    display: grid;
-    gap: 20px;
+.fact strong{
+display:block;
+color:var(--navy);
+margin-bottom:4px;
 }
 
-.education-item {
-    background: white;
-    border-left: 5px solid var(--accent);
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: var(--shadow);
+.fact span{
+color:var(--muted);
+font-size:14px;
 }
 
-.education-item h3 {
-    color: var(--primary);
-    margin-bottom: 5px;
+.education-list,
+.timeline{
+display:flex;
+flex-direction:column;
+gap:18px;
 }
 
-.education-item strong {
-    color: var(--secondary);
+.education-item,
+.timeline-item{
+background:#fff;
+border:1px solid var(--border);
+border-left:5px solid var(--blue);
+border-radius:11px;
+padding:29px 32px;
 }
 
-.experience-list {
-    display: grid;
-    gap: 22px;
+.education-item h3,
+.timeline-item h3{
+color:var(--navy);
+font-size:21px;
+margin-bottom:5px;
 }
 
-.experience-item {
-    background: white;
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 25px;
+.education-item strong,
+.timeline-item strong{
+display:block;
+margin-bottom:5px;
 }
 
-.experience-item h3 {
-    color: var(--primary);
+.education-item p,
+.timeline-item p{
+color:var(--muted);
 }
 
-.experience-role {
-    color: var(--secondary);
-    font-weight: 700;
-    margin-bottom: 8px;
+.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:25px;
 }
 
-.project-card {
-    background: white;
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 28px;
-    box-shadow: var(--shadow);
+.card{
+background:#fff;
+border:1px solid var(--border);
+border-radius:15px;
+padding:31px;
+box-shadow:0 6px 25px rgba(0,0,0,.04);
 }
 
-.project-label {
-    font-size: 0.75rem;
-    font-weight: 800;
-    color: var(--accent);
-    letter-spacing: 1px;
-    margin-bottom: 8px;
+.card h3{
+color:var(--navy);
+font-size:21px;
+margin-bottom:10px;
 }
 
-.project-card h3 {
-    color: var(--primary);
-    margin-bottom: 12px;
+.card p{
+color:var(--muted);
 }
 
-.project-link {
-    display: inline-block;
-    margin-top: 15px;
-    font-weight: 700;
+.card-label{
+display:inline-block;
+font-size:11px;
+font-weight:700;
+letter-spacing:1.1px;
+color:var(--blue);
+margin-bottom:8px;
 }
 
-.publication-card {
-    background: white;
-    border-left: 5px solid var(--accent);
-    padding: 25px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: var(--shadow);
+.experience-role{
+font-weight:700;
+color:var(--blue)!important;
+margin-bottom:8px;
 }
 
-.publication-label {
-    font-size: 0.75rem;
-    color: var(--accent);
-    font-weight: 800;
-    letter-spacing: 1px;
+.research-card{
+border-top:5px solid var(--blue);
 }
 
-.publication-card h3 {
-    color: var(--primary);
-    margin: 7px 0;
+.project-card{
+border-top:5px solid #315f80;
 }
 
-.training-library {
-    display: grid;
-    gap: 20px;
+.publication-card{
+border-top:4px solid #58758c;
 }
 
-.training-topic {
-    background: white;
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    overflow: hidden;
-    box-shadow: var(--shadow);
+.teaching-card{
+border-top:4px solid #6c8395;
 }
 
-.training-topic summary {
-    cursor: pointer;
-    list-style: none;
-    padding: 25px;
-    display: flex;
-    align-items: center;
-    gap: 18px;
-    background: white;
+.skill-list{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+margin-top:20px;
 }
 
-.training-topic summary::-webkit-details-marker {
-    display: none;
+.skill{
+background:var(--light);
+color:var(--navy);
+border:1px solid var(--border);
+padding:8px 13px;
+border-radius:20px;
+font-size:13px;
+font-weight:600;
 }
 
-.training-topic summary:hover {
-    background: #f8fbfd;
+.project-meta{
+display:flex;
+flex-wrap:wrap;
+gap:8px;
+margin:18px 0;
 }
 
-.training-icon {
-    width: 55px;
-    height: 55px;
-    border-radius: 12px;
-    background: var(--primary);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 800;
-    font-size: 0.85rem;
-    flex-shrink: 0;
+.project-meta span{
+background:var(--light);
+color:var(--blue);
+padding:5px 10px;
+border-radius:15px;
+font-size:11px;
+font-weight:700;
 }
 
-.training-title {
-    flex: 1;
+.project-section{
+margin-top:18px;
 }
 
-.training-title h3 {
-    color: var(--primary);
-    margin-bottom: 4px;
+.project-section strong{
+color:var(--navy);
 }
 
-.training-title p {
-    color: #65717d;
-    font-size: 0.92rem;
+.project-link{
+display:inline-block;
+margin-top:16px;
+font-weight:700;
 }
 
-.training-arrow {
-    font-size: 1.4rem;
-    color: var(--accent);
+.training-intro{
+background:#fff;
+border:1px solid var(--border);
+border-radius:16px;
+padding:38px;
+margin-bottom:30px;
+box-shadow:0 7px 28px rgba(0,0,0,.045);
 }
 
-.training-topic[open] .training-arrow {
-    transform: rotate(180deg);
+.training-intro p{
+color:var(--muted);
+max-width:970px;
 }
 
-.training-content {
-    border-top: 1px solid var(--border);
-    padding: 25px;
-    background: #fbfdff;
+.training-topics{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:22px;
 }
 
-.training-content h4 {
-    color: var(--primary);
-    margin-bottom: 20px;
-    font-size: 1.15rem;
+.training-topic{
+background:#fff;
+border:1px solid var(--border);
+border-radius:16px;
+overflow:hidden;
+box-shadow:0 6px 25px rgba(0,0,0,.045);
 }
 
-.material-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 18px;
+.training-topic summary{
+list-style:none;
+cursor:pointer;
+padding:28px 30px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:20px;
+background:#fff;
 }
 
-.material-card {
-    background: white;
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 20px;
+.training-topic summary::-webkit-details-marker{
+display:none;
 }
 
-.material-type {
-    font-size: 0.72rem;
-    font-weight: 800;
-    color: var(--accent);
-    letter-spacing: 1px;
-    margin-bottom: 6px;
+.training-topic summary:hover{
+background:var(--light);
 }
 
-.material-card h5 {
-    color: var(--primary);
-    font-size: 1rem;
-    margin-bottom: 7px;
+.topic-left{
+display:flex;
+align-items:center;
+gap:17px;
 }
 
-.material-card p {
-    font-size: 0.9rem;
-    margin-bottom: 13px;
+.topic-icon{
+width:50px;
+height:50px;
+border-radius:12px;
+background:var(--navy);
+color:#fff;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:700;
+font-size:13px;
+flex-shrink:0;
 }
 
-.material-link {
-    font-weight: 700;
-    font-size: 0.9rem;
+.topic-title{
+font-size:20px;
+font-weight:700;
+color:var(--navy);
 }
 
-.coming-soon {
-    color: #777;
-    font-weight: 600;
-    font-size: 0.9rem;
+.topic-description{
+font-size:13px;
+color:var(--muted);
+margin-top:3px;
 }
 
-.training-info {
-    margin-top: 30px;
-    background: #eef6fb;
-    border-left: 5px solid var(--accent);
-    padding: 22px;
-    border-radius: 8px;
+.topic-arrow{
+font-size:22px;
+color:var(--blue);
+transition:transform .2s ease;
 }
 
-.contact-box {
-    background: var(--primary);
-    color: white;
-    padding: 35px;
-    border-radius: 14px;
+.training-topic[open] .topic-arrow{
+transform:rotate(180deg);
 }
 
-.contact-box h2 {
-    color: white;
+.topic-content{
+padding:0 30px 30px;
+border-top:1px solid var(--border);
 }
 
-.contact-box a {
-    color: white;
-    font-weight: 700;
+.topic-content h4{
+color:var(--navy);
+font-size:17px;
+margin:25px 0 15px;
 }
 
-footer {
-    background: #101820;
-    color: #cbd3da;
-    text-align: center;
-    padding: 30px 0;
+.material-list{
+display:flex;
+flex-direction:column;
+gap:12px;
 }
 
-.footer-links {
-    margin-top: 12px;
+.material{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:18px;
+background:var(--light);
+border:1px solid var(--border);
+border-radius:10px;
+padding:17px 19px;
 }
 
-.footer-links a {
-    color: #dce8f0;
-    margin: 0 10px;
+.material-info{
+display:flex;
+align-items:center;
+gap:14px;
+min-width:0;
 }
 
-.badge-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 25px;
+.material-icon{
+width:40px;
+height:40px;
+border-radius:8px;
+background:var(--blue);
+color:#fff;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:10px;
+font-weight:700;
+flex-shrink:0;
 }
 
-.badge {
-    background: #e8f2f8;
-    color: var(--primary);
-    padding: 8px 14px;
-    border-radius: 20px;
-    font-size: 0.85rem;
-    font-weight: 700;
+.material h5{
+font-size:15px;
+color:var(--navy);
+margin-bottom:2px;
 }
 
-@media (max-width: 850px) {
+.material p{
+font-size:12px;
+color:var(--muted);
+}
+
+.material-status{
+color:var(--muted);
+font-size:12px;
+font-weight:600;
+white-space:nowrap;
+}
+
+.training-note{
+margin-top:28px;
+background:var(--note);
+border-left:5px solid var(--blue);
+border-radius:9px;
+padding:25px;
+}
+
+.training-note h3{
+color:var(--navy);
+margin-bottom:9px;
+}
+
+.training-note p{
+color:var(--muted);
+font-size:14px;
+}
+
+.contact-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:25px;
+}
+
+.contact-card{
+background:#fff;
+border:1px solid var(--border);
+border-radius:15px;
+padding:30px;
+}
+
+.contact-card h3{
+color:var(--navy);
+margin-bottom:12px;
+}
+
+.contact-item{
+margin-bottom:15px;
+}
+
+.contact-item strong{
+display:inline-block;
+min-width:90px;
+}
+
+.cv-box{
+margin-top:25px;
+background:var(--light);
+border-radius:10px;
+padding:22px;
+}
+
+.cv-button{
+display:inline-block;
+margin-top:12px;
+background:var(--navy);
+color:#fff!important;
+padding:10px 17px;
+border-radius:7px;
+font-weight:700;
+}
+
+.cv-button:hover{
+background:var(--blue);
+text-decoration:none;
+}
+
+footer{
+background:#06131f;
+color:#cbd6df;
+text-align:center;
+padding:32px 20px;
+font-size:14px;
+}
+
+.footer-links{
+margin-top:9px;
+}
+
+.footer-links a{
+color:#dce8f0;
+margin:0 8px;
+}
+
+@media(max-width:1000px){
+
+.nav-container{
+flex-direction:column;
+align-items:flex-start;
+}
+
+.nav-links{
+justify-content:flex-start;
+}
+
+.hero-container{
+flex-direction:column;
+text-align:center;
+}
+
+.hero-tags{
+justify-content:center;
+}
+
+.grid,
+.training-topics,
+.contact-grid{
+grid-template-columns:1fr;
+}
+
+.profile-facts{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:600px){
+
+.hero{
+padding:65px 18px;
+}
 
-    .nav {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+.profile-image{
+width:155px;
+height:155px;
+}
 
-    nav {
-        justify-content: flex-start;
-    }
+.hero h1{
+font-size:30px;
+}
 
-    .hero-grid {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
+.hero-subtitle{
+font-size:17px;
+}
 
-    .profile-photo {
-        margin: auto;
-    }
+.container{
+padding:55px 17px;
+}
 
-    .cards {
-        grid-template-columns: 1fr;
-    }
+.section-title{
+font-size:28px;
+}
 
-    .material-grid {
-        grid-template-columns: 1fr;
-    }
+.about-box,
+.contact-box,
+.card,
+.training-intro{
+padding:24px;
+}
 
-    .hero h1 {
-        font-size: 2.15rem;
-    }
+.nav-links{
+gap:9px;
 }
 
-@media (max-width: 550px) {
+.nav-links a{
+font-size:11px;
+}
 
-    .section {
-        padding: 50px 0;
-    }
+.training-topic summary{
+padding:22px;
+}
 
-    nav {
-        gap: 10px;
-    }
+.topic-content{
+padding:0 22px 22px;
+}
 
-    nav a {
-        font-size: 0.82rem;
-    }
+.material{
+align-items:flex-start;
+flex-direction:column;
+}
 
-    .hero {
-        padding: 50px 0;
-    }
+.material-status{
+white-space:normal;
+}
 
-    .training-topic summary {
-        padding: 18px;
-    }
+.profile-facts{
+grid-template-columns:1fr;
+}
 
-    .training-content {
-        padding: 18px;
-    }
 }
 
 </style>
 
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Dr Mesut İnan",
-  "honorificPrefix": "Dr",
-  "honorificSuffix": "PhD, SFHEA",
-  "jobTitle": "Senior Lecturer in Cyber Security and AI",
-  "url": "https://drmesutinan-sfhea.github.io/",
-  "image": "https://raw.githubusercontent.com/DrMesutInan-SFHEA/drmesutinan-sfhea.github.io/main/1781380694313.jpg",
-  "email": "Mesut.Inan@wlv.ac.uk",
-  "sameAs": [
-    "https://github.com/DrMesutInan-SFHEA"
-  ],
-  "knowsAbout": [
-    "Cyber Security",
-    "Artificial Intelligence",
-    "Neural Cryptography",
-    "Information Security",
-    "Computer Science",
-    "Secure Software Engineering"
-  ]
+"@context":"https://schema.org",
+"@type":"Person",
+"name":"Dr Mesut İnan",
+"honorificPrefix":"Dr",
+"honorificSuffix":"PhD, SFHEA",
+"jobTitle":"Senior Lecturer in Cyber Security and AI",
+"url":"https://drmesutinan-sfhea.github.io/",
+"image":"https://raw.githubusercontent.com/DrMesutInan-SFHEA/drmesutinan-sfhea.github.io/main/1781380694313.jpg",
+"email":"Mesut.Inan@wlv.ac.uk",
+"sameAs":[
+"https://github.com/DrMesutInan-SFHEA"
+],
+"knowsAbout":[
+"Cyber Security",
+"Artificial Intelligence",
+"Neural Cryptography",
+"Information Security",
+"Computer Science",
+"Secure Software Engineering",
+"Cloud Security",
+"Offensive Security"
+]
 }
 </script>
 
@@ -554,14 +724,15 @@ footer {
 
 <body>
 
-<header>
-<div class="container nav">
-
-<div class="logo">
-Dr Mesut İnan, PhD, SFHEA
-</div>
-
 <nav>
+
+<div class="nav-container">
+
+<a href="#top" class="nav-brand">
+Dr Mesut İnan, PhD, SFHEA
+</a>
+
+<div class="nav-links">
 <a href="#about">About</a>
 <a href="#education">Education</a>
 <a href="#experience">Experience</a>
@@ -569,65 +740,66 @@ Dr Mesut İnan, PhD, SFHEA
 <a href="#projects">Projects</a>
 <a href="#publications">Publications</a>
 <a href="#teaching">Teaching</a>
-<a href="#notes">Training Notes</a>
+<a href="#notes">Training</a>
 <a href="#contact">Contact</a>
+</div>
+
+</div>
+
 </nav>
 
-</div>
-</header>
+<header class="hero" id="top">
 
+<div class="hero-container">
 
-<main>
-
-<section class="hero" id="top">
-
-<div class="container hero-grid">
-
-<div>
 <img
-class="profile-photo"
 src="https://raw.githubusercontent.com/DrMesutInan-SFHEA/drmesutinan-sfhea.github.io/main/1781380694313.jpg"
-alt="Dr Mesut İnan, PhD, SFHEA">
-</div>
+alt="Dr Mesut İnan, PhD, SFHEA"
+class="profile-image"
+
+>
 
 <div>
 
 <h1>Dr Mesut İnan, PhD, SFHEA</h1>
 
-<div class="hero-subtitle">
+<p class="hero-subtitle">
 Cyber Security Researcher | Senior Lecturer | AI & Cybersecurity
-</div>
-
-<p class="hero-text">
-Academic and professional profile focused on Cyber Security,
-Artificial Intelligence, Computer Science, Information Security
-and emerging secure technologies.
 </p>
 
-<div class="badge-row">
+<p class="hero-description">
+Academic and professional profile spanning Cyber Security,
+Artificial Intelligence, Computer Science, Information Security
+and emerging secure technologies. His work combines research,
+higher education teaching and applied technology development.
+</p>
 
-<span class="badge">Cyber Security</span>
-<span class="badge">Artificial Intelligence</span>
-<span class="badge">Neural Cryptography</span>
-<span class="badge">Information Security</span>
-<span class="badge">Emerging Technology</span>
-
+<div class="hero-tags">
+<span class="hero-tag">Cyber Security</span>
+<span class="hero-tag">Artificial Intelligence</span>
+<span class="hero-tag">Neural Cryptography</span>
+<span class="hero-tag">Information Security</span>
+<span class="hero-tag">Secure Software</span>
+<span class="hero-tag">Emerging Technology</span>
 </div>
 
 </div>
 
 </div>
 
-</section>
+</header>
 
+<main>
 
-<section class="section" id="about">
+<section id="about">
 
 <div class="container">
 
 <h2 class="section-title">About</h2>
 
-<p class="section-intro">
+<div class="about-box">
+
+<p>
 Dr Mesut İnan is a Cyber Security researcher and Senior Lecturer
 working across Artificial Intelligence, Cybersecurity and Computer Science.
 His academic interests include AI-driven security, neural cryptography,
@@ -641,23 +813,41 @@ and higher education teaching, with an emphasis on responsible,
 secure and practical adoption of emerging technologies.
 </p>
 
-<br>
+<p>
+His broader professional interests include the design of secure
+digital systems, intelligent security assessment, emerging
+technologies and the relationship between Artificial Intelligence
+and Cybersecurity.
+</p>
 
-<div class="cards">
+<div class="profile-facts">
 
-<div class="card">
-<h3>Academic Focus</h3>
-<p>Cyber Security & Artificial Intelligence</p>
+<div class="fact">
+<strong>Academic Focus</strong>
+<span>Cyber Security & Artificial Intelligence</span>
 </div>
 
-<div class="card">
-<h3>Research</h3>
-<p>AI Security & Neural Cryptography</p>
+<div class="fact">
+<strong>Research</strong>
+<span>AI Security & Neural Cryptography</span>
 </div>
 
-<div class="card">
-<h3>Academic Status</h3>
-<p>Senior Lecturer | SFHEA</p>
+<div class="fact">
+<strong>Teaching</strong>
+<span>Cyber Security, AI & Computer Science</span>
+</div>
+
+<div class="fact">
+<strong>Academic Status</strong>
+<span>Senior Lecturer | SFHEA</span>
+</div>
+
+</div>
+
+<div class="skill-list">
+
+<span class="skill">Cyber Threat Detection</span> <span class="skill">AI Security</span> <span class="skill">Neural Cryptography</span> <span class="skill">Information Security</span> <span class="skill">Offensive Security</span> <span class="skill">Cloud Security</span> <span class="skill">Secure Software Engineering</span> <span class="skill">Responsible AI</span>
+
 </div>
 
 </div>
@@ -666,42 +856,65 @@ secure and practical adoption of emerging technologies.
 
 </section>
 
-
-<section class="section" id="education">
+<section id="education">
 
 <div class="container">
 
 <h2 class="section-title">Education</h2>
 
 <p class="section-intro">
-Academic background in Computer Science, Artificial Intelligence,
+Academic background spanning Computer Science, Artificial Intelligence,
 Cybersecurity and Information Security.
 </p>
 
 <div class="education-list">
 
 <div class="education-item">
+
 <h3>PhD in Computer Science</h3>
+
 <strong>KU Leuven, Belgium</strong>
-<p>Cybersecurity and Neural Cryptography</p>
+
+<p>
+Research focus: Cybersecurity and Neural Cryptography.
+</p>
+
 </div>
 
 <div class="education-item">
+
 <h3>MSc in Artificial Intelligence</h3>
+
 <strong>KU Leuven, Belgium</strong>
-<p>Autonomous Systems | Summa Cum Laude</p>
+
+<p>
+Specialisation: Autonomous Systems | Summa Cum Laude.
+</p>
+
 </div>
 
 <div class="education-item">
+
 <h3>MSc in Computer Science</h3>
+
 <strong>University of Antwerp, Belgium</strong>
-<p>Risk and Information Security | Distinction</p>
+
+<p>
+Specialisation: Risk and Information Security | Distinction.
+</p>
+
 </div>
 
 <div class="education-item">
+
 <h3>BSc in Computer Science</h3>
+
 <strong>KU Leuven, Belgium</strong>
-<p>Computer Science | Top Student</p>
+
+<p>
+Computer Science | Top Student.
+</p>
+
 </div>
 
 </div>
@@ -710,57 +923,66 @@ Cybersecurity and Information Security.
 
 </section>
 
-
-<section class="section" id="experience">
+<section id="experience">
 
 <div class="container">
 
-<h2 class="section-title">Academic & Professional Experience</h2>
+<h2 class="section-title">
+Academic & Professional Experience
+</h2>
 
-<div class="experience-list">
+<div class="timeline">
 
-<div class="experience-item">
+<div class="timeline-item">
+
 <h3>University of Wolverhampton</h3>
-<div class="experience-role">
-Senior Lecturer in Cyber Security and AI
-</div>
+
+<strong>Senior Lecturer in Cyber Security and AI</strong>
+
 <p>
-Teaching and academic activities across Cyber Security,
-Artificial Intelligence and Computer Science.
+Teaching, academic development and programme-related activities
+across Cyber Security, Artificial Intelligence and Computer Science.
 </p>
+
 </div>
 
-<div class="experience-item">
+<div class="timeline-item">
+
 <h3>Vrije Universiteit Brussel</h3>
-<div class="experience-role">
-AI & Cybersecurity
-</div>
+
+<strong>AI & Cybersecurity</strong>
+
 <p>
 Academic and teaching activities involving Artificial Intelligence,
 Cybersecurity and related computing disciplines.
 </p>
+
 </div>
 
-<div class="experience-item">
+<div class="timeline-item">
+
 <h3>Thomas More University</h3>
-<div class="experience-role">
-Applied Computer Science
-</div>
+
+<strong>Applied Computer Science</strong>
+
 <p>
-Teaching and applied academic work in Computer Science and
-technology-oriented disciplines.
+Teaching and applied academic work in Computer Science,
+software development and technology-oriented disciplines.
 </p>
+
 </div>
 
-<div class="experience-item">
+<div class="timeline-item">
+
 <h3>TECHAMES</h3>
-<div class="experience-role">
-Founder & CEO
-</div>
+
+<strong>Founder & CEO</strong>
+
 <p>
 Technology development, innovation and applied research activities
 across emerging technology areas.
 </p>
+
 </div>
 
 </div>
@@ -769,8 +991,7 @@ across emerging technology areas.
 
 </section>
 
-
-<section class="section" id="research">
+<section id="research">
 
 <div class="container">
 
@@ -778,41 +999,97 @@ across emerging technology areas.
 
 <p class="section-intro">
 Research interests at the intersection of Artificial Intelligence,
-Cybersecurity and secure computing.
+Cybersecurity, secure computing and emerging technologies.
 </p>
 
-<div class="cards">
+<div class="grid">
 
-<div class="card">
+<div class="card research-card">
+
 <h3>AI for Cybersecurity</h3>
+
 <p>
-Intelligent approaches for cyber threat detection, security analysis
-and automated decision support.
+Intelligent approaches for cyber threat detection, security analysis,
+automated assessment and decision support.
 </p>
+
 </div>
 
-<div class="card">
+<div class="card research-card">
+
 <h3>Neural Cryptography</h3>
+
 <p>
-Research into neural-network-based approaches to cryptographic
-learning and secure communication.
+Neural-network-based approaches to cryptographic learning,
+secure communication and computational security.
 </p>
+
 </div>
 
-<div class="card">
+<div class="card research-card">
+
+<h3>Cyber Threat Detection</h3>
+
+<p>
+Intelligent detection and analysis of threats affecting digital
+systems, networks and critical infrastructure.
+</p>
+
+</div>
+
+<div class="card research-card">
+
 <h3>Information Security</h3>
+
 <p>
-Security architectures, risk analysis, information protection
-and secure technology adoption.
+Security architectures, risk analysis, information protection,
+governance and secure technology adoption.
 </p>
+
 </div>
 
-<div class="card">
-<h3>Secure Software Engineering</h3>
+<div class="card research-card">
+
+<h3>Offensive Security</h3>
+
 <p>
-Security-aware software development, automated assessment and
-engineering of resilient digital systems.
+Security assessment, attack-surface analysis, vulnerability
+identification and security testing methodologies.
 </p>
+
+</div>
+
+<div class="card research-card">
+
+<h3>Cloud Security</h3>
+
+<p>
+Security considerations for cloud infrastructure, applications,
+services and distributed computing environments.
+</p>
+
+</div>
+
+<div class="card research-card">
+
+<h3>Secure Software Engineering</h3>
+
+<p>
+Security-aware software development, automated assessment
+and engineering of resilient digital systems.
+</p>
+
+</div>
+
+<div class="card research-card">
+
+<h3>Responsible & Emerging AI</h3>
+
+<p>
+Secure and responsible adoption of emerging AI technologies
+within academic, organisational and technological environments.
+</p>
+
 </div>
 
 </div>
@@ -821,20 +1098,23 @@ engineering of resilient digital systems.
 
 </section>
 
-
-<section class="section" id="projects">
+<section id="projects">
 
 <div class="container">
 
-<h2 class="section-title">Research Projects</h2>
+<h2 class="section-title">Research & Technology Projects</h2>
 
-<div class="cards">
+<p class="section-intro">
+Selected research and technology development projects connecting
+academic research with practical security and intelligent-system
+development.
+</p>
 
-<div class="project-card">
+<div class="grid">
 
-<div class="project-label">
-RESEARCH PROJECT
-</div>
+<div class="card project-card">
+
+<span class="card-label">RESEARCH PROJECT</span>
 
 <h3>AEGIS-SENTINEL</h3>
 
@@ -844,18 +1124,30 @@ and critical infrastructure protection through intelligent sensor
 fusion, threat assessment and human-authorised decision making.
 </p>
 
+<div class="project-meta">
+<span>Sensor Fusion</span>
+<span>Threat Detection</span>
+<span>AI</span>
+<span>Critical Infrastructure</span>
+</div>
+
+<div class="project-section">
+<strong>Research Direction</strong>
+<p>
+Intelligent analysis of heterogeneous sensor information while
+maintaining human authority over consequential decisions.
+</p>
+</div>
+
 <a class="project-link" href="#contact">
 Research Project →
 </a>
 
 </div>
 
+<div class="card project-card">
 
-<div class="project-card">
-
-<div class="project-label">
-RESEARCH OUTPUT
-</div>
+<span class="card-label">RESEARCH OUTPUT</span>
 
 <h3>AFSS</h3>
 
@@ -864,21 +1156,30 @@ Research into secure and adaptive computational systems,
 optimisation techniques and security-oriented system design.
 </p>
 
+<div class="project-meta">
+<span>Optimisation</span>
+<span>Secure Systems</span>
+<span>Adaptive Computing</span>
+</div>
+
+<div class="project-section">
+<strong>Research Record</strong>
+<p>
+A verified research record is available through Zenodo.
+</p>
+</div>
+
 <a class="project-link"
 href="https://doi.org/10.5281/zenodo.17974640"
 target="_blank"
-rel="noopener">
-View Research Record →
-</a>
+rel="noopener noreferrer">
+View Research Record → </a>
 
 </div>
 
+<div class="card project-card">
 
-<div class="project-card">
-
-<div class="project-label">
-SOFTWARE PROJECT
-</div>
+<span class="card-label">SOFTWARE PROJECT</span>
 
 <h3>Cyber Web Assessment Agent</h3>
 
@@ -888,12 +1189,26 @@ evidence, perform security analysis, calculate risk and generate
 structured assessment reports.
 </p>
 
+<div class="project-meta">
+<span>Web Security</span>
+<span>Automated Assessment</span>
+<span>Risk Analysis</span>
+<span>Python</span>
+</div>
+
+<div class="project-section">
+<strong>Development Approach</strong>
+<p>
+Modular architecture based on evidence collection, analysis,
+risk assessment and structured reporting.
+</p>
+</div>
+
 <a class="project-link"
 href="https://github.com/DrMesutInan-SFHEA"
 target="_blank"
-rel="noopener">
-GitHub Profile →
-</a>
+rel="noopener noreferrer">
+GitHub Profile → </a>
 
 </div>
 
@@ -903,24 +1218,22 @@ GitHub Profile →
 
 </section>
 
-
-<section class="section" id="publications">
+<section id="publications">
 
 <div class="container">
 
 <h2 class="section-title">Publications & Academic Work</h2>
 
 <p class="section-intro">
-Selected research outputs and academic work. Verified scholarly
-records can be added here as they become available.
+Selected research output and academic areas. Only verified
+scholarly records are listed as publications.
 </p>
 
+<div class="grid">
 
-<div class="publication-card">
+<div class="card publication-card">
 
-<div class="publication-label">
-RESEARCH OUTPUT
-</div>
+<span class="card-label">RESEARCH OUTPUT</span>
 
 <h3>AFSS Research Dataset and Research Record</h3>
 
@@ -929,20 +1242,22 @@ Research output associated with secure and adaptive computational
 system development.
 </p>
 
-<a href="https://doi.org/10.5281/zenodo.17974640"
+<p class="project-section">
+<strong>DOI</strong><br>
+10.5281/zenodo.17974640
+</p>
+
+<a class="project-link"
+href="https://doi.org/10.5281/zenodo.17974640"
 target="_blank"
-rel="noopener">
-DOI: 10.5281/zenodo.17974640 →
-</a>
+rel="noopener noreferrer">
+Open Research Record → </a>
 
 </div>
 
+<div class="card publication-card">
 
-<div class="publication-card">
-
-<div class="publication-label">
-RESEARCH AREA
-</div>
+<span class="card-label">RESEARCH AREA</span>
 
 <h3>Artificial Intelligence for Cybersecurity</h3>
 
@@ -953,12 +1268,9 @@ threat detection and AI-assisted cyber defence.
 
 </div>
 
+<div class="card publication-card">
 
-<div class="publication-card">
-
-<div class="publication-label">
-RESEARCH AREA
-</div>
+<span class="card-label">RESEARCH AREA</span>
 
 <h3>Neural Cryptography</h3>
 
@@ -969,12 +1281,9 @@ cryptographic and secure communication systems.
 
 </div>
 
+<div class="card publication-card">
 
-<div class="publication-card">
-
-<div class="publication-label">
-RESEARCH AREA
-</div>
+<span class="card-label">RESEARCH AREA</span>
 
 <h3>Information Security</h3>
 
@@ -985,19 +1294,22 @@ and secure technology adoption.
 
 </div>
 
+<div class="card publication-card">
 
-<div class="publication-card">
-
-<div class="publication-label">
-ACADEMIC RECORD
-</div>
+<span class="card-label">ACADEMIC RECORD</span>
 
 <h3>Peer-Reviewed Publications & Conference Contributions</h3>
 
 <p>
-This section is reserved for verified journal articles,
+This area is reserved for verified journal articles,
 conference papers, book chapters and other scholarly outputs.
 </p>
+
+<p class="project-section">
+Additional verified records will be added as they become available.
+</p>
+
+</div>
 
 </div>
 
@@ -1005,45 +1317,84 @@ conference papers, book chapters and other scholarly outputs.
 
 </section>
 
-
-<section class="section" id="teaching">
+<section id="teaching">
 
 <div class="container">
 
 <h2 class="section-title">Teaching</h2>
 
-<div class="cards">
+<p class="section-intro">
+Teaching interests cover Cyber Security, Artificial Intelligence,
+Computer Science and Information Security, with an emphasis on
+applied and research-informed learning.
+</p>
 
-<div class="card">
+<div class="grid">
+
+<div class="card teaching-card">
+
 <h3>Cyber Security</h3>
+
 <p>
-Cybersecurity principles, threat analysis, information security
-and practical security technologies.
+Cybersecurity principles, threat analysis, attack surfaces,
+security technologies and defensive practices.
 </p>
+
 </div>
 
-<div class="card">
+<div class="card teaching-card">
+
 <h3>Artificial Intelligence</h3>
+
 <p>
-Artificial Intelligence, intelligent systems, autonomous systems
-and applied AI.
+Artificial Intelligence, intelligent systems, machine learning,
+autonomous systems and applied AI.
 </p>
+
 </div>
 
-<div class="card">
-<h3>Computer Science</h3>
-<p>
-Computer Science, software development, databases and computing
-technologies.
-</p>
-</div>
+<div class="card teaching-card">
 
-<div class="card">
 <h3>Information Security</h3>
+
 <p>
-Risk, information protection, secure systems and security-aware
-technology adoption.
+Risk, governance, information protection, security controls
+and secure technology adoption.
 </p>
+
+</div>
+
+<div class="card teaching-card">
+
+<h3>Computer Science</h3>
+
+<p>
+Computer Science, software development, databases and
+computing technologies.
+</p>
+
+</div>
+
+<div class="card teaching-card">
+
+<h3>Secure Software Engineering</h3>
+
+<p>
+Secure development practices, software assessment,
+security testing and resilient engineering.
+</p>
+
+</div>
+
+<div class="card teaching-card">
+
+<h3>Emerging Technologies</h3>
+
+<p>
+Emerging digital technologies, responsible adoption,
+innovation and technology transformation.
+</p>
+
 </div>
 
 </div>
@@ -1052,122 +1403,117 @@ technology adoption.
 
 </section>
 
-
-<section class="section" id="notes">
+<section id="notes">
 
 <div class="container">
 
-<h2 class="section-title">Training Notes</h2>
+<h2 class="section-title">Training Notes & Academic Resources</h2>
 
-<p class="section-intro">
-A dedicated educational library for students, researchers,
-professionals and anyone interested in Cyber Security,
+<div class="training-intro">
+
+<p>
+A dedicated educational resource area for students, researchers,
+professionals and independent learners interested in Cyber Security,
 Artificial Intelligence, Neural Cryptography, Information Security
 and Emerging Technology.
 </p>
 
-<p class="section-intro">
-Select a subject below to explore training materials.
-PDF documents, PowerPoint presentations, lecture notes,
-practical exercises and research notes can be added to the
-corresponding subject area over time.
+<br>
+
+<p>
+The library is designed to grow into a structured collection of
+lecture notes, PDF documents, PowerPoint presentations, practical
+exercises, research notes and further reading materials.
 </p>
 
+</div>
 
-<div class="training-library">
-
+<div class="training-topics">
 
 <details class="training-topic">
 
 <summary>
 
-<div class="training-icon">CS</div>
+<div class="topic-left">
 
-<div class="training-title">
-<h3>Cyber Security</h3>
-<p>Cybersecurity principles, threats, attacks and defence</p>
+<div class="topic-icon">CS</div>
+
+<div>
+
+<div class="topic-title">Cyber Security</div>
+
+<div class="topic-description">
+Cybersecurity principles, threats, attacks and defence
 </div>
 
-<div class="training-arrow">⌄</div>
+</div>
+
+</div>
+
+<div class="topic-arrow">⌄</div>
 
 </summary>
 
+<div class="topic-content">
 
-<div class="training-content">
+<h4>Planned Training Resources</h4>
 
-<h4>Cyber Security Training Materials</h4>
+<div class="material-list">
 
-<div class="material-grid">
+<div class="material">
 
+<div class="material-info">
 
-<div class="material-card">
+<div class="material-icon">PDF</div>
 
-<div class="material-type">PDF</div>
-
+<div>
 <h5>Cyber Security Fundamentals</h5>
-
-<p>
-Introduction to cybersecurity concepts, threats,
-security principles and defensive practices.
-</p>
-
-<span class="coming-soon">
-Training material will be added
-</span>
+<p>Core cybersecurity concepts and principles.</p>
+</div>
 
 </div>
 
+<div class="material-status">
+Coming Soon
+</div>
 
-<div class="material-card">
+</div>
 
-<div class="material-type">PPTX</div>
+<div class="material">
 
+<div class="material-info">
+
+<div class="material-icon">PPT</div>
+
+<div>
 <h5>Cyber Security Lecture Notes</h5>
-
-<p>
-Lecture presentation covering core cybersecurity
-concepts and practical security considerations.
-</p>
-
-<span class="coming-soon">
-Training material will be added
-</span>
+<p>Academic lecture and teaching material.</p>
+</div>
 
 </div>
 
-
-<div class="material-card">
-
-<div class="material-type">PRACTICAL</div>
-
-<h5>Cyber Security Practical Exercises</h5>
-
-<p>
-Practical exercises covering threat analysis,
-security testing and defensive techniques.
-</p>
-
-<span class="coming-soon">
-Practical materials will be added
-</span>
+<div class="material-status">
+Coming Soon
+</div>
 
 </div>
 
+<div class="material">
 
-<div class="material-card">
+<div class="material-info">
 
-<div class="material-type">RESEARCH</div>
+<div class="material-icon">LAB</div>
 
-<h5>Cybersecurity Research Notes</h5>
+<div>
+<h5>Practical Security Exercises</h5>
+<p>Applied security testing and analysis exercises.</p>
+</div>
 
-<p>
-Research-oriented notes covering emerging cybersecurity
-problems and technologies.
-</p>
+</div>
 
-<span class="coming-soon">
-Research notes will be added
-</span>
+<div class="material-status">
+Coming Soon
+</div>
 
 </div>
 
@@ -1177,98 +1523,90 @@ Research notes will be added
 
 </details>
 
-
 <details class="training-topic">
 
 <summary>
 
-<div class="training-icon">AI</div>
+<div class="topic-left">
 
-<div class="training-title">
-<h3>Artificial Intelligence</h3>
-<p>AI, machine learning and intelligent systems</p>
+<div class="topic-icon">AI</div>
+
+<div>
+
+<div class="topic-title">Artificial Intelligence</div>
+
+<div class="topic-description">
+AI, machine learning and intelligent systems
 </div>
 
-<div class="training-arrow">⌄</div>
+</div>
+
+</div>
+
+<div class="topic-arrow">⌄</div>
 
 </summary>
 
+<div class="topic-content">
 
-<div class="training-content">
+<h4>Planned Training Resources</h4>
 
-<h4>Artificial Intelligence Training Materials</h4>
+<div class="material-list">
 
-<div class="material-grid">
+<div class="material">
 
+<div class="material-info">
 
-<div class="material-card">
+<div class="material-icon">PDF</div>
 
-<div class="material-type">PDF</div>
-
+<div>
 <h5>Introduction to Artificial Intelligence</h5>
-
-<p>
-Core concepts of Artificial Intelligence,
-intelligent agents and AI applications.
-</p>
-
-<span class="coming-soon">
-Training material will be added
-</span>
+<p>Foundations of AI and intelligent systems.</p>
+</div>
 
 </div>
 
+<div class="material-status">
+Coming Soon
+</div>
 
-<div class="material-card">
+</div>
 
-<div class="material-type">PPTX</div>
+<div class="material">
 
+<div class="material-info">
+
+<div class="material-icon">PPT</div>
+
+<div>
 <h5>Machine Learning Fundamentals</h5>
-
-<p>
-Introduction to machine learning concepts,
-models, training and evaluation.
-</p>
-
-<span class="coming-soon">
-Training material will be added
-</span>
+<p>Models, training, evaluation and applications.</p>
+</div>
 
 </div>
 
+<div class="material-status">
+Coming Soon
+</div>
 
-<div class="material-card">
+</div>
 
-<div class="material-type">PRACTICAL</div>
+<div class="material">
 
+<div class="material-info">
+
+<div class="material-icon">LAB</div>
+
+<div>
 <h5>Applied AI Exercises</h5>
-
-<p>
-Practical exercises involving AI models,
-data analysis and intelligent systems.
-</p>
-
-<span class="coming-soon">
-Practical materials will be added
-</span>
+<p>Practical activities involving intelligent systems.</p>
+</div>
 
 </div>
 
-
-<div class="material-card">
-
-<div class="material-type">RESEARCH</div>
-
-<h5>AI Research Notes</h5>
-
-<p>
-Research notes covering AI security,
-responsible AI and emerging AI technologies.
-</p>
-
-<span class="coming-soon">
-Research notes will be added
-</span>
+<div class="material-status">
+Coming Soon
+</div>
 
 </div>
 
@@ -1278,98 +1616,90 @@ Research notes will be added
 
 </details>
 
-
 <details class="training-topic">
 
 <summary>
 
-<div class="training-icon">NC</div>
+<div class="topic-left">
 
-<div class="training-title">
-<h3>Neural Cryptography</h3>
-<p>Neural networks, cryptography and secure communication</p>
+<div class="topic-icon">NC</div>
+
+<div>
+
+<div class="topic-title">Neural Cryptography</div>
+
+<div class="topic-description">
+Neural networks, cryptography and secure communication
 </div>
 
-<div class="training-arrow">⌄</div>
+</div>
+
+</div>
+
+<div class="topic-arrow">⌄</div>
 
 </summary>
 
+<div class="topic-content">
 
-<div class="training-content">
+<h4>Planned Training Resources</h4>
 
-<h4>Neural Cryptography Training Materials</h4>
+<div class="material-list">
 
-<div class="material-grid">
+<div class="material">
 
+<div class="material-info">
 
-<div class="material-card">
+<div class="material-icon">PDF</div>
 
-<div class="material-type">PDF</div>
-
+<div>
 <h5>Introduction to Neural Cryptography</h5>
-
-<p>
-Foundations of neural-network-based approaches
-to cryptographic learning.
-</p>
-
-<span class="coming-soon">
-Training material will be added
-</span>
+<p>Foundations of neural cryptographic learning.</p>
+</div>
 
 </div>
 
+<div class="material-status">
+Coming Soon
+</div>
 
-<div class="material-card">
+</div>
 
-<div class="material-type">PPTX</div>
+<div class="material">
 
+<div class="material-info">
+
+<div class="material-icon">PPT</div>
+
+<div>
 <h5>Neural Cryptography Lecture Notes</h5>
-
-<p>
-Academic lecture material covering neural
-cryptographic models and secure communication.
-</p>
-
-<span class="coming-soon">
-Training material will be added
-</span>
+<p>Academic material covering neural cryptographic models.</p>
+</div>
 
 </div>
 
+<div class="material-status">
+Coming Soon
+</div>
 
-<div class="material-card">
+</div>
 
-<div class="material-type">PRACTICAL</div>
+<div class="material">
 
+<div class="material-info">
+
+<div class="material-icon">LAB</div>
+
+<div>
 <h5>Neural Cryptography Exercises</h5>
-
-<p>
-Exercises covering neural networks,
-key exchange and cryptographic learning.
-</p>
-
-<span class="coming-soon">
-Practical materials will be added
-</span>
+<p>Practical exercises related to neural cryptographic systems.</p>
+</div>
 
 </div>
 
-
-<div class="material-card">
-
-<div class="material-type">RESEARCH</div>
-
-<h5>Neural Cryptography Research Notes</h5>
-
-<p>
-Research-oriented material connected to
-neural cryptography and secure communication.
-</p>
-
-<span class="coming-soon">
-Research notes will be added
-</span>
+<div class="material-status">
+Coming Soon
+</div>
 
 </div>
 
@@ -1379,98 +1709,90 @@ Research notes will be added
 
 </details>
 
-
 <details class="training-topic">
 
 <summary>
 
-<div class="training-icon">IS</div>
+<div class="topic-left">
 
-<div class="training-title">
-<h3>Information Security</h3>
-<p>Risk, governance, information protection and secure systems</p>
+<div class="topic-icon">IS</div>
+
+<div>
+
+<div class="topic-title">Information Security</div>
+
+<div class="topic-description">
+Risk, governance, information protection and secure systems
 </div>
 
-<div class="training-arrow">⌄</div>
+</div>
+
+</div>
+
+<div class="topic-arrow">⌄</div>
 
 </summary>
 
+<div class="topic-content">
 
-<div class="training-content">
+<h4>Planned Training Resources</h4>
 
-<h4>Information Security Training Materials</h4>
+<div class="material-list">
 
-<div class="material-grid">
+<div class="material">
 
+<div class="material-info">
 
-<div class="material-card">
+<div class="material-icon">PDF</div>
 
-<div class="material-type">PDF</div>
-
+<div>
 <h5>Information Security Fundamentals</h5>
-
-<p>
-Core principles of information security,
-confidentiality, integrity and availability.
-</p>
-
-<span class="coming-soon">
-Training material will be added
-</span>
+<p>Confidentiality, integrity, availability and security principles.</p>
+</div>
 
 </div>
 
+<div class="material-status">
+Coming Soon
+</div>
 
-<div class="material-card">
+</div>
 
-<div class="material-type">PPTX</div>
+<div class="material">
 
+<div class="material-info">
+
+<div class="material-icon">PPT</div>
+
+<div>
 <h5>Information Security Management</h5>
-
-<p>
-Security management, risk assessment,
-controls and organisational security.
-</p>
-
-<span class="coming-soon">
-Training material will be added
-</span>
+<p>Risk, controls and organisational security.</p>
+</div>
 
 </div>
 
+<div class="material-status">
+Coming Soon
+</div>
 
-<div class="material-card">
+</div>
 
-<div class="material-type">PRACTICAL</div>
+<div class="material">
 
+<div class="material-info">
+
+<div class="material-icon">LAB</div>
+
+<div>
 <h5>Security Risk Exercises</h5>
-
-<p>
-Practical activities involving risk identification,
-assessment and security controls.
-</p>
-
-<span class="coming-soon">
-Practical materials will be added
-</span>
+<p>Risk identification and assessment activities.</p>
+</div>
 
 </div>
 
-
-<div class="material-card">
-
-<div class="material-type">RESEARCH</div>
-
-<h5>Information Security Research Notes</h5>
-
-<p>
-Research notes covering information protection,
-risk and secure technology adoption.
-</p>
-
-<span class="coming-soon">
-Research notes will be added
-</span>
+<div class="material-status">
+Coming Soon
+</div>
 
 </div>
 
@@ -1479,99 +1801,91 @@ Research notes will be added
 </div>
 
 </details>
-
 
 <details class="training-topic">
 
 <summary>
 
-<div class="training-icon">ET</div>
+<div class="topic-left">
 
-<div class="training-title">
-<h3>Emerging Technology</h3>
-<p>New technologies, digital transformation and future systems</p>
+<div class="topic-icon">ET</div>
+
+<div>
+
+<div class="topic-title">Emerging Technology</div>
+
+<div class="topic-description">
+New technologies, innovation and future systems
 </div>
 
-<div class="training-arrow">⌄</div>
+</div>
+
+</div>
+
+<div class="topic-arrow">⌄</div>
 
 </summary>
 
+<div class="topic-content">
 
-<div class="training-content">
+<h4>Planned Training Resources</h4>
 
-<h4>Emerging Technology Training Materials</h4>
+<div class="material-list">
 
-<div class="material-grid">
+<div class="material">
 
+<div class="material-info">
 
-<div class="material-card">
+<div class="material-icon">PDF</div>
 
-<div class="material-type">PDF</div>
-
+<div>
 <h5>Emerging Technologies</h5>
-
-<p>
-Overview of emerging technologies and their
-impact on computing and society.
-</p>
-
-<span class="coming-soon">
-Training material will be added
-</span>
+<p>Overview of emerging technologies and their impact.</p>
+</div>
 
 </div>
 
+<div class="material-status">
+Coming Soon
+</div>
 
-<div class="material-card">
+</div>
 
-<div class="material-type">PPTX</div>
+<div class="material">
 
+<div class="material-info">
+
+<div class="material-icon">PPT</div>
+
+<div>
 <h5>Future Technology</h5>
-
-<p>
-Lecture material exploring future technologies,
-innovation and digital transformation.
-</p>
-
-<span class="coming-soon">
-Training material will be added
-</span>
+<p>Innovation, transformation and future systems.</p>
+</div>
 
 </div>
 
+<div class="material-status">
+Coming Soon
+</div>
 
-<div class="material-card">
+</div>
 
-<div class="material-type">PRACTICAL</div>
+<div class="material">
 
+<div class="material-info">
+
+<div class="material-icon">LAB</div>
+
+<div>
 <h5>Emerging Technology Exercises</h5>
-
-<p>
-Activities exploring practical applications
-of new and emerging technologies.
-</p>
-
-<span class="coming-soon">
-Practical materials will be added
-</span>
+<p>Practical exploration of new technologies.</p>
+</div>
 
 </div>
 
-
-<div class="material-card">
-
-<div class="material-type">RESEARCH</div>
-
-<h5>Emerging Technology Research Notes</h5>
-
-<p>
-Research notes covering future computing,
-AI, cybersecurity and technological innovation.
-</p>
-
-<span class="coming-soon">
-Research notes will be added
-</span>
+<div class="material-status">
+Coming Soon
+</div>
 
 </div>
 
@@ -1581,19 +1895,16 @@ Research notes will be added
 
 </details>
 
-
 </div>
 
+<div class="training-note">
 
-<div class="training-info">
-
-<strong>Training Library Development</strong>
+<h3>Academic Resource Development</h3>
 
 <p>
-This library is designed to grow over time. New PDF documents,
-PowerPoint presentations, lecture notes, practical exercises,
-research notes and other educational resources can be added
-to each subject area as they are developed.
+This section will progressively host original teaching resources,
+lecture materials, practical exercises, research notes and other
+academic resources developed for educational and professional use.
 </p>
 
 </div>
@@ -1602,42 +1913,82 @@ to each subject area as they are developed.
 
 </section>
 
-
-<section class="section" id="contact">
+<section id="contact">
 
 <div class="container">
 
-<div class="contact-box">
+<h2 class="section-title">Contact & Academic Collaboration</h2>
 
-<h2>Contact</h2>
+<p class="section-intro">
+For academic collaboration, research discussion, teaching-related
+enquiries and professional opportunities.
+</p>
 
-<br>
+<div class="contact-grid">
 
-<p>
+<div class="contact-card">
+
+<h3>Academic Contact</h3>
+
+<div class="contact-item">
 <strong>Email:</strong>
 <a href="mailto:Mesut.Inan@wlv.ac.uk">
 Mesut.Inan@wlv.ac.uk
 </a>
-</p>
+</div>
 
-<br>
+<div class="contact-item">
+<strong>Role:</strong>
+Senior Lecturer in Cyber Security and AI
+</div>
 
-<p>
+<div class="contact-item">
+<strong>Status:</strong>
+SFHEA
+</div>
+
+</div>
+
+<div class="contact-card">
+
+<h3>Professional Profiles</h3>
+
+<div class="contact-item">
+
 <strong>GitHub:</strong>
-<a href="https://github.com/DrMesutInan-SFHEA"
-target="_blank"
-rel="noopener">
-DrMesutInan-SFHEA
-</a>
-</p>
 
-<br>
+<a
+href="https://github.com/DrMesutInan-SFHEA"
+target="_blank"
+rel="noopener noreferrer">
+DrMesutInan-SFHEA </a>
+
+</div>
+
+<div class="contact-item">
+<strong>Website:</strong>
+drmesutinan-sfhea.github.io
+</div>
+
+</div>
+
+</div>
+
+<div class="cv-box">
+
+<strong>Academic CV</strong>
 
 <p>
-For academic collaboration, research discussion,
-teaching-related enquiries and professional opportunities,
-please use the institutional email address above.
+The full academic CV can be made available here as a downloadable
+PDF resource.
 </p>
+
+<a
+class="cv-button"
+href="Dr-Mesut-Inan-Academic-CV.pdf"
+target="_blank"
+rel="noopener noreferrer">
+View Academic CV → </a>
 
 </div>
 
@@ -1647,10 +1998,7 @@ please use the institutional email address above.
 
 </main>
 
-
 <footer>
-
-<div class="container">
 
 <p>
 © 2026 Dr Mesut İnan, PhD, SFHEA.
@@ -1659,14 +2007,7 @@ Academic & Professional Website.
 
 <div class="footer-links">
 
-<a href="#about">About</a>
-<a href="#research">Research</a>
-<a href="#projects">Projects</a>
-<a href="#publications">Publications</a>
-<a href="#notes">Training Notes</a>
-<a href="#contact">Contact</a>
-
-</div>
+<a href="#about">About</a> <a href="#research">Research</a> <a href="#projects">Projects</a> <a href="#publications">Publications</a> <a href="#teaching">Teaching</a> <a href="#notes">Training</a> <a href="#contact">Contact</a>
 
 </div>
 
