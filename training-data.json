@@ -1,0 +1,99 @@
+{
+  "topics": [
+    {
+      "title": "Cyber Security",
+      "icon": "CS",
+      "description": "Cybersecurity principles, threats, attacks and defence",
+      "materials": [
+        {
+          "title": "Cyber Security Fundamentals",
+          "description": "Introduction to cybersecurity concepts and principles.",
+          "type": "PDF",
+          "file": "training/cyber-security/cyber-security-fundamentals.pdf"
+        },
+        {
+          "title": "Cyber Security Lecture Notes",
+          "description": "Lecture presentation and training material.",
+          "type": "PPTX",
+          "file": "training/cyber-security/cyber-security-lecture-notes.pptx"
+        }
+      ]
+    },
+    {
+      "title": "Artificial Intelligence",
+      "icon": "AI",
+      "description": "AI, machine learning and intelligent systems",
+      "materials": [
+        {
+          "title": "Introduction to Artificial Intelligence",
+          "description": "Fundamental concepts of Artificial Intelligence.",
+          "type": "PDF",
+          "file": "training/artificial-intelligence/introduction-to-ai.pdf"
+        },
+        {
+          "title": "Machine Learning and Intelligent Systems",
+          "description": "Training presentation covering applied AI concepts.",
+          "type": "PPTX",
+          "file": "training/artificial-intelligence/machine-learning.pptx"
+        }
+      ]
+    },
+    {
+      "title": "Neural Cryptography",
+      "icon": "NC",
+      "description": "Neural networks, cryptography and secure communication",
+      "materials": [
+        {
+          "title": "Introduction to Neural Cryptography",
+          "description": "Educational material covering neural cryptographic concepts.",
+          "type": "PDF",
+          "file": "training/neural-cryptography/neural-cryptography-introduction.pdf"
+        },
+        {
+          "title": "Neural Cryptography Lecture",
+          "description": "Presentation covering neural cryptography research concepts.",
+          "type": "PPTX",
+          "file": "training/neural-cryptography/neural-cryptography.pptx"
+        }
+      ]
+    },
+    {
+      "title": "Information Security",
+      "icon": "IS",
+      "description": "Risk, governance, information protection and secure systems",
+      "materials": [
+        {
+          "title": "Information Security Fundamentals",
+          "description": "Core principles of information security and risk.",
+          "type": "PDF",
+          "file": "training/information-security/information-security-fundamentals.pdf"
+        },
+        {
+          "title": "Information Security Management",
+          "description": "Lecture and training presentation.",
+          "type": "PPTX",
+          "file": "training/information-security/information-security-management.pptx"
+        }
+      ]
+    },
+    {
+      "title": "Emerging Technology",
+      "icon": "ET",
+      "description": "New technologies, digital transformation and future systems",
+      "materials": [
+        {
+          "title": "Emerging Technologies Overview",
+          "description": "Educational notes covering important emerging technologies.",
+          "type": "PDF",
+          "file": "training/emerging-technology/emerging-technologies.pdf"
+        },
+        {
+          "title": "Future Technology and Digital Transformation",
+          "description": "Presentation covering emerging technology trends.",
+          "type": "PPTX",
+          "file": "training/emerging-technology/future-technology.pptx"
+        }
+      ]
+    }
+  ]
+}
