@@ -4,35 +4,47 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Dr Mesut İnan, PhD, SFHEA | Cyber Security, AI & Computer Science</title>
+<title>Dr Mesut İnan, PhD, SFHEA | Cyber Security Researcher & Senior Lecturer</title>
 
-<meta name="description" content="Official academic and professional website of Dr Mesut İnan, PhD, SFHEA, Cyber Security Researcher and Senior Lecturer specialising in Cyber Security, Artificial Intelligence, Computer Science and Information Security.">
+<meta name="description" content="Official academic and professional website of Dr Mesut İnan, PhD, SFHEA. Cyber Security Researcher and Senior Lecturer specialising in Cyber Security, Artificial Intelligence, Computer Science, Information Security and Neural Cryptography.">
+
 <meta name="author" content="Dr Mesut İnan, PhD, SFHEA">
 <meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0a1d2f">
 
 <link rel="canonical" href="https://drmesutinan-sfhea.github.io/">
 
 <meta property="og:title" content="Dr Mesut İnan, PhD, SFHEA">
 <meta property="og:description" content="Cyber Security Researcher | Senior Lecturer | AI & Cybersecurity">
-<meta property="og:type" content="website">
+<meta property="og:type" content="profile">
 <meta property="og:url" content="https://drmesutinan-sfhea.github.io/">
 <meta property="og:image" content="https://raw.githubusercontent.com/DrMesutInan-SFHEA/drmesutinan-sfhea.github.io/main/1781380694313.jpg">
+<meta property="og:site_name" content="Dr Mesut İnan">
 
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Dr Mesut İnan",
-  "honorificPrefix": "Dr",
-  "honorificSuffix": "PhD, SFHEA",
-  "jobTitle": "Senior Lecturer in Cyber Security and AI",
-  "url": "https://drmesutinan-sfhea.github.io/",
-  "image": "https://raw.githubusercontent.com/DrMesutInan-SFHEA/drmesutinan-sfhea.github.io/main/1781380694313.jpg",
-  "email": "Mesut.Inan@wlv.ac.uk",
-  "sameAs": [
+  "@context":"https://schema.org",
+  "@type":"Person",
+  "@id":"https://drmesutinan-sfhea.github.io/#person",
+  "name":"Dr Mesut İnan",
+  "givenName":"Mesut",
+  "familyName":"İnan",
+  "honorificPrefix":"Dr",
+  "honorificSuffix":"PhD, SFHEA",
+  "jobTitle":"Senior Lecturer in Cyber Security and AI",
+  "description":"Cyber Security Researcher and Senior Lecturer specialising in Cyber Security, Artificial Intelligence, Computer Science, Information Security and Neural Cryptography.",
+  "url":"https://drmesutinan-sfhea.github.io/",
+  "image":"https://raw.githubusercontent.com/DrMesutInan-SFHEA/drmesutinan-sfhea.github.io/main/1781380694313.jpg",
+  "email":"Mesut.Inan@wlv.ac.uk",
+  "worksFor":{
+    "@type":"Organization",
+    "name":"University of Wolverhampton",
+    "url":"https://www.wlv.ac.uk/"
+  },
+  "sameAs":[
     "https://github.com/DrMesutInan-SFHEA"
   ],
-  "knowsAbout": [
+  "knowsAbout":[
     "Cyber Security",
     "Artificial Intelligence",
     "Computer Science",
@@ -40,21 +52,27 @@
     "Neural Cryptography",
     "Secure Software Engineering",
     "Cloud Security",
-    "Offensive Security"
+    "Offensive Security",
+    "Cybersecurity",
+    "Artificial Intelligence for Cybersecurity"
   ]
 }
 </script>
 
 <style>
+
 :root{
---navy:#0a1d2f;
---blue:#164e78;
---light:#eef4f8;
---text:#1d2733;
---muted:#617080;
---white:#fff;
---border:#d8e1e8;
---bg:#f5f7f9;
+--navy:#081c2d;
+--navy2:#102f49;
+--blue:#18547f;
+--blue2:#2673a8;
+--light:#eef5f9;
+--text:#172431;
+--muted:#617180;
+--white:#ffffff;
+--border:#d9e3ea;
+--background:#f5f8fa;
+--success:#2d6f55;
 }
 
 *{
@@ -69,7 +87,7 @@ scroll-behavior:smooth;
 
 body{
 font-family:Arial,Helvetica,sans-serif;
-background:var(--bg);
+background:var(--background);
 color:var(--text);
 line-height:1.7;
 }
@@ -88,11 +106,11 @@ position:sticky;
 top:0;
 z-index:1000;
 background:var(--navy);
-box-shadow:0 3px 15px rgba(0,0,0,.15);
+box-shadow:0 3px 16px rgba(0,0,0,.18);
 }
 
 .nav-container{
-max-width:1200px;
+max-width:1220px;
 margin:auto;
 padding:15px 22px;
 display:flex;
@@ -112,7 +130,7 @@ white-space:nowrap;
 display:flex;
 flex-wrap:wrap;
 justify-content:flex-end;
-gap:17px;
+gap:16px;
 }
 
 .nav-links a{
@@ -122,13 +140,13 @@ font-weight:600;
 }
 
 .hero{
-background:linear-gradient(135deg,#091c2e,#18527f);
+background:linear-gradient(135deg,var(--navy),var(--blue));
 color:#fff;
-padding:90px 22px;
+padding:95px 22px;
 }
 
 .hero-container{
-max-width:1200px;
+max-width:1220px;
 margin:auto;
 display:flex;
 align-items:center;
@@ -136,36 +154,52 @@ gap:55px;
 }
 
 .profile-image{
-width:205px;
-height:205px;
-border-radius:50%;
+width:210px;
+height:210px;
 object-fit:cover;
+border-radius:50%;
 border:5px solid rgba(255,255,255,.95);
-box-shadow:0 12px 35px rgba(0,0,0,.3);
+box-shadow:0 15px 40px rgba(0,0,0,.3);
+flex-shrink:0;
 }
 
 .hero h1{
-font-size:48px;
-line-height:1.15;
-margin-bottom:15px;
+font-size:49px;
+line-height:1.12;
+margin-bottom:14px;
 }
 
 .hero-subtitle{
 font-size:21px;
 font-weight:600;
-margin-bottom:15px;
+margin-bottom:14px;
 }
 
 .hero-description{
 font-size:17px;
-max-width:800px;
+max-width:850px;
 opacity:.95;
 }
 
+.hero-tags{
+display:flex;
+flex-wrap:wrap;
+gap:9px;
+margin-top:22px;
+}
+
+.hero-tag{
+border:1px solid rgba(255,255,255,.35);
+background:rgba(255,255,255,.08);
+padding:6px 12px;
+border-radius:20px;
+font-size:12px;
+}
+
 .container{
-max-width:1200px;
+max-width:1220px;
 margin:auto;
-padding:75px 22px;
+padding:76px 22px;
 }
 
 section{
@@ -173,28 +207,52 @@ scroll-margin-top:90px;
 }
 
 .section-title{
-font-size:33px;
+font-size:34px;
 color:var(--navy);
-margin-bottom:15px;
+margin-bottom:14px;
 }
 
 .section-intro{
-max-width:900px;
+max-width:930px;
 color:var(--muted);
-margin-bottom:35px;
+margin-bottom:36px;
 }
 
 .about-box,
 .contact-box{
 background:#fff;
 border:1px solid var(--border);
-border-radius:15px;
-padding:38px;
-box-shadow:0 6px 25px rgba(0,0,0,.04);
+border-radius:16px;
+padding:40px;
+box-shadow:0 7px 28px rgba(0,0,0,.045);
 }
 
 .about-box p+p{
 margin-top:18px;
+}
+
+.profile-facts{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:15px;
+margin-top:28px;
+}
+
+.fact{
+background:var(--light);
+border-radius:10px;
+padding:17px;
+}
+
+.fact strong{
+display:block;
+color:var(--navy);
+margin-bottom:4px;
+}
+
+.fact span{
+color:var(--muted);
+font-size:14px;
 }
 
 .education-list{
@@ -208,7 +266,7 @@ background:#fff;
 border:1px solid var(--border);
 border-left:5px solid var(--blue);
 border-radius:11px;
-padding:27px 30px;
+padding:28px 31px;
 }
 
 .education-item h3{
@@ -236,7 +294,7 @@ gap:25px;
 background:#fff;
 border:1px solid var(--border);
 border-radius:15px;
-padding:30px;
+padding:31px;
 box-shadow:0 6px 25px rgba(0,0,0,.04);
 }
 
@@ -270,11 +328,11 @@ border-top:5px solid var(--blue);
 }
 
 .publication-card{
-border-top:4px solid #315c7e;
+border-top:4px solid #315f80;
 }
 
 .teaching-card{
-border-top:4px solid #5d7890;
+border-top:4px solid #58758c;
 }
 
 .card-link{
@@ -283,15 +341,47 @@ margin-top:17px;
 font-weight:700;
 }
 
+.academic-links{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:18px;
+margin-top:25px;
+}
+
+.academic-link{
+background:#fff;
+border:1px solid var(--border);
+border-radius:12px;
+padding:22px;
+transition:.2s;
+}
+
+.academic-link:hover{
+transform:translateY(-2px);
+box-shadow:0 8px 22px rgba(0,0,0,.07);
+text-decoration:none;
+}
+
+.academic-link strong{
+display:block;
+color:var(--navy);
+margin-bottom:5px;
+}
+
+.academic-link span{
+font-size:13px;
+color:var(--muted);
+}
+
 .cv-section{
 background:var(--navy);
-border-radius:17px;
-padding:50px;
+border-radius:18px;
+padding:52px;
 color:#fff;
 }
 
 .cv-section h2{
-font-size:32px;
+font-size:33px;
 margin-bottom:12px;
 }
 
@@ -304,7 +394,7 @@ margin-bottom:25px;
 display:inline-block;
 background:#fff;
 color:var(--navy);
-padding:13px 23px;
+padding:13px 24px;
 border-radius:8px;
 font-weight:700;
 }
@@ -327,11 +417,20 @@ footer{
 background:#06131f;
 color:#cbd6df;
 text-align:center;
-padding:30px 20px;
+padding:31px 20px;
 font-size:14px;
 }
 
-@media(max-width:900px){
+.footer-links{
+margin-top:8px;
+}
+
+.footer-links a{
+color:#dce8f0;
+margin:0 8px;
+}
+
+@media(max-width:950px){
 
 .nav-container{
 flex-direction:column;
@@ -348,10 +447,22 @@ text-align:center;
 }
 
 .hero h1{
-font-size:38px;
+font-size:39px;
+}
+
+.hero-tags{
+justify-content:center;
 }
 
 .grid{
+grid-template-columns:1fr;
+}
+
+.profile-facts{
+grid-template-columns:1fr;
+}
+
+.academic-links{
 grid-template-columns:1fr;
 }
 }
@@ -390,7 +501,7 @@ padding:24px;
 }
 
 .cv-section{
-padding:32px 25px;
+padding:33px 25px;
 }
 
 .nav-links{
@@ -401,12 +512,14 @@ gap:9px;
 font-size:11px;
 }
 }
+
 </style>
 </head>
 
 <body>
 
 <nav>
+
 <div class="nav-container">
 
 <a href="#top" class="nav-brand">
@@ -421,11 +534,13 @@ Dr Mesut İnan, PhD, SFHEA
 <a href="#projects">Projects</a>
 <a href="#publications">Publications</a>
 <a href="#teaching">Teaching</a>
+<a href="#academic-profiles">Profiles</a>
 <a href="#cv">CV</a>
 <a href="#contact">Contact</a>
 </div>
 
 </div>
+
 </nav>
 
 <header class="hero" id="top">
@@ -434,7 +549,7 @@ Dr Mesut İnan, PhD, SFHEA
 
 <img
 src="https://raw.githubusercontent.com/DrMesutInan-SFHEA/drmesutinan-sfhea.github.io/main/1781380694313.jpg"
-alt="Dr Mesut İnan"
+alt="Dr Mesut İnan, PhD, SFHEA"
 class="profile-image"
 >
 
@@ -452,14 +567,24 @@ Artificial Intelligence, Computer Science, Information Security
 and emerging secure technologies.
 </p>
 
+<div class="hero-tags">
+<span class="hero-tag">Cyber Security</span>
+<span class="hero-tag">Artificial Intelligence</span>
+<span class="hero-tag">Neural Cryptography</span>
+<span class="hero-tag">Information Security</span>
+<span class="hero-tag">Secure Software Engineering</span>
 </div>
 
 </div>
+
+</div>
+
 </header>
 
 <main>
 
 <section id="about">
+
 <div class="container">
 
 <h2 class="section-title">About</h2>
@@ -480,11 +605,33 @@ and higher education teaching, with an emphasis on responsible,
 secure and practical adoption of emerging technologies.
 </p>
 
+<div class="profile-facts">
+
+<div class="fact">
+<strong>Academic Focus</strong>
+<span>Cyber Security & Artificial Intelligence</span>
 </div>
+
+<div class="fact">
+<strong>Research</strong>
+<span>AI Security & Neural Cryptography</span>
 </div>
+
+<div class="fact">
+<strong>Academic Status</strong>
+<span>Senior Lecturer | SFHEA</span>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
 </section>
 
 <section id="education">
+
 <div class="container">
 
 <h2 class="section-title">Education</h2>
@@ -521,10 +668,13 @@ Cybersecurity and Information Security.
 </div>
 
 </div>
+
 </div>
+
 </section>
 
 <section id="experience">
+
 <div class="container">
 
 <h2 class="section-title">Academic & Professional Experience</h2>
@@ -576,10 +726,13 @@ activities across emerging technology areas.
 </div>
 
 </div>
+
 </div>
+
 </section>
 
 <section id="research">
+
 <div class="container">
 
 <h2 class="section-title">Research</h2>
@@ -624,10 +777,13 @@ and engineering of resilient digital systems.
 </div>
 
 </div>
+
 </div>
+
 </section>
 
 <section id="projects">
+
 <div class="container">
 
 <h2 class="section-title">Research Projects</h2>
@@ -696,18 +852,20 @@ GitHub Profile →
 </div>
 
 </div>
+
 </div>
+
 </section>
 
 <section id="publications">
+
 <div class="container">
 
 <h2 class="section-title">Publications & Academic Work</h2>
 
 <p class="section-intro">
-Selected research outputs and academic work. This section is structured
-to accommodate verified journal articles, conference papers,
-book chapters and research datasets.
+Selected research outputs and academic work. Verified scholarly
+records should be added here as they become available.
 </p>
 
 <div class="grid">
@@ -799,10 +957,13 @@ conference papers, book chapters and other scholarly outputs.
 </div>
 
 </div>
+
 </div>
+
 </section>
 
 <section id="teaching">
+
 <div class="container">
 
 <h2 class="section-title">Teaching</h2>
@@ -842,10 +1003,78 @@ and security-aware technology adoption.
 </div>
 
 </div>
+
 </div>
+
+</section>
+
+<section id="academic-profiles">
+
+<div class="container">
+
+<h2 class="section-title">Academic & Professional Profiles</h2>
+
+<p class="section-intro">
+Verified professional and academic profiles can be connected here
+to provide a consistent online research identity.
+</p>
+
+<div class="academic-links">
+
+<a
+class="academic-link"
+href="https://github.com/DrMesutInan-SFHEA"
+target="_blank"
+rel="noopener noreferrer">
+
+<strong>GitHub</strong>
+<span>Research projects, software and technical work</span>
+
+</a>
+
+<div class="academic-link">
+
+<strong>ORCID</strong>
+<span>Profile link to be added after verification</span>
+
+</div>
+
+<div class="academic-link">
+
+<strong>Google Scholar</strong>
+<span>Profile link to be added after verification</span>
+
+</div>
+
+<div class="academic-link">
+
+<strong>ResearchGate</strong>
+<span>Profile link to be added after verification</span>
+
+</div>
+
+<div class="academic-link">
+
+<strong>LinkedIn</strong>
+<span>Professional profile link to be added after verification</span>
+
+</div>
+
+<div class="academic-link">
+
+<strong>University Profile</strong>
+<span>University of Wolverhampton academic profile</span>
+
+</div>
+
+</div>
+
+</div>
+
 </section>
 
 <section id="cv">
+
 <div class="container">
 
 <div class="cv-section">
@@ -865,10 +1094,13 @@ Download Academic CV
 </a>
 
 </div>
+
 </div>
+
 </section>
 
 <section id="contact">
+
 <div class="container">
 
 <h2 class="section-title">Contact</h2>
@@ -893,13 +1125,27 @@ DrMesutInan-SFHEA
 </div>
 
 </div>
+
 </div>
+
 </section>
 
 </main>
 
 <footer>
+
 © 2026 Dr Mesut İnan, PhD, SFHEA. Academic & Professional Website.
+
+<div class="footer-links">
+
+<a href="#about">About</a>
+<a href="#research">Research</a>
+<a href="#publications">Publications</a>
+<a href="#cv">CV</a>
+<a href="#contact">Contact</a>
+
+</div>
+
 </footer>
 
 </body>
