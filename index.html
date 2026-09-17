@@ -1,166 +1,384 @@
-Skip to content
-DrMesutInan-SFHEA
-drmesutinan-sfhea.github.io
-Repository navigation
-Code
-Issues
-Pull requests
-Agents
-Actions
-Projects
-Wiki
-Security and quality
-Insights
-Settings
-Commit 2d98424
-DrMesutInan-SFHEA
-DrMesutInan-SFHEA
-authored
-32 minutes ago
-·
-·
-Verified
-Update index.html with navigation and footer content
-main
-1 parent 
-f2f1fd4
- commit 
-2d98424
-1 file changed
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-+105
--9
-Lines changed: 105 additions & 9 deletions
-File tree
-Filter files…
-index.html
-Search within code
- 
-‎index.html‎
-+105
--9
-Lines changed: 105 additions & 9 deletions
-Original file line number	Diff line number	Diff line change
-@@ -1,9 +1,105 @@
-This XML file does not appear to have any style information associated with it. The document tree is shown below.
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-<loc>https://drmesutinan-sfhea.github.io/</loc>
-<lastmod>2026-09-15</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1.0</priority>
-</url>
-</urlset>
-Skip to content
-DrMesutInan-SFHEA
-drmesutinan-sfhea.github.io
-Repository navigation
-Code
-Issues
-Pull requests
-Agents
-Actions
-Projects
-Wiki
-Security and quality
-Insights
-Settings
-DrMesutInan-SFHEA
-drmesutinan-sfhea.github.io
-Public
-Go to file
-t
-T
-DrMesutInan-SFHEA
-DrMesutInan-SFHEA
-Enhance SEO and layout in about.html
-f2f1fd4
- · 
-19 hours ago
-Name		
-1781380694313.jpg
-Add files via upload
-3 days ago
-README.md
-Initial commit
-4 days ago
-about.html
-Enhance SEO and layout in about.html
-19 hours ago
-google5951522d6d32c7cd.html
-Add files via upload
-yesterday
-googleacc0988b894e1a61.html
-Create googleacc0988b894e1a61.html
-20 hours ago
-index.html
-Update index.html
-20 hours ago
-sitemap.xml
-Update sitemap.xml
-20 hours ago
-training-data.json
-Create training-data.json with educational topicsAdd training library…
-2 days ago
-Repository files navigation
-README
-drmesutinan-sfhea.github.io
-Official academic and professional website of Dr Mesut İnan, PhD, SFHEA | Cyber Security, Artificial Intelligence and Computer Science
-About
-Official academic and professional website of Dr Mesut İnan, PhD, SFHEA | Cyber Security, Artificial Intelligence and Computer Science
-Resources
-Readme
-Activity
-Stars
-0 stars
-Watchers
-0 watching
-Forks
-0 forks
-Releases
-No releases published
-Create a new release
-Deployments
-61
- (61)
-github-pages
-19 hours ago
-Packages
-No packages published
-Publish your first package
-Contributors
-1
- (1)
-@DrMesutInan-SFHEA
-DrMesutInan-SFHEADr Mesut İnan, PhD, SFHEA
-Languages
-HTML
-100%
-Footer
-© 2026 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Community
-Docs
-Contact
-Manage cookies
-Do not share my personal information
- 
-Memo
-Highlight
-Explain
-0 commit comments
-Comments
-0
- (0)
-Comment
-You're not receiving notifications from this thread.
+<title>Dr Mesut İnan, PhD, SFHEA | Cyber Security & Artificial Intelligence</title>
 
+<meta name="description" content="Official academic and professional website of Dr Mesut İnan, PhD, SFHEA. Cyber Security Researcher and Senior Lecturer specialising in Cyber Security, Artificial Intelligence, Information Security and emerging technologies.">
 
-Memo
-Highlight
-Explain
-There are no files selected for viewing
+<style>
+*{
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  background:#07111f;
+  color:#eef5fb;
+  line-height:1.65;
+}
+
+.container{
+  width:90%;
+  max-width:1100px;
+  margin:auto;
+}
+
+nav{
+  background:#0c1b2c;
+  padding:20px 0;
+  position:sticky;
+  top:0;
+  z-index:100;
+}
+
+nav a{
+  color:#ffffff;
+  text-decoration:none;
+  margin-right:20px;
+}
+
+nav a:hover{
+  color:#59c4ff;
+}
+
+.hero{
+  padding:80px 0;
+  background:#0b1727;
+}
+
+.hero-grid{
+  display:grid;
+  grid-template-columns:1fr 300px;
+  gap:50px;
+  align-items:center;
+}
+
+h1{
+  font-size:52px;
+  margin:0 0 15px;
+}
+
+h2{
+  font-size:34px;
+  color:#59c4ff;
+}
+
+h3{
+  color:#eef5fb;
+}
+
+.subtitle{
+  font-size:22px;
+  color:#b9cbd9;
+}
+
+.profile-photo{
+  width:280px;
+  height:280px;
+  object-fit:cover;
+  border-radius:20px;
+  border:3px solid #59c4ff;
+}
+
+section{
+  padding:60px 0;
+  scroll-margin-top:70px;
+}
+
+.card{
+  background:#0c1b2c;
+  padding:25px;
+  margin:15px 0;
+  border-radius:12px;
+  border:1px solid rgba(89,196,255,.12);
+}
+
+a{
+  color:#59c4ff;
+}
+
+/* EDUCATION PHOTOS */
+
+.education-gallery{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:24px;
+  max-width:900px;
+  margin:35px auto 0;
+}
+
+.edu-photo{
+  margin:0;
+  padding:10px;
+  background:#0c1b2c;
+  border:1px solid rgba(89,196,255,.18);
+  border-radius:14px;
+  overflow:hidden;
+}
+
+.edu-photo img{
+  display:block;
+  width:100%;
+  height:280px;
+  object-fit:cover;
+  object-position:center;
+  border-radius:10px;
+}
+
+.edu-photo figcaption{
+  text-align:center;
+  color:#b9cbd9;
+  padding:12px 8px 5px;
+  font-size:14px;
+}
+
+.edu-photo figcaption strong{
+  color:#eef5fb;
+}
+
+/* FOOTER */
+
+footer{
+  text-align:center;
+  padding:30px;
+  background:#0c1b2c;
+  color:#9fb0c0;
+}
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+  .hero-grid{
+    grid-template-columns:1fr;
+  }
+
+  h1{
+    font-size:38px;
+  }
+
+  .profile-photo{
+    width:220px;
+    height:220px;
+  }
+
+  nav a{
+    display:inline-block;
+    margin-bottom:8px;
+  }
+
+  .education-gallery{
+    grid-template-columns:1fr;
+    max-width:500px;
+  }
+
+  .edu-photo img{
+    height:auto;
+    max-height:340px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="container">
+    #aboutAbout</a>
+    #educationEducation</a>
+    #researchResearch</a>
+    #projectsProjects</a>
+    #contactContact</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container hero-grid">
+
+    <div>
+      <h1>Dr Mesut İnan, PhD, SFHEA</h1>
+
+      <p class="subtitle">
+        Cyber Security Researcher | Senior Lecturer | AI &amp; Cybersecurity
+      </p>
+
+      <p>
+        Academic and professional work across Cyber Security,
+        Artificial Intelligence, Information Security,
+        Computer Science and emerging technologies.
+      </p>
+    </div>
+
+    <div>
+      <img
+        class="profile-photo"
+        src="1781380694313.jpg"
+        alt="Dr Mesut İnan, PhD, SFHEA">
+    </div>
+
+  </div>
+</header>
+
+<main>
+
+<section id="about">
+  <div class="container">
+
+    <h2>About</h2>
+
+    <div class="card">
+      <p>
+        Dr Mesut İnan is a Cyber Security and Artificial Intelligence
+        academic and researcher with a background in Computer Science,
+        Information Security, Artificial Intelligence and emerging
+        security technologies.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section id="education">
+  <div class="container">
+
+    <h2>Education</h2>
+
+    <div class="card">
+      <h3>PhD in Computer Science</h3>
+      <p>KU Leuven, Belgium</p>
+      <p>Specialisation: Cybersecurity and Neural Cryptography</p>
+    </div>
+
+    <div class="card">
+      <h3>MSc in Artificial Intelligence</h3>
+      <p>KU Leuven, Belgium</p>
+      <p>Autonomous Systems | Summa Cum Laude</p>
+    </div>
+
+    <div class="card">
+      <h3>MSc in Computer Science</h3>
+      <p>University of Antwerp, Belgium</p>
+      <p>Risk and Information Security | Distinction</p>
+    </div>
+
+    <div class="card">
+      <h3>BSc in Computer Science</h3>
+      <p>KU Leuven, Belgium</p>
+    </div>
+
+    <div class="education-gallery">
+
+      <figure class="edu-photo">
+        1781380694313_cleanup.jpg
+        <figcaption>
+          Dr Mesut İnan during his PhD Public Defense<br>
+          <strong>PhD Public Defense, KU Leuven</strong>
+        </figcaption>
+      </figure>
+
+      <figure class="edu-photo">
+        1781712651525_cleanup.jpg
+        <figcaption>
+          Dr Mesut İnan at an academic graduation ceremony<br>
+          <strong>Academic Graduation Ceremony</strong>
+        </figcaption>
+      </figure>
+
+    </div>
+
+  </div>
+</section>
+
+<section id="research">
+  <div class="container">
+
+    <h2>Research Interests</h2>
+
+    <div class="card">
+      <p>
+        AI for Cybersecurity · Neural Cryptography ·
+        Information Security · Offensive Security ·
+        Cloud Security · Secure Software Engineering ·
+        Responsible AI
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container">
+
+    <h2>Projects</h2>
+
+    <div class="card">
+      <h3>AEGIS-SENTINEL</h3>
+      <p>
+        Research into intelligent threat assessment,
+        civilian airspace security and critical infrastructure protection.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>AFSS</h3>
+      <p>
+        Research into secure and adaptive systems,
+        optimisation and computational modelling.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Cyber Web Assessment Agent</h3>
+      <p>
+        A web security assessment framework for evidence collection,
+        security analysis, risk assessment and automated reporting.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+
+    <h2>Contact</h2>
+
+    <div class="card">
+
+      <p>
+        Email:
+        <a href="mailto:Mesut.Inan@wlv.ac.uk">
+          Mesut.Inan@wlv.ac.uk
+        </a>
+      </p>
+
+      <p>
+        GitHub:
+        <a href="https://github.com/DrMesutInan-SFHEA"
+           target="_blank"
+           rel="noopener">
+          DrMesutInan-SFHEA
+        </a>
+      </p>
+
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer>
+  © 2026 Dr Mesut İnan, PhD, SFHEA. Academic and professional website.
+</footer>
+
+</body>
+</html>
