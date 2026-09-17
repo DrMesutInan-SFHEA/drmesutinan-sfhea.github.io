@@ -37,17 +37,26 @@ nav{
   position:sticky;
   top:0;
   z-index:100;
+  border-bottom:1px solid rgba(89,196,255,.14);
 }
 
-nav a{
+.nav-links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+}
+
+.nav-link{
   color:#ffffff;
   text-decoration:none;
-  margin-right:20px;
+  font-size:15px;
 }
 
-nav a:hover{
+.nav-link:hover{
   color:#59c4ff;
 }
+
+/* HERO */
 
 .hero{
   padding:80px 0;
@@ -63,16 +72,19 @@ nav a:hover{
 
 h1{
   font-size:52px;
+  line-height:1.1;
   margin:0 0 15px;
 }
 
 h2{
   font-size:34px;
   color:#59c4ff;
+  margin-top:0;
 }
 
 h3{
   color:#eef5fb;
+  margin-top:0;
 }
 
 .subtitle{
@@ -83,14 +95,18 @@ h3{
 .profile-photo{
   width:280px;
   height:280px;
-  object-fit:cover;
   border-radius:20px;
   border:3px solid #59c4ff;
+  background-image:url("1781380694313.jpg");
+  background-size:cover;
+  background-position:center;
 }
+
+/* SECTIONS */
 
 section{
   padding:60px 0;
-  scroll-margin-top:70px;
+  scroll-margin-top:80px;
 }
 
 .card{
@@ -101,11 +117,7 @@ section{
   border:1px solid rgba(89,196,255,.12);
 }
 
-a{
-  color:#59c4ff;
-}
-
-/* EDUCATION PHOTOS */
+/* EDUCATION GALLERY */
 
 .education-gallery{
   display:grid;
@@ -119,18 +131,26 @@ a{
   margin:0;
   padding:10px;
   background:#0c1b2c;
-  border:1px solid rgba(89,196,255,.18);
+  border:1px solid rgba(89,196,255,.20);
   border-radius:14px;
-  overflow:hidden;
+  box-shadow:0 12px 30px rgba(0,0,0,.20);
 }
 
-.edu-photo img{
-  display:block;
+.edu-image{
   width:100%;
   height:280px;
-  object-fit:cover;
-  object-position:center;
   border-radius:10px;
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+
+.phd-photo{
+  background-image:url("1781380694313_cleanup.jpg");
+}
+
+.graduation-photo{
+  background-image:url("1781712651525_cleanup.jpg");
 }
 
 .edu-photo figcaption{
@@ -144,6 +164,17 @@ a{
   color:#eef5fb;
 }
 
+/* LINKS */
+
+.contact-link{
+  color:#59c4ff;
+  text-decoration:none;
+}
+
+.contact-link:hover{
+  text-decoration:underline;
+}
+
 /* FOOTER */
 
 footer{
@@ -151,6 +182,7 @@ footer{
   padding:30px;
   background:#0c1b2c;
   color:#9fb0c0;
+  border-top:1px solid rgba(89,196,255,.12);
 }
 
 /* MOBILE */
@@ -170,9 +202,8 @@ footer{
     height:220px;
   }
 
-  nav a{
-    display:inline-block;
-    margin-bottom:8px;
+  .nav-links{
+    gap:12px;
   }
 
   .education-gallery{
@@ -180,9 +211,8 @@ footer{
     max-width:500px;
   }
 
-  .edu-photo img{
-    height:auto;
-    max-height:340px;
+  .edu-image{
+    height:300px;
   }
 }
 </style>
@@ -192,11 +222,13 @@ footer{
 
 <nav>
   <div class="container">
-    #aboutAbout</a>
-    #educationEducation</a>
-    #researchResearch</a>
-    #projectsProjects</a>
-    #contactContact</a>
+    <div class="nav-links">
+      #aboutAbout</a>
+      #educationEducation</a>
+      #researchResearch</a>
+      #projectsProjects</a>
+      #contactContact</a>
+    </div>
   </div>
 </nav>
 
@@ -217,11 +249,10 @@ footer{
       </p>
     </div>
 
-    <div>
-      <img
-        class="profile-photo"
-        src="1781380694313.jpg"
-        alt="Dr Mesut İnan, PhD, SFHEA">
+    <div
+      class="profile-photo"
+      role="img"
+      aria-label="Dr Mesut İnan, PhD, SFHEA">
     </div>
 
   </div>
@@ -277,19 +308,35 @@ footer{
     <div class="education-gallery">
 
       <figure class="edu-photo">
-        1781380694313_cleanup.jpg
+
+        <div
+          class="edu-image phd-photo"
+          role="img"
+          aria-label="Dr Mesut İnan during his PhD Public Defense at KU Leuven">
+        </div>
+
         <figcaption>
-          Dr Mesut İnan during his PhD Public Defense<br>
+          Dr Mesut İnan during his PhD Public Defense
+          <br>
           <strong>PhD Public Defense, KU Leuven</strong>
         </figcaption>
+
       </figure>
 
       <figure class="edu-photo">
-        1781712651525_cleanup.jpg
+
+        <div
+          class="edu-image graduation-photo"
+          role="img"
+          aria-label="Dr Mesut İnan at an academic graduation ceremony">
+        </div>
+
         <figcaption>
-          Dr Mesut İnan at an academic graduation ceremony<br>
+          Dr Mesut İnan at an academic graduation ceremony
+          <br>
           <strong>Academic Graduation Ceremony</strong>
         </figcaption>
+
       </figure>
 
     </div>
@@ -355,16 +402,18 @@ footer{
 
       <p>
         Email:
-        <a href="mailto:Mesut.Inan@wlv.ac.uk">
+        <a class="contact-link" href="mailto:Mesut.Inan@wlv.ac.uk">
           Mesut.Inan@wlv.ac.uk
         </a>
       </p>
 
       <p>
         GitHub:
-        <a href="https://github.com/DrMesutInan-SFHEA"
-           target="_blank"
-           rel="noopener">
+        <a
+          class="contact-link"
+          href="https://github.com/DrMesutInan-SFHEA"
+          target="_blank"
+          rel="noopener">
           DrMesutInan-SFHEA
         </a>
       </p>
